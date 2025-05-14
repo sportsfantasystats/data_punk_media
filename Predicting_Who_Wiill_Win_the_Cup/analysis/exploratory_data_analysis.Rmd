@@ -1,0 +1,182 @@
+---
+title: "exploratory data analysis"
+author: "Data Punk"
+date: "2025-05-14"
+output: html_document
+---
+
+License Information
+
+MIT License
+
+Copyright (c) 2024 Data Punk Hockey
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+Load core libraries. 
+
+```{r}
+
+library(tidyverse)
+library(ggplot2)
+library(readr)
+library(corrplot)
+
+```
+
+Load data from Hockey Reference into an R data frame and re-factor PLAYOFF data. 
+
+```{r}
+
+nhl_team_stats_df <- read_csv("all_stats_data.csv")
+
+nhl_team_stats_df$PLAYOFF <- factor(nhl_team_stats_df$PLAYOFF, labels = c("No", "Yes"))
+
+```
+
+Plot Average Points Percentage by Playoff Status. 
+
+```{r}
+
+ggplot(nhl_team_stats_df, aes(x = PLAYOFF, y = PTS_PCT, fill = PLAYOFF)) +
+  geom_boxplot(width = 0.5, outlier.shape = 21, outlier.fill = "white", outlier.size = 2) +
+  scale_fill_manual(values = c("No" = "#FF9999", "Yes" = "#66CC99")) +
+  labs(
+    title = "PTS PCT by Playoff Status",
+    x = "Playoff Team?",
+    y = "PTS PCT"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
+    axis.title.x = element_text(margin = margin(t = 10)),
+    axis.title.y = element_text(margin = margin(r = 10)),
+    axis.text = element_text(size = 12),
+    panel.grid.major = element_line(color = "gray90"),
+    panel.grid.minor = element_blank(),
+    legend.position = "none"
+  )
+
+
+```
+Plot Average Goals For Per Game vs. Goals Against Per Game.
+
+```{r}
+
+ggplot(nhl_team_stats_df, aes(x = GFPG, y = GAPG, color = PLAYOFF)) +
+  geom_point(alpha = 0.7, size = 3) +
+  scale_color_manual(values = c("No" = "#FF6666", "Yes" = "#339966")) +
+  labs(
+    title = "Goals For vs. Goals Against per Game",
+    subtitle = "Playoff Teams vs. Non-Playoff Teams",
+    x = "Goals For Per Game (GFPG)",
+    y = "Goals Against Per Game (GAPG)",
+    color = "Playoff Team"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
+    plot.subtitle = element_text(size = 12, hjust = 0.5, margin = margin(b = 10)),
+    axis.title.x = element_text(margin = margin(t = 10)),
+    axis.title.y = element_text(margin = margin(r = 10)),
+    axis.text = element_text(size = 12),
+    panel.grid.major = element_line(color = "gray90"),
+    panel.grid.minor = element_blank(),
+    legend.position = "top",
+    legend.title = element_text(face = "bold")
+  )
+
+
+```
+Plot Power Play and Penalty Kill Percentage by Playoff Status. 
+
+```{r}
+
+nhl_team_stats_df %>%
+  pivot_longer(cols = c(PP_PCT, PK_PCT), names_to = "Special_Teams", values_to = "Percentage") %>%
+  ggplot(aes(x = PLAYOFF, y = Percentage, fill = PLAYOFF)) +
+  geom_boxplot() +
+  facet_wrap(~Special_Teams, scales = "free_y") +
+  labs(title = "Special Teams Performance by Playoff Status", x = "Made Playoffs?", y = "Percentage") +
+  theme_minimal()
+
+```
+
+Create Correlation matrix for numeric performance metrics. 
+
+```{r}
+
+
+library(corrplot)
+library(RColorBrewer)
+
+cor_df <- nhl_team_stats_df %>%
+  select(GFPG, GAPG, PP_PCT, PK_PCT, S_PCT, SV_PCT, PDO, CF_PCT, XGF, XGA, SCF_PCT, HDF_PCT)
+
+cor_matrix <- cor(cor_df, use = "complete.obs")
+
+corrplot(
+  cor_matrix,
+  method = "color",
+  type = "upper",
+  col = colorRampPalette(brewer.pal(n = 8, name = "RdYlBu"))(100),
+  tl.col = "black",
+  tl.cex = 1,
+  cl.cex = 0.8,
+  number.cex = 0.8,
+  addCoef.col = "black",
+  diag = FALSE,
+  title = "Correlation of Key Performance Metrics",
+  mar = c(0, 0, 2, 0)  # Adjusts margin for better title display
+)
+
+
+```
+
+Create Logistic regression to predict playoff probability.
+
+```{r}
+
+model <- glm(PLAYOFF ~ GFPG + PDO + SV_PCT, 
+             data = nhl_team_stats_df, family = "binomial")
+summary(model)
+
+```
+
+Plot Predicted probabilities of making playoffs
+
+```{r}
+
+nhl_team_stats_df$playoff_prob <- predict(model, type = "response")
+
+ggplot(nhl_team_stats_df, aes(x = playoff_prob, fill = PLAYOFF)) +
+  geom_histogram(binwidth = 0.05, alpha = 0.6, position = "identity", color = "white") +
+  labs(title = "Predicted Playoff Probability vs Actual", x = "Predicted Probability", y = "Count") +
+  theme_minimal()
+
+```
+
+
