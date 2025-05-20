@@ -1,0 +1,294 @@
+---
+title: "predictive_model"
+author: "Data Punk"
+date: "2025-05-17"
+output: html_document
+---
+
+License Information
+
+MIT License
+
+Copyright (c) 2024 Data Punk Hockey
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+ 
+# Load libraries for the script.
+
+```{r}
+
+library(tidyverse)
+library(dplyr)
+library(rvest)
+library(xml2)
+
+```
+
+# Scrape the data from Hockey-Reference.com. 
+
+```{r}
+
+url <- "https://www.hockey-reference.com/playoffs/NHL_2025.html"
+
+team_statistics <- url %>% 
+  read_html() %>% 
+  html_nodes(xpath = '//*[@id="teams"]') %>% 
+  html_table()
+
+playoff_statistics <- team_statistics[[1]]
+
+playoff_pwp_df <- as.data.frame(playoff_statistics)
+
+playoff_pwp_df <- playoff_pwp_df %>% 
+  filter(Team != "League Average")
+
+print(playoff_pwp_df)
+
+colnames(playoff_pwp_df) <- c("RANK", "TEAM", "GP", "W", "L", "T", "OW", "OL",
+                              "WL_PCT", "GF", "GA", "DIFF")
+
+
+```
+
+
+
+```{r}
+
+team_abbr_lookup <- data.frame(
+  TEAM = c("Carolina Hurricanes", "Edmonton Oilers", "Florida Panthers", 
+           "Dallas Stars", "Toronto Maple Leafs", "Winnipeg Jets",
+           "Washington Capitals", "Vegas Golden Knights",
+           "Colorado Avalanche", "St. Louis Blues", "Ottawa Senators", 
+           "Minnesota Wild", "Los Angeles Kings", "New Jersey Devils", 
+           "Montreal Canadiens", "Tampa Bay Lightning"),
+  TEAM_ABB = c("CAR", "EDM", "FLA", "DAL", "TOR", "WPG", "WSH", "VGK", 
+               "COL", "STL", "OTT", "MIN", "LAK", "NJD", "MTL", "TBL"),
+  stringsAsFactors = FALSE
+)
+
+playoff_pwp_df <- playoff_pwp_df %>%
+  left_join(team_abbr_lookup, by = "TEAM")
+
+playoff_pwp_df$SEASON = "2024-2025"
+
+playoff_pwp_df$PWP = (playoff_pwp_df$GF^2)/(playoff_pwp_df$GF^2+playoff_pwp_df$GA^2)
+
+playoff_pwp_df <- playoff_pwp_df %>% 
+  select(SEASON, RANK, TEAM, TEAM_ABB, GP, W, L, T, OW, OL, WL_PCT, GF, GA,
+         DIFF, PWP)
+
+print(playoff_pwp_df)
+
+write.csv(playoff_pwp_df, "current_playoff_pwp_df.csv", row.names = FALSE)
+
+```
+
+
+# Optionally load the data manually and filter the data for what you need.
+
+```{r}
+
+# playoff_pwp_data <- read.csv("playoff_pwp.csv")
+
+team_summary <- playoff_pwp_df %>% 
+  select(SEASON, TEAM_ABB, GF, GA, PWP)
+
+print(team_summary)
+
+write.csv(team_summary, "playoff_team_summary.csv", row.names = FALSE)
+
+```
+
+# Use the PWP to predict the likelihood of a team winning the Cup. 
+
+```{r}
+
+predict_stanley_cup_chance <- function(team, season) {
+  df_prediction <- team_summary %>% 
+    filter(TEAM_ABB == team, SEASON == season)
+  
+  if (nrow(df_prediction) == 0) {
+    return("No data available for this team.")
+  }
+  
+  pwp_score <- df_prediction$PWP
+  message <- ifelse(pwp_score > 0.6, 
+                    "High likelihood of winning the Cup.", 
+                    ifelse(pwp_score > 0.5, 
+                           "Moderate chance of winning the Cup.", 
+                           "Low chance of winning the Cup."))
+  
+  cat("\n=== Stanley Cup Prediction ===\n")
+  cat("Team: ", team, "\nSeason: ", season, "\n")
+  cat("PWP:", round(pwp_score, 3), "\n")
+  cat("Predicted Outcome: ", message, "\n")
+}
+
+```
+
+
+
+```{r}
+
+predict_stanley_cup_chance("CAR", "2024-2025")
+
+```
+
+
+
+```{r}
+
+predict_win_percentage_vs_field <- function(team, season) {
+  playoff_teams <- team_summary %>%
+    filter(SEASON == season)
+
+  if (!(team %in% playoff_teams$TEAM)) {
+    return("Team not found.")
+  }
+
+  team_pwp <- playoff_teams %>% filter(TEAM_ABB == team) %>% pull(PWP)
+  total_pwp <- sum(playoff_teams$PWP, na.rm = TRUE)
+  
+  win_pct <- team_pwp / total_pwp * 100
+  
+  cat("\n=== Championship Probability Based on PWP ===\n")
+  cat("Team: ", team, "\n")
+  cat("Season: ", season, "\n")
+  cat("PWP: ", round(team_pwp, 3), "\n")
+  cat("Predicted Chance of Winning Stanley Cup: ", sprintf("%.2f%%", win_pct), "\n")
+}
+
+```
+
+
+```{r}
+
+predict_win_percentage_vs_field("CAR", "2024-2025")
+
+```
+
+
+```{r}
+
+rank_stanley_cup_chances <- function(season) {
+  playoff_teams <- team_summary %>%
+    filter(SEASON == season) %>%
+    drop_na(PWP) 
+  
+  total_pwp <- sum(playoff_teams$PWP, na.rm = TRUE)
+  
+  ranked_df <- playoff_teams %>%
+    mutate(
+      Win_Percentage = (PWP / total_pwp) * 100
+    ) %>%
+    arrange(desc(Win_Percentage)) %>%
+    select(TEAM_ABB, PWP, Win_Percentage)
+  
+  return(ranked_df)
+}
+
+```
+
+
+```{r}
+
+ranked_chances_2024 <- rank_stanley_cup_chances("2024-2025")
+print(ranked_chances_2024)
+
+```
+
+
+
+```{r}
+
+rank_stanley_cup_chances <- function(season, playoff_teams_vec) {
+  playoff_teams <- team_summary %>%
+    filter(SEASON == season, TEAM_ABB %in% playoff_teams_vec) %>%
+    drop_na(PWP)
+  
+  total_pwp <- sum(playoff_teams$PWP, na.rm = TRUE)
+  
+  ranked_df <- playoff_teams %>%
+    mutate(
+      Win_Percentage = (PWP / total_pwp) * 100
+    ) %>%
+    arrange(desc(Win_Percentage)) %>%
+    select(TEAM_ABB, PWP, Win_Percentage)
+  
+  return(ranked_df)
+}
+
+```
+
+
+
+```{r}
+
+remaining_teams <- c("CAR", "FLA", "DAL", "EDM")
+
+ranked_playoff_chances <- rank_stanley_cup_chances("2024-2025", remaining_teams)
+
+print(ranked_playoff_chances)
+
+```
+
+
+
+
+```{r}
+
+head_to_head_prediction <- function(team1, team2, season) {
+  df1 <- team_summary %>% filter(TEAM_ABB == team1, SEASON == season)
+  df2 <- team_summary %>% filter(TEAM_ABB == team2, SEASON == season)
+  
+  if (nrow(df1) == 0 || nrow(df2) == 0) {
+    return("One or both teams not found.")
+  }
+  
+  pwp1 <- df1$PWP
+  pwp2 <- df2$PWP
+  
+  prob_team1_win <- pwp1 / (pwp1 + pwp2)
+  prob_team2_win <- pwp2 / (pwp1 + pwp2)
+  
+  cat("\n=== Head-to-Head Prediction ===\n")
+  cat("Playoffs:", season, "\n")
+  cat(team1, "Win Probability:", sprintf("%.1f%%", 100 * prob_team1_win), "\n")
+  cat(team2, "Win Probability:", sprintf("%.1f%%", 100 * prob_team2_win), "\n")
+}
+
+```
+
+
+```{r}
+
+head_to_head_prediction("CAR", "FLA", "2024-2025")
+
+```
+
+
+
+
