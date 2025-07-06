@@ -1,0 +1,97 @@
+---
+title: "artist data analysis"
+author: "Data Punk"
+date: "2025-06-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r}
+
+library(tidyverse)
+library(GGally)
+library(ggcorrplot)
+library(ggplot2)
+
+```
+
+
+
+```{r}
+
+artist_data <- read_csv("combined_artist_data.csv")
+
+colnames(artist_data) <- c("ARTIST", "ARTIST_ID", "FOLLOWERS", "POPULARITY",
+                           "AVG_TRACK_POPULARITY", "EST_REVENUE", "DATE")
+
+```
+
+
+
+```{r}
+
+cor_vars <- artist_data %>%
+  select(FOLLOWERS, POPULARITY, AVG_TRACK_POPULARITY, EST_REVENUE)
+
+cor_matrix <- cor(cor_vars, use = "complete.obs")
+
+```
+
+
+```{r}
+
+ggcorrplot(
+  cor_matrix,
+  method = "circle",
+  type = "lower",
+  lab = TRUE,
+  lab_size = 3.5,
+  colors = c("#4575B4", "white", "#D73027"), 
+  title = "Correlation Matrix: Spotify Metrics vs Est. Revenue",
+  ggtheme = ggplot2::theme_minimal(base_size = 8)
+) +
+  ggplot2::theme(
+    plot.title = ggplot2::element_text(hjust = 0.5, size = 12, face = "bold"),
+    axis.text.x = ggplot2::element_text(angle = 45, vjust = 1, hjust = 1, size = 8),
+    axis.text.y = ggplot2::element_text(size = 8),
+    panel.grid.major = ggplot2::element_blank(),
+    panel.border = ggplot2::element_blank()
+  )
+
+```
+
+
+```{r}
+
+
+ggpairs(cor_vars, 
+        title = "Relationships Between Spotify Metrics and Revenue",
+        upper = list(continuous = wrap("cor", size = 3)),
+        lower = list(continuous = wrap("smooth", method = "lm", se = FALSE)))
+
+
+
+ggpairs(
+  cor_vars,
+  title = "Relationships Between Spotify Metrics and Revenue",
+  upper = list(continuous = wrap("cor", size = 4, color = "darkblue")),
+  lower = list(continuous = wrap("smooth", method = "lm", se = FALSE, size = 0.7, color = "#E46726")),
+  diag = list(continuous = wrap("densityDiag", alpha = 0.4, fill = "#6D9EC1"))
+) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
+    strip.text = element_text(size = 10)
+  )
+
+
+
+```
+
+
