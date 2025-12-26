@@ -1,0 +1,593 @@
+Home,Away,XG_Home,XG_Away,p_home,p_draw,p_away
+Current,Thorns,2.3,1.4,61.93%,14.92%,23.15%
+Louisville,Pride,0.9,1.1,36.72%,17.50%,45.78%
+Royals,Red Stars,2.2,1.2,64.12%,14.36%,21.52%
+Courage,Dash,3.2,0.2,92.09%,3.87%,4.04%
+Reign,Spirit,1.6,0,75.82%,10.67%,13.52%
+Angel City,Bay FC,1.9,1,61.93%,14.92%,23.15%
+Red Stars,Reign,0.7,0.9,36.72%,17.50%,45.78%
+Royals,Courage,0.3,2.8,6.30%,5.77%,87.93%
+Spirit,Bay FC,2.1,0.8,70.30%,12.55%,17.15%
+Pride,Angel City,0.7,1.8,19.98%,13.78%,66.24%
+Thorns,Gotham FC,1.2,0.7,52.79%,16.74%,30.46%
+Wave,Current,1.5,1.7,36.72%,17.50%,45.78%
+Dash,Louisville,0.9,2,19.98%,13.78%,66.24%
+Pride,Red Stars,1.9,0.9,64.12%,14.36%,21.52%
+Current,Angel City,2.5,1.2,70.30%,12.55%,17.15%
+Thorns,Louisville,2,1.4,55.12%,16.36%,28.52%
+Wave,Reign,0.9,0.5,50.45%,17.06%,32.49%
+Courage,Gotham FC,0.8,1.4,28.52%,16.36%,55.12%
+Spirit,Royals,3.1,1.2,80.59%,8.85%,10.55%
+Bay FC,Dash,1.1,2.4,17.15%,12.55%,70.30%
+Dash,Spirit,0.6,2.3,12.46%,10.05%,77.49%
+Courage,Thorns,0.4,1.1,26.65%,15.93%,57.43%
+Louisville,Wave,1.1,1,43.46%,17.61%,38.93%
+Royals,Pride,0.1,1.8,12.46%,10.05%,77.49%
+Gotham FC,Current,1.3,1.3,41.18%,17.65%,41.18%
+Red Stars,Angel City,0.9,1,38.93%,17.61%,43.46%
+Bay FC,Reign,1.8,1,59.70%,15.45%,24.85%
+Spirit,Gotham FC,1.9,0.6,70.30%,12.55%,17.15%
+Louisville,Royals,3.9,0.6,93.91%,3.01%,3.08%
+Current,Bay FC,1.7,1.4,48.11%,17.31%,34.57%
+Pride,Wave,3.7,0.2,94.90%,2.54%,2.57%
+Reign,Red Stars,1.1,1.6,30.46%,16.74%,52.79%
+Angel City,Courage,0.4,2.3,10.55%,8.85%,80.59%
+Thorns,Dash,3.6,0.4,93.35%,3.28%,3.37%
+Spirit,Pride,1.8,1.5,48.11%,17.31%,34.57%
+Royals,Dash,0.9,0.5,50.45%,17.06%,32.49%
+Red Stars,Thorns,1.6,1.7,38.93%,17.61%,43.46%
+Courage,Reign,2,1.3,57.43%,15.93%,26.65%
+Angel City,Current,1,3,9.70%,8.28%,82.02%
+Gotham FC,Louisville,1.6,1.8,36.72%,17.50%,45.78%
+Wave,Bay FC,1.4,1.8,32.49%,17.06%,50.45%
+Pride,Courage,2.1,0.6,74.06%,11.29%,14.65%
+Red Stars,Spirit,0.9,1,38.93%,17.61%,43.46%
+Bay FC,Thorns,1.9,1.4,52.79%,16.74%,30.46%
+Reign,Wave,1.7,1.6,43.46%,17.61%,38.93%
+Gotham FC,Courage,1,0.8,45.78%,17.50%,36.72%
+Royals,Angel City,0.9,1.4,30.46%,16.74%,52.79%
+Dash,Current,0.8,2.5,12.46%,10.05%,77.49%
+Pride,Louisville,1.3,1,48.11%,17.31%,34.57%
+Thorns,Spirit,1.5,2.2,26.65%,15.93%,57.43%
+Bay FC,Red Stars,1,1.8,24.85%,15.45%,59.70%
+Reign,Current,0.2,1.2,21.52%,14.36%,64.12%
+Wave,Royals,2.4,0.7,77.49%,10.05%,12.46%
+Dash,Gotham FC,0.2,2.4,8.18%,7.20%,84.62%
+Pride,Bay FC,2,1,64.12%,14.36%,21.52%
+Louisville,Spirit,1.4,0.9,52.79%,16.74%,30.46%
+Red Stars,Royals,2.6,1.1,74.06%,11.29%,14.65%
+Angel City,Dash,0.9,1.1,36.72%,17.50%,45.78%
+Wave,Gotham FC,1.4,1.6,36.72%,17.50%,45.78%
+Current,Courage,2.9,0.3,88.89%,5.34%,5.77%
+Thorns,Reign,1.4,0.8,55.12%,16.36%,28.52%
+Dash,Thorns,1.1,2.8,12.46%,10.05%,77.49%
+Bay FC,Wave,0.4,1.5,19.98%,13.78%,66.24%
+Spirit,Angel City,2.7,1.4,70.30%,12.55%,17.15%
+Courage,Royals,3.1,0.2,91.38%,4.20%,4.42%
+Reign,Pride,1.6,1.4,45.78%,17.50%,36.72%
+Gotham FC,Red Stars,1.9,1.2,57.43%,15.93%,26.65%
+Current,Louisville,2,0.5,74.06%,11.29%,14.65%
+Pride,Thorns,2.4,2.5,38.93%,17.61%,43.46%
+Angel City,Wave,1.1,1.9,24.85%,15.45%,59.70%
+Spirit,Reign,2.2,1,68.31%,13.17%,18.52%
+Red Stars,Louisville,1.4,2.1,26.65%,15.93%,57.43%
+Bay FC,Gotham FC,0.8,2.1,17.15%,12.55%,70.30%
+Dash,Courage,1.7,1,57.43%,15.93%,26.65%
+Royals,Current,0.3,3.9,2.34%,2.32%,95.33%
+Gotham FC,Angel City,1.9,0.5,72.22%,11.92%,15.86%
+Royals,Spirit,0.8,1.4,28.52%,16.36%,55.12%
+Red Stars,Bay FC,1.2,3.2,9.70%,8.28%,82.02%
+Wave,Pride,1,0.6,50.45%,17.06%,32.49%
+Louisville,Dash,1.3,1.5,36.72%,17.50%,45.78%
+Current,Reign,2.9,1.9,64.12%,14.36%,21.52%
+Thorns,Courage,1.4,0.4,64.12%,14.36%,21.52%
+Louisville,Gotham FC,0.4,1.2,24.85%,15.45%,59.70%
+Current,Red Stars,2.2,0.3,80.59%,8.85%,10.55%
+Spirit,Wave,1.5,1,52.79%,16.74%,30.46%
+Courage,Pride,1,2,21.52%,14.36%,64.12%
+Reign,Thorns,0.5,0.7,36.72%,17.50%,45.78%
+Dash,Angel City,0.7,2,17.15%,12.55%,70.30%
+Bay FC,Royals,0.8,0.8,41.18%,17.65%,41.18%
+Gotham FC,Wave,0.9,0.3,55.12%,16.36%,28.52%
+Angel City,Louisville,1.5,2,30.46%,16.74%,52.79%
+Dash,Wave,0.6,0.5,43.46%,17.61%,38.93%
+Pride,Royals,3.9,0.4,94.90%,2.54%,2.57%
+Thorns,Current,0.7,2.2,14.65%,11.29%,74.06%
+Reign,Louisville,2,0.7,70.30%,12.55%,17.15%
+Gotham FC,Spirit,1.2,1.6,32.49%,17.06%,50.45%
+Courage,Red Stars,1.2,0.7,52.79%,16.74%,30.46%
+Bay FC,Angel City,1.1,1.2,38.93%,17.61%,43.46%
+Louisville,Bay FC,0.5,1.2,26.65%,15.93%,57.43%
+Wave,Red Stars,2.1,1.7,50.45%,17.06%,32.49%
+Current,Dash,3.1,0.3,90.61%,4.56%,4.83%
+Spirit,Courage,1.3,0.4,61.93%,14.92%,23.15%
+Gotham FC,Reign,1.1,0.7,50.45%,17.06%,32.49%
+Angel City,Pride,1.2,2.4,18.52%,13.17%,68.31%
+Royals,Thorns,1.8,0.9,61.93%,14.92%,23.15%
+Red Stars,Dash,0.9,0.8,43.46%,17.61%,38.93%
+Current,Pride,1.4,2.1,26.65%,15.93%,57.43%
+Thorns,Wave,2.4,1,72.22%,11.92%,15.86%
+Reign,Royals,2.4,1.6,59.70%,15.45%,24.85%
+Courage,Louisville,1.9,0.8,66.24%,13.78%,19.98%
+Angel City,Gotham FC,1.6,2.6,21.52%,14.36%,64.12%
+Bay FC,Spirit,1.4,2.4,21.52%,14.36%,64.12%
+Wave,Angel City,0.9,2.7,11.47%,9.44%,79.09%
+Gotham FC,Thorns,1,0.4,55.12%,16.36%,28.52%
+Dash,Pride,1.3,2.6,17.15%,12.55%,70.30%
+Louisville,Red Stars,2,0.6,72.22%,11.92%,15.86%
+Royals,Bay FC,0.8,1.4,28.52%,16.36%,55.12%
+Spirit,Current,0.6,0.9,34.57%,17.31%,48.11%
+Reign,Courage,2.1,0.4,77.49%,10.05%,12.46%
+Thorns,Bay FC,1.1,2.3,18.52%,13.17%,68.31%
+Louisville,Reign,2,1,64.12%,14.36%,21.52%
+Angel City,Red Stars,1.4,1.3,43.46%,17.61%,38.93%
+Courage,Current,1.4,2.2,24.85%,15.45%,59.70%
+Pride,Gotham FC,0.8,0.8,41.18%,17.65%,41.18%
+Dash,Royals,1.7,3.4,12.46%,10.05%,77.49%
+Wave,Spirit,0.6,2.1,14.65%,11.29%,74.06%
+Spirit,Thorns,3.3,1.8,74.06%,11.29%,14.65%
+Current,Royals,1.8,1.2,55.12%,16.36%,28.52%
+Angel City,Reign,1.3,2.4,19.98%,13.78%,66.24%
+Gotham FC,Dash,1.6,0.6,64.12%,14.36%,21.52%
+Red Stars,Pride,0.1,1.3,18.52%,13.17%,68.31%
+Bay FC,Louisville,1.5,1.1,50.45%,17.06%,32.49%
+Wave,Courage,1.4,2.1,26.65%,15.93%,57.43%
+Courage,Bay FC,0.7,2.1,15.86%,11.92%,72.22%
+Thorns,Red Stars,0.8,1.9,19.98%,13.78%,66.24%
+Louisville,Angel City,0.5,1.2,26.65%,15.93%,57.43%
+Pride,Current,0.7,1,34.57%,17.31%,48.11%
+Spirit,Dash,2.2,0.8,72.22%,11.92%,15.86%
+Royals,Wave,1.1,1.5,32.49%,17.06%,50.45%
+Reign,Gotham FC,0.3,1.1,24.85%,15.45%,59.70%
+Current,Spirit,1,0.6,50.45%,17.06%,32.49%
+Louisville,Courage,2.6,1.2,72.22%,11.92%,15.86%
+Bay FC,Pride,1,1.3,34.57%,17.31%,48.11%
+Gotham FC,Royals,0.7,0.7,41.18%,17.65%,41.18%
+Dash,Reign,0.8,1.3,30.46%,16.74%,52.79%
+Red Stars,Wave,1.3,3.4,8.91%,7.73%,83.36%
+Angel City,Thorns,1.6,1.6,41.18%,17.65%,41.18%
+Current,Gotham FC,2.6,1.1,74.06%,11.29%,14.65%
+Royals,Louisville,2.1,1.1,64.12%,14.36%,21.52%
+Angel City,Spirit,1.7,1.7,41.18%,17.65%,41.18%
+Pride,Dash,3.2,1.2,82.02%,8.28%,9.70%
+Reign,Bay FC,0.6,2.1,14.65%,11.29%,74.06%
+Red Stars,Courage,1.2,1,45.78%,17.50%,36.72%
+Wave,Thorns,1.7,1,57.43%,15.93%,26.65%
+Courage,Wave,2.1,2.5,32.49%,17.06%,50.45%
+Reign,Angel City,0.6,1.2,28.52%,16.36%,55.12%
+Dash,Red Stars,3,1.8,68.31%,13.17%,18.52%
+Gotham FC,Bay FC,4,1.6,86.90%,6.22%,6.88%
+Louisville,Current,0.6,1.4,24.85%,15.45%,59.70%
+Pride,Spirit,1.5,1,52.79%,16.74%,30.46%
+Thorns,Royals,2,1.7,48.11%,17.31%,34.57%
+Red Stars,Gotham FC,0.2,2.2,9.70%,8.28%,82.02%
+Thorns,Pride,1.3,0.5,59.70%,15.45%,24.85%
+Courage,Angel City,1.6,1,55.12%,16.36%,28.52%
+Royals,Reign,2.5,0.1,86.90%,6.22%,6.88%
+Spirit,Louisville,3.4,1.4,82.02%,8.28%,9.70%
+Bay FC,Current,0.8,1.3,30.46%,16.74%,52.79%
+Wave,Dash,1.1,1.5,32.49%,17.06%,50.45%
+Current,Wave,2.5,0.8,77.49%,10.05%,12.46%
+Reign,Dash,1.6,1.5,43.46%,17.61%,38.93%
+Louisville,Thorns,0.9,1,38.93%,17.61%,43.46%
+Angel City,Royals,1.2,1.4,36.72%,17.50%,45.78%
+Spirit,Red Stars,2.5,0.6,80.59%,8.85%,10.55%
+Gotham FC,Pride,2,1.9,43.46%,17.61%,38.93%
+Bay FC,Courage,1.7,0.7,64.12%,14.36%,21.52%
+Pride,Reign,2.9,1.4,74.06%,11.29%,14.65%
+Thorns,Angel City,1.5,0.9,55.12%,16.36%,28.52%
+Royals,Gotham FC,1.1,3.4,7.50%,6.70%,85.80%
+Courage,Spirit,0.4,0.7,34.57%,17.31%,48.11%
+Red Stars,Current,1.3,1.9,28.52%,16.36%,55.12%
+Wave,Louisville,1.8,1.8,41.18%,17.65%,41.18%
+Dash,Bay FC,1.1,2.1,21.52%,14.36%,64.12%
+Current,Courage,1.7,1.4,48.11%,17.31%,34.57%
+Pride,Red Stars,4.9,1.2,95.73%,2.13%,2.14%
+Spirit,Bay FC,1.7,1.5,45.78%,17.50%,36.72%
+Gotham FC,Thorns,0.8,0.7,43.46%,17.61%,38.93%
+Spirit,Gotham FC,2,0.8,68.31%,13.17%,18.52%
+Pride,Current,2.4,2.6,36.72%,17.50%,45.78%
+Pride,Spirit,0.4,1.8,15.86%,11.92%,72.22%
+Current,Thorns,1.9,1.2,57.43%,15.93%,26.65%
+Royals,Bay FC,1,0.8,45.78%,17.50%,36.72%
+Dash,Spirit,1,1.4,32.49%,17.06%,50.45%
+Pride,Chicago Stars,2.1,1.1,64.12%,14.36%,21.52%
+Angel City,Wave,0.7,1.3,28.52%,16.36%,55.12%
+Reign,Gotham FC,0.7,1.4,26.65%,15.93%,57.43%
+Louisville,Courage,1.7,1.2,52.79%,16.74%,30.46%
+Thorns,Angel City,1.7,0.5,68.31%,13.17%,18.52%
+Courage,Reign,1.3,1.1,45.78%,17.50%,36.72%
+Spirit,Current,1.2,3.1,10.55%,8.85%,80.59%
+Chicago Stars,Dash,1.1,2.2,19.98%,13.78%,66.24%
+Gotham FC,Pride,1.1,1,43.46%,17.61%,38.93%
+Wave,Royals,2.2,1.1,66.24%,13.78%,19.98%
+Bay FC,Louisville,0.9,1.4,30.46%,16.74%,52.79%
+Pride,Wave,1.8,0.3,74.06%,11.29%,14.65%
+Current,Royals,3.1,0.2,91.38%,4.20%,4.42%
+Dash,Gotham FC,0.1,0.4,34.57%,17.31%,48.11%
+Spirit,Bay FC,1.1,1.3,36.72%,17.50%,45.78%
+Chicago Stars,Louisville,0.9,1.8,23.15%,14.92%,61.93%
+Thorns,Courage,1.7,2.2,30.46%,16.74%,52.79%
+Angel City,Reign,1.4,1.5,38.93%,17.61%,43.46%
+Dash,Angel City,1.8,1.6,45.78%,17.50%,36.72%
+Reign,Pride,1.3,1.5,36.72%,17.50%,45.78%
+Louisville,Spirit,0.9,0.6,48.11%,17.31%,34.57%
+Royals,Thorns,0.8,2.4,13.52%,10.67%,75.82%
+Bay FC,Chicago Stars,1.7,1.5,45.78%,17.50%,36.72%
+Gotham FC,Courage,2.4,0.7,77.49%,10.05%,12.46%
+Wave,Current,0.6,1.1,30.46%,16.74%,52.79%
+Louisville,Wave,1.4,0.7,57.43%,15.93%,26.65%
+Pride,Spirit,1.6,1.4,45.78%,17.50%,36.72%
+Current,Dash,1.6,0.6,64.12%,14.36%,21.52%
+Reign,Thorns,1.1,1.2,38.93%,17.61%,43.46%
+Courage,Bay FC,0.3,0.5,36.72%,17.50%,45.78%
+Royals,Chicago Stars,1,0.5,52.79%,16.74%,30.46%
+Angel City,Gotham FC,0.5,1.3,24.85%,15.45%,59.70%
+Thorns,Gotham FC,2.1,0.7,72.22%,11.92%,15.86%
+Spirit,Gotham FC,2.6,1.9,57.43%,15.93%,26.65%
+Chicago Stars,Wave,0.7,0.9,36.72%,17.50%,45.78%
+Dash,Royals,1,1,41.18%,17.65%,41.18%
+Courage,Current,1.2,1.1,43.46%,17.61%,38.93%
+Pride,Angel City,1.3,0.8,52.79%,16.74%,30.46%
+Thorns,Louisville,2.3,2.9,28.52%,16.36%,55.12%
+Bay FC,Reign,0.6,1.1,30.46%,16.74%,52.79%
+Thorns,Pride,1.6,1,55.12%,16.36%,28.52%
+Dash,Louisville,1,0.8,45.78%,17.50%,36.72%
+Reign,Current,0.3,0.7,32.49%,17.06%,50.45%
+Spirit,Angel City,2.4,2.3,43.46%,17.61%,38.93%
+Gotham FC,Chicago Stars,1.2,0.2,64.12%,14.36%,21.52%
+Royals,Courage,0.6,2.9,7.50%,6.70%,85.80%
+Wave,Bay FC,1.9,0.8,66.24%,13.78%,19.98%
+Chicago Stars,Spirit,2.1,1.5,55.12%,16.36%,28.52%
+Courage,Pride,1,2,21.52%,14.36%,64.12%
+Angel City,Royals,1.8,1,59.70%,15.45%,24.85%
+Louisville,Gotham FC,0.7,1,34.57%,17.31%,48.11%
+Current,Bay FC,2.5,0.7,79.09%,9.44%,11.47%
+Wave,Thorns,0.6,2.7,8.91%,7.73%,83.36%
+Reign,Dash,0.6,1,32.49%,17.06%,50.45%
+Louisville,Reign,1.1,0.6,52.79%,16.74%,30.46%
+Gotham FC,Wave,0.5,0.3,45.78%,17.50%,36.72%
+Courage,Chicago Stars,1.4,0.9,52.79%,16.74%,30.46%
+Dash,Thorns,1,1.6,28.52%,16.36%,55.12%
+Spirit,Royals,3.9,0.7,93.35%,3.28%,3.37%
+Pride,Current,1.4,1,50.45%,17.06%,32.49%
+Bay FC,Angel City,1.3,1.1,45.78%,17.50%,36.72%
+Chicago Stars,Current,0.1,1.9,11.47%,9.44%,79.09%
+Reign,Spirit,0.7,2.3,13.52%,10.67%,75.82%
+Royals,Pride,0.7,3.8,3.69%,3.56%,92.75%
+Angel City,Louisville,1.6,1.5,43.46%,17.61%,38.93%
+Dash,Bay FC,0.8,2.2,15.86%,11.92%,72.22%
+Wave,Courage,1.6,1.8,36.72%,17.50%,45.78%
+Louisville,Royals,1.9,1.1,59.70%,15.45%,24.85%
+Gotham FC,Current,0.9,1.9,21.52%,14.36%,64.12%
+Bay FC,Thorns,0.9,1.1,36.72%,17.50%,45.78%
+Pride,Dash,1.4,0.6,59.70%,15.45%,24.85%
+Wave,Reign,0.9,0.6,48.11%,17.31%,34.57%
+Spirit,Courage,1.5,2.6,19.98%,13.78%,66.24%
+Angel City,Chicago Stars,1.5,0.5,64.12%,14.36%,21.52%
+Chicago Stars,Reign,1,1.1,38.93%,17.61%,43.46%
+Current,Louisville,2.1,1.1,64.12%,14.36%,21.52%
+Bay FC,Pride,1.7,0.4,70.30%,12.55%,17.15%
+Dash,Wave,0.8,1.9,19.98%,13.78%,66.24%
+Royals,Gotham FC,0.6,1.6,21.52%,14.36%,64.12%
+Thorns,Spirit,1.5,1.2,48.11%,17.31%,34.57%
+Angel City,Courage,1.4,2.9,14.65%,11.29%,74.06%
+Royals,Reign,1.8,2.2,32.49%,17.06%,50.45%
+Current,Angel City,2.1,0.8,70.30%,12.55%,17.15%
+Gotham FC,Bay FC,0.9,2.8,10.55%,8.85%,80.59%
+Courage,Dash,2.1,0.5,75.82%,10.67%,13.52%
+Louisville,Pride,2.5,0.9,75.82%,10.67%,13.52%
+Thorns,Chicago Stars,0.9,0.3,55.12%,16.36%,28.52%
+Wave,Spirit,0.8,0.8,41.18%,17.65%,41.18%
+Chicago Stars,Gotham FC,1.3,1.4,38.93%,17.61%,43.46%
+Reign,Angel City,0.8,0.4,50.45%,17.06%,32.49%
+Courage,Wave,0.2,1.1,23.15%,14.92%,61.93%
+Louisville,Current,0.4,1.8,15.86%,11.92%,72.22%
+Spirit,Thorns,2,1.3,57.43%,15.93%,26.65%
+Pride,Royals,1.8,0.4,72.22%,11.92%,15.86%
+Bay FC,Dash,3.6,1.7,80.59%,8.85%,10.55%
+Gotham FC,Spirit,0.3,1.1,24.85%,15.45%,59.70%
+Dash,Courage,1,1.7,26.65%,15.93%,57.43%
+Pride,Louisville,2.8,0.8,82.02%,8.28%,9.70%
+Royals,Current,0.6,1.1,30.46%,16.74%,52.79%
+Thorns,Reign,4.5,1,94.90%,2.54%,2.57%
+Chicago Stars,Bay FC,1,1.5,30.46%,16.74%,52.79%
+Wave,Angel City,1,1.1,38.93%,17.61%,43.46%
+Royals,Angel City,1.1,0.4,57.43%,15.93%,26.65%
+Spirit,Louisville,1,1.2,36.72%,17.50%,45.78%
+Current,Thorns,2.3,1.4,61.93%,14.92%,23.15%
+Louisville,Pride,0.9,1.1,36.72%,17.50%,45.78%
+Royals,Red Stars,2.2,1.2,64.12%,14.36%,21.52%
+Courage,Dash,3.2,0.2,92.09%,3.87%,4.04%
+Reign,Spirit,1.6,0,75.82%,10.67%,13.52%
+Angel City,Bay FC,1.9,1,61.93%,14.92%,23.15%
+Red Stars,Reign,0.7,0.9,36.72%,17.50%,45.78%
+Royals,Courage,0.3,2.8,6.30%,5.77%,87.93%
+Spirit,Bay FC,2.1,0.8,70.30%,12.55%,17.15%
+Pride,Angel City,0.7,1.8,19.98%,13.78%,66.24%
+Thorns,Gotham FC,1.2,0.7,52.79%,16.74%,30.46%
+Wave,Current,1.5,1.7,36.72%,17.50%,45.78%
+Dash,Louisville,0.9,2,19.98%,13.78%,66.24%
+Pride,Red Stars,1.9,0.9,64.12%,14.36%,21.52%
+Current,Angel City,2.5,1.2,70.30%,12.55%,17.15%
+Thorns,Louisville,2,1.4,55.12%,16.36%,28.52%
+Wave,Reign,0.9,0.5,50.45%,17.06%,32.49%
+Courage,Gotham FC,0.8,1.4,28.52%,16.36%,55.12%
+Spirit,Royals,3.1,1.2,80.59%,8.85%,10.55%
+Bay FC,Dash,1.1,2.4,17.15%,12.55%,70.30%
+Dash,Spirit,0.6,2.3,12.46%,10.05%,77.49%
+Courage,Thorns,0.4,1.1,26.65%,15.93%,57.43%
+Louisville,Wave,1.1,1,43.46%,17.61%,38.93%
+Royals,Pride,0.1,1.8,12.46%,10.05%,77.49%
+Gotham FC,Current,1.3,1.3,41.18%,17.65%,41.18%
+Red Stars,Angel City,0.9,1,38.93%,17.61%,43.46%
+Bay FC,Reign,1.8,1,59.70%,15.45%,24.85%
+Spirit,Gotham FC,1.9,0.6,70.30%,12.55%,17.15%
+Louisville,Royals,3.9,0.6,93.91%,3.01%,3.08%
+Current,Bay FC,1.7,1.4,48.11%,17.31%,34.57%
+Pride,Wave,3.7,0.2,94.90%,2.54%,2.57%
+Reign,Red Stars,1.1,1.6,30.46%,16.74%,52.79%
+Angel City,Courage,0.4,2.3,10.55%,8.85%,80.59%
+Thorns,Dash,3.6,0.4,93.35%,3.28%,3.37%
+Spirit,Pride,1.8,1.5,48.11%,17.31%,34.57%
+Royals,Dash,0.9,0.5,50.45%,17.06%,32.49%
+Red Stars,Thorns,1.6,1.7,38.93%,17.61%,43.46%
+Courage,Reign,2,1.3,57.43%,15.93%,26.65%
+Angel City,Current,1,3,9.70%,8.28%,82.02%
+Gotham FC,Louisville,1.6,1.8,36.72%,17.50%,45.78%
+Wave,Bay FC,1.4,1.8,32.49%,17.06%,50.45%
+Pride,Courage,2.1,0.6,74.06%,11.29%,14.65%
+Red Stars,Spirit,0.9,1,38.93%,17.61%,43.46%
+Bay FC,Thorns,1.9,1.4,52.79%,16.74%,30.46%
+Reign,Wave,1.7,1.6,43.46%,17.61%,38.93%
+Gotham FC,Courage,1,0.8,45.78%,17.50%,36.72%
+Royals,Angel City,0.9,1.4,30.46%,16.74%,52.79%
+Dash,Current,0.8,2.5,12.46%,10.05%,77.49%
+Pride,Louisville,1.3,1,48.11%,17.31%,34.57%
+Thorns,Spirit,1.5,2.2,26.65%,15.93%,57.43%
+Bay FC,Red Stars,1,1.8,24.85%,15.45%,59.70%
+Reign,Current,0.2,1.2,21.52%,14.36%,64.12%
+Wave,Royals,2.4,0.7,77.49%,10.05%,12.46%
+Dash,Gotham FC,0.2,2.4,8.18%,7.20%,84.62%
+Pride,Bay FC,2,1,64.12%,14.36%,21.52%
+Louisville,Spirit,1.4,0.9,52.79%,16.74%,30.46%
+Red Stars,Royals,2.6,1.1,74.06%,11.29%,14.65%
+Angel City,Dash,0.9,1.1,36.72%,17.50%,45.78%
+Wave,Gotham FC,1.4,1.6,36.72%,17.50%,45.78%
+Current,Courage,2.9,0.3,88.89%,5.34%,5.77%
+Thorns,Reign,1.4,0.8,55.12%,16.36%,28.52%
+Dash,Thorns,1.1,2.8,12.46%,10.05%,77.49%
+Bay FC,Wave,0.4,1.5,19.98%,13.78%,66.24%
+Spirit,Angel City,2.7,1.4,70.30%,12.55%,17.15%
+Courage,Royals,3.1,0.2,91.38%,4.20%,4.42%
+Reign,Pride,1.6,1.4,45.78%,17.50%,36.72%
+Gotham FC,Red Stars,1.9,1.2,57.43%,15.93%,26.65%
+Current,Louisville,2,0.5,74.06%,11.29%,14.65%
+Pride,Thorns,2.4,2.5,38.93%,17.61%,43.46%
+Angel City,Wave,1.1,1.9,24.85%,15.45%,59.70%
+Spirit,Reign,2.2,1,68.31%,13.17%,18.52%
+Red Stars,Louisville,1.4,2.1,26.65%,15.93%,57.43%
+Bay FC,Gotham FC,0.8,2.1,17.15%,12.55%,70.30%
+Dash,Courage,1.7,1,57.43%,15.93%,26.65%
+Royals,Current,0.3,3.9,2.34%,2.32%,95.33%
+Gotham FC,Angel City,1.9,0.5,72.22%,11.92%,15.86%
+Royals,Spirit,0.8,1.4,28.52%,16.36%,55.12%
+Red Stars,Bay FC,1.2,3.2,9.70%,8.28%,82.02%
+Wave,Pride,1,0.6,50.45%,17.06%,32.49%
+Louisville,Dash,1.3,1.5,36.72%,17.50%,45.78%
+Current,Reign,2.9,1.9,64.12%,14.36%,21.52%
+Thorns,Courage,1.4,0.4,64.12%,14.36%,21.52%
+Louisville,Gotham FC,0.4,1.2,24.85%,15.45%,59.70%
+Current,Red Stars,2.2,0.3,80.59%,8.85%,10.55%
+Spirit,Wave,1.5,1,52.79%,16.74%,30.46%
+Courage,Pride,1,2,21.52%,14.36%,64.12%
+Reign,Thorns,0.5,0.7,36.72%,17.50%,45.78%
+Dash,Angel City,0.7,2,17.15%,12.55%,70.30%
+Bay FC,Royals,0.8,0.8,41.18%,17.65%,41.18%
+Gotham FC,Wave,0.9,0.3,55.12%,16.36%,28.52%
+Angel City,Louisville,1.5,2,30.46%,16.74%,52.79%
+Dash,Wave,0.6,0.5,43.46%,17.61%,38.93%
+Pride,Royals,3.9,0.4,94.90%,2.54%,2.57%
+Thorns,Current,0.7,2.2,14.65%,11.29%,74.06%
+Reign,Louisville,2,0.7,70.30%,12.55%,17.15%
+Gotham FC,Spirit,1.2,1.6,32.49%,17.06%,50.45%
+Courage,Red Stars,1.2,0.7,52.79%,16.74%,30.46%
+Bay FC,Angel City,1.1,1.2,38.93%,17.61%,43.46%
+Louisville,Bay FC,0.5,1.2,26.65%,15.93%,57.43%
+Wave,Red Stars,2.1,1.7,50.45%,17.06%,32.49%
+Current,Dash,3.1,0.3,90.61%,4.56%,4.83%
+Spirit,Courage,1.3,0.4,61.93%,14.92%,23.15%
+Gotham FC,Reign,1.1,0.7,50.45%,17.06%,32.49%
+Angel City,Pride,1.2,2.4,18.52%,13.17%,68.31%
+Royals,Thorns,1.8,0.9,61.93%,14.92%,23.15%
+Red Stars,Dash,0.9,0.8,43.46%,17.61%,38.93%
+Current,Pride,1.4,2.1,26.65%,15.93%,57.43%
+Thorns,Wave,2.4,1,72.22%,11.92%,15.86%
+Reign,Royals,2.4,1.6,59.70%,15.45%,24.85%
+Courage,Louisville,1.9,0.8,66.24%,13.78%,19.98%
+Angel City,Gotham FC,1.6,2.6,21.52%,14.36%,64.12%
+Bay FC,Spirit,1.4,2.4,21.52%,14.36%,64.12%
+Wave,Angel City,0.9,2.7,11.47%,9.44%,79.09%
+Gotham FC,Thorns,1,0.4,55.12%,16.36%,28.52%
+Dash,Pride,1.3,2.6,17.15%,12.55%,70.30%
+Louisville,Red Stars,2,0.6,72.22%,11.92%,15.86%
+Royals,Bay FC,0.8,1.4,28.52%,16.36%,55.12%
+Spirit,Current,0.6,0.9,34.57%,17.31%,48.11%
+Reign,Courage,2.1,0.4,77.49%,10.05%,12.46%
+Thorns,Bay FC,1.1,2.3,18.52%,13.17%,68.31%
+Louisville,Reign,2,1,64.12%,14.36%,21.52%
+Angel City,Red Stars,1.4,1.3,43.46%,17.61%,38.93%
+Courage,Current,1.4,2.2,24.85%,15.45%,59.70%
+Pride,Gotham FC,0.8,0.8,41.18%,17.65%,41.18%
+Dash,Royals,1.7,3.4,12.46%,10.05%,77.49%
+Wave,Spirit,0.6,2.1,14.65%,11.29%,74.06%
+Spirit,Thorns,3.3,1.8,74.06%,11.29%,14.65%
+Current,Royals,1.8,1.2,55.12%,16.36%,28.52%
+Angel City,Reign,1.3,2.4,19.98%,13.78%,66.24%
+Gotham FC,Dash,1.6,0.6,64.12%,14.36%,21.52%
+Red Stars,Pride,0.1,1.3,18.52%,13.17%,68.31%
+Bay FC,Louisville,1.5,1.1,50.45%,17.06%,32.49%
+Wave,Courage,1.4,2.1,26.65%,15.93%,57.43%
+Courage,Bay FC,0.7,2.1,15.86%,11.92%,72.22%
+Thorns,Red Stars,0.8,1.9,19.98%,13.78%,66.24%
+Louisville,Angel City,0.5,1.2,26.65%,15.93%,57.43%
+Pride,Current,0.7,1,34.57%,17.31%,48.11%
+Spirit,Dash,2.2,0.8,72.22%,11.92%,15.86%
+Royals,Wave,1.1,1.5,32.49%,17.06%,50.45%
+Reign,Gotham FC,0.3,1.1,24.85%,15.45%,59.70%
+Current,Spirit,1,0.6,50.45%,17.06%,32.49%
+Louisville,Courage,2.6,1.2,72.22%,11.92%,15.86%
+Bay FC,Pride,1,1.3,34.57%,17.31%,48.11%
+Gotham FC,Royals,0.7,0.7,41.18%,17.65%,41.18%
+Dash,Reign,0.8,1.3,30.46%,16.74%,52.79%
+Red Stars,Wave,1.3,3.4,8.91%,7.73%,83.36%
+Angel City,Thorns,1.6,1.6,41.18%,17.65%,41.18%
+Current,Gotham FC,2.6,1.1,74.06%,11.29%,14.65%
+Royals,Louisville,2.1,1.1,64.12%,14.36%,21.52%
+Angel City,Spirit,1.7,1.7,41.18%,17.65%,41.18%
+Pride,Dash,3.2,1.2,82.02%,8.28%,9.70%
+Reign,Bay FC,0.6,2.1,14.65%,11.29%,74.06%
+Red Stars,Courage,1.2,1,45.78%,17.50%,36.72%
+Wave,Thorns,1.7,1,57.43%,15.93%,26.65%
+Courage,Wave,2.1,2.5,32.49%,17.06%,50.45%
+Reign,Angel City,0.6,1.2,28.52%,16.36%,55.12%
+Dash,Red Stars,3,1.8,68.31%,13.17%,18.52%
+Gotham FC,Bay FC,4,1.6,86.90%,6.22%,6.88%
+Louisville,Current,0.6,1.4,24.85%,15.45%,59.70%
+Pride,Spirit,1.5,1,52.79%,16.74%,30.46%
+Thorns,Royals,2,1.7,48.11%,17.31%,34.57%
+Red Stars,Gotham FC,0.2,2.2,9.70%,8.28%,82.02%
+Thorns,Pride,1.3,0.5,59.70%,15.45%,24.85%
+Courage,Angel City,1.6,1,55.12%,16.36%,28.52%
+Royals,Reign,2.5,0.1,86.90%,6.22%,6.88%
+Spirit,Louisville,3.4,1.4,82.02%,8.28%,9.70%
+Bay FC,Current,0.8,1.3,30.46%,16.74%,52.79%
+Wave,Dash,1.1,1.5,32.49%,17.06%,50.45%
+Current,Wave,2.5,0.8,77.49%,10.05%,12.46%
+Reign,Dash,1.6,1.5,43.46%,17.61%,38.93%
+Louisville,Thorns,0.9,1,38.93%,17.61%,43.46%
+Angel City,Royals,1.2,1.4,36.72%,17.50%,45.78%
+Spirit,Red Stars,2.5,0.6,80.59%,8.85%,10.55%
+Gotham FC,Pride,2,1.9,43.46%,17.61%,38.93%
+Bay FC,Courage,1.7,0.7,64.12%,14.36%,21.52%
+Pride,Reign,2.9,1.4,74.06%,11.29%,14.65%
+Thorns,Angel City,1.5,0.9,55.12%,16.36%,28.52%
+Royals,Gotham FC,1.1,3.4,7.50%,6.70%,85.80%
+Courage,Spirit,0.4,0.7,34.57%,17.31%,48.11%
+Red Stars,Current,1.3,1.9,28.52%,16.36%,55.12%
+Wave,Louisville,1.8,1.8,41.18%,17.65%,41.18%
+Dash,Bay FC,1.1,2.1,21.52%,14.36%,64.12%
+Current,Courage,1.7,1.4,48.11%,17.31%,34.57%
+Pride,Red Stars,4.9,1.2,95.73%,2.13%,2.14%
+Spirit,Bay FC,1.7,1.5,45.78%,17.50%,36.72%
+Gotham FC,Thorns,0.8,0.7,43.46%,17.61%,38.93%
+Spirit,Gotham FC,2,0.8,68.31%,13.17%,18.52%
+Pride,Current,2.4,2.6,36.72%,17.50%,45.78%
+Pride,Spirit,0.4,1.8,15.86%,11.92%,72.22%
+Current,Thorns,1.9,1.2,57.43%,15.93%,26.65%
+Royals,Bay FC,1,0.8,45.78%,17.50%,36.72%
+Dash,Spirit,1,1.4,32.49%,17.06%,50.45%
+Pride,Chicago Stars,2.1,1.1,64.12%,14.36%,21.52%
+Angel City,Wave,0.7,1.3,28.52%,16.36%,55.12%
+Reign,Gotham FC,0.7,1.4,26.65%,15.93%,57.43%
+Louisville,Courage,1.7,1.2,52.79%,16.74%,30.46%
+Thorns,Angel City,1.7,0.5,68.31%,13.17%,18.52%
+Courage,Reign,1.3,1.1,45.78%,17.50%,36.72%
+Spirit,Current,1.2,3.1,10.55%,8.85%,80.59%
+Chicago Stars,Dash,1.1,2.2,19.98%,13.78%,66.24%
+Gotham FC,Pride,1.1,1,43.46%,17.61%,38.93%
+Wave,Royals,2.2,1.1,66.24%,13.78%,19.98%
+Bay FC,Louisville,0.9,1.4,30.46%,16.74%,52.79%
+Pride,Wave,1.8,0.3,74.06%,11.29%,14.65%
+Current,Royals,3.1,0.2,91.38%,4.20%,4.42%
+Dash,Gotham FC,0.1,0.4,34.57%,17.31%,48.11%
+Spirit,Bay FC,1.1,1.3,36.72%,17.50%,45.78%
+Chicago Stars,Louisville,0.9,1.8,23.15%,14.92%,61.93%
+Thorns,Courage,1.7,2.2,30.46%,16.74%,52.79%
+Angel City,Reign,1.4,1.5,38.93%,17.61%,43.46%
+Dash,Angel City,1.8,1.6,45.78%,17.50%,36.72%
+Reign,Pride,1.3,1.5,36.72%,17.50%,45.78%
+Louisville,Spirit,0.9,0.6,48.11%,17.31%,34.57%
+Royals,Thorns,0.8,2.4,13.52%,10.67%,75.82%
+Bay FC,Chicago Stars,1.7,1.5,45.78%,17.50%,36.72%
+Gotham FC,Courage,2.4,0.7,77.49%,10.05%,12.46%
+Wave,Current,0.6,1.1,30.46%,16.74%,52.79%
+Louisville,Wave,1.4,0.7,57.43%,15.93%,26.65%
+Pride,Spirit,1.6,1.4,45.78%,17.50%,36.72%
+Current,Dash,1.6,0.6,64.12%,14.36%,21.52%
+Reign,Thorns,1.1,1.2,38.93%,17.61%,43.46%
+Courage,Bay FC,0.3,0.5,36.72%,17.50%,45.78%
+Royals,Chicago Stars,1,0.5,52.79%,16.74%,30.46%
+Angel City,Gotham FC,0.5,1.3,24.85%,15.45%,59.70%
+Thorns,Gotham FC,2.1,0.7,72.22%,11.92%,15.86%
+Spirit,Gotham FC,2.6,1.9,57.43%,15.93%,26.65%
+Chicago Stars,Wave,0.7,0.9,36.72%,17.50%,45.78%
+Dash,Royals,1,1,41.18%,17.65%,41.18%
+Courage,Current,1.2,1.1,43.46%,17.61%,38.93%
+Pride,Angel City,1.3,0.8,52.79%,16.74%,30.46%
+Thorns,Louisville,2.3,2.9,28.52%,16.36%,55.12%
+Bay FC,Reign,0.6,1.1,30.46%,16.74%,52.79%
+Thorns,Pride,1.6,1,55.12%,16.36%,28.52%
+Dash,Louisville,1,0.8,45.78%,17.50%,36.72%
+Reign,Current,0.3,0.7,32.49%,17.06%,50.45%
+Spirit,Angel City,2.4,2.3,43.46%,17.61%,38.93%
+Gotham FC,Chicago Stars,1.2,0.2,64.12%,14.36%,21.52%
+Royals,Courage,0.6,2.9,7.50%,6.70%,85.80%
+Wave,Bay FC,1.9,0.8,66.24%,13.78%,19.98%
+Chicago Stars,Spirit,2.1,1.5,55.12%,16.36%,28.52%
+Courage,Pride,1,2,21.52%,14.36%,64.12%
+Angel City,Royals,1.8,1,59.70%,15.45%,24.85%
+Louisville,Gotham FC,0.7,1,34.57%,17.31%,48.11%
+Current,Bay FC,2.5,0.7,79.09%,9.44%,11.47%
+Wave,Thorns,0.6,2.7,8.91%,7.73%,83.36%
+Reign,Dash,0.6,1,32.49%,17.06%,50.45%
+Louisville,Reign,1.1,0.6,52.79%,16.74%,30.46%
+Gotham FC,Wave,0.5,0.3,45.78%,17.50%,36.72%
+Courage,Chicago Stars,1.4,0.9,52.79%,16.74%,30.46%
+Dash,Thorns,1,1.6,28.52%,16.36%,55.12%
+Spirit,Royals,3.9,0.7,93.35%,3.28%,3.37%
+Pride,Current,1.4,1,50.45%,17.06%,32.49%
+Bay FC,Angel City,1.3,1.1,45.78%,17.50%,36.72%
+Chicago Stars,Current,0.1,1.9,11.47%,9.44%,79.09%
+Reign,Spirit,0.7,2.3,13.52%,10.67%,75.82%
+Royals,Pride,0.7,3.8,3.69%,3.56%,92.75%
+Angel City,Louisville,1.6,1.5,43.46%,17.61%,38.93%
+Dash,Bay FC,0.8,2.2,15.86%,11.92%,72.22%
+Wave,Courage,1.6,1.8,36.72%,17.50%,45.78%
+Louisville,Royals,1.9,1.1,59.70%,15.45%,24.85%
+Gotham FC,Current,0.9,1.9,21.52%,14.36%,64.12%
+Bay FC,Thorns,0.9,1.1,36.72%,17.50%,45.78%
+Pride,Dash,1.4,0.6,59.70%,15.45%,24.85%
+Wave,Reign,0.9,0.6,48.11%,17.31%,34.57%
+Spirit,Courage,1.5,2.6,19.98%,13.78%,66.24%
+Angel City,Chicago Stars,1.5,0.5,64.12%,14.36%,21.52%
+Chicago Stars,Reign,1,1.1,38.93%,17.61%,43.46%
+Current,Louisville,2.1,1.1,64.12%,14.36%,21.52%
+Bay FC,Pride,1.7,0.4,70.30%,12.55%,17.15%
+Dash,Wave,0.8,1.9,19.98%,13.78%,66.24%
+Royals,Gotham FC,0.6,1.6,21.52%,14.36%,64.12%
+Thorns,Spirit,1.5,1.2,48.11%,17.31%,34.57%
+Angel City,Courage,1.4,2.9,14.65%,11.29%,74.06%
+Royals,Reign,1.8,2.2,32.49%,17.06%,50.45%
+Current,Angel City,2.1,0.8,70.30%,12.55%,17.15%
+Gotham FC,Bay FC,0.9,2.8,10.55%,8.85%,80.59%
+Courage,Dash,2.1,0.5,75.82%,10.67%,13.52%
+Louisville,Pride,2.5,0.9,75.82%,10.67%,13.52%
+Thorns,Chicago Stars,0.9,0.3,55.12%,16.36%,28.52%
+Wave,Spirit,0.8,0.8,41.18%,17.65%,41.18%
+Chicago Stars,Gotham FC,1.3,1.4,38.93%,17.61%,43.46%
+Reign,Angel City,0.8,0.4,50.45%,17.06%,32.49%
+Courage,Wave,0.2,1.1,23.15%,14.92%,61.93%
+Louisville,Current,0.4,1.8,15.86%,11.92%,72.22%
+Spirit,Thorns,2,1.3,57.43%,15.93%,26.65%
+Pride,Royals,1.8,0.4,72.22%,11.92%,15.86%
+Bay FC,Dash,3.6,1.7,80.59%,8.85%,10.55%
+Gotham FC,Spirit,0.3,1.1,24.85%,15.45%,59.70%
+Dash,Courage,1,1.7,26.65%,15.93%,57.43%
+Pride,Louisville,2.8,0.8,82.02%,8.28%,9.70%
+Royals,Current,0.6,1.1,30.46%,16.74%,52.79%
+Thorns,Reign,4.5,1,94.90%,2.54%,2.57%
+Chicago Stars,Bay FC,1,1.5,30.46%,16.74%,52.79%
+Wave,Angel City,1,1.1,38.93%,17.61%,43.46%
+Royals,Angel City,1.1,0.4,57.43%,15.93%,26.65%
+Spirit,Louisville,1,1.2,36.72%,17.50%,45.78%

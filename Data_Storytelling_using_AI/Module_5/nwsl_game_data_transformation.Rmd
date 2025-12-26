@@ -1,0 +1,308 @@
+---
+title: "nwsl_data_transformation"
+output: html_document
+date: "2025-08-17"
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r}
+
+library(tidyverse)
+library(readr)
+library(ggplot2)
+library(scales)
+library(dplyr)
+library(tibble)
+
+```
+
+```{r}
+
+x <- readLines("nwsl_game_stats_data_v2.csv", encoding = "Windows-1252", warn = FALSE)
+
+x <- iconv(x, from = "Windows-1252", to = "UTF-8", sub = "byte")   
+
+writeLines(x, "nwsl_game_stats_data_v2_utf8.csv", useBytes = TRUE)
+
+df <- read_csv("nwsl_game_stats_data_v2_utf8.csv", locale = locale(encoding = "UTF-8"))
+
+df_clean <- na.omit(df)
+
+print(head(df))
+
+```
+
+
+
+```{r}
+
+df_new <- df_clean %>%
+  mutate(MATCH_ID = row_number()) %>%
+  separate(SCORE, into = c("GOALS_HOME","GOALS_AWAY"), sep = "[^0-9]+", convert = TRUE)
+
+```
+
+
+```{r}
+
+home_rows <- df_new %>%
+  transmute(
+    MATCH_ID,
+    Team      = HOME_TEAM,
+    Opponent  = AWAY_TEAM,
+    Venue     = "HOME",
+    xG        = XG_HOME,
+    xG_Opp    = XG_AWAY,
+    Goals     = GOALS_HOME,
+    OppGoals  = GOALS_AWAY
+  )
+
+away_rows <- df_new %>%
+  transmute(
+    MATCH_ID,
+    Team      = HOME_TEAM,
+    Opponent  = AWAY_TEAM,
+    Venue     = "AWAY",
+    xG        = XG_HOME,
+    xG_Opp    = XG_AWAY,
+    Goals     = GOALS_HOME,
+    OppGoals  = GOALS_AWAY
+  )
+
+tidy_df <- bind_rows(home_rows, away_rows) %>%
+  mutate(
+    Win_Flag  = as.integer(Goals >  OppGoals),
+    Draw_Flag = as.integer(Goals == OppGoals),
+    xG_Diff   = xG - xG_Opp,
+    Home_Flag = as.integer(Venue == "Home")
+  )
+
+print(tidy_df)
+```
+
+
+```{r}
+
+cat("\nCorrelation: xG vs Goals:\n")
+print(cor(tidy_df$xG, tidy_df$Goals, use = "complete.obs"))
+
+cat("\nCorrelation: xG_Diff vs Win_Flag:\n")
+print(cor(tidy_df$xG_Diff, tidy_df$Win_Flag, use = "complete.obs"))
+
+```
+
+
+```{r}
+
+mod_basic <- glm(Win_Flag ~ xG_Diff, data = tidy_df, family = binomial)
+cat("\n=== Logistic Regression (Win ~ xG_Diff) ===\n")
+print(summary(mod_basic))
+
+tidy_df <- tidy_df %>%
+  mutate(Pred_Win_Prob_basic = predict(mod_basic, type = "response"))
+
+```
+
+
+```{r}
+
+mod_home <- glm(Win_Flag ~ xG_Diff + Home_Flag, data = tidy_df, family = binomial)
+cat("\n=== Logistic Regression (Win ~ xG_Diff + Home_Flag) ===\n")
+print(summary(mod_home))
+
+tidy_df <- tidy_df %>%
+  mutate(Pred_Win_Prob_home = predict(mod_home, type = "response"))
+
+write.csv(tidy_df, "long_tidy_nwsl_dataset.csv", row.names = FALSE)
+
+```
+
+
+```{r}
+
+ggplot(tidy_df, aes(x = xG_Diff, y = Win_Flag)) +
+  geom_jitter(width = 0.05, height = 0.02, alpha = 0.6) +
+  stat_smooth(method = "glm", method.args = list(family = "binomial"), se = TRUE) +
+  labs(
+    title = "Probability of Winning vs. xG Difference",
+    x = "xG Difference (Team − Opponent)",
+    y = "Win (1) / Not Win (0)"
+  ) +
+  theme_minimal()
+
+```
+
+```{r}
+
+tidy_df$Win_Flag <- factor(tidy_df$Win_Flag, levels = c(0,1), labels = c("Loss/Draw", "Win"))
+
+
+ggplot(tidy_df, aes(x = xG_Diff, y = as.numeric(as.character(Win_Flag)) - 1)) +
+  geom_jitter(aes(color = Win_Flag),
+              width = 0.05, height = 0.02, alpha = 0.4, size = 2) +
+  stat_smooth(method = "glm",
+              method.args = list(family = "binomial"),
+              se = TRUE, color = "#2E86AB", fill = "#2E86AB", alpha = 0.15, size = 1.2) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1),
+                     breaks = seq(0,1,0.2), limits = c(0,1)) +
+  scale_color_manual(values = c("Loss/Draw" = "#C0C0C0", "Win" = "#E74C3C")) +
+  labs(
+    title = "Win Probability vs. Expected Goals Difference (xG_Diff)",
+    subtitle = "Logistic regression fit with 95% confidence interval",
+    x = "xG Difference (Team − Opponent)",
+    y = "Probability of Win",
+    color = "Match Result"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", size = 16),
+    plot.subtitle = element_text(size = 12, color = "gray40"),
+    axis.title = element_text(face = "bold"),
+    legend.position = "top",
+    legend.title = element_blank()
+  )
+
+```
+
+
+```{r}
+
+tidy_df <- tidy_df %>%
+  mutate(
+    Win_Flag_num = as.integer(Goals > OppGoals),                  
+    Win_Flag_fac = factor(Win_Flag_num,                           
+                          levels = c(0,1),
+                          labels = c("Loss/Draw","Win"))
+  )
+
+stopifnot(nrow(tidy_df) > 0)
+stopifnot(any(!is.na(tidy_df$xG_Diff)))
+stopifnot(any(!is.na(tidy_df$Win_Flag_num)))
+
+   
+ggplot(tidy_df, aes(x = xG_Diff, y = Win_Flag_num)) +
+  geom_jitter(aes(color = Win_Flag_fac),
+              width = 0.05, height = 0.02, alpha = 0.4, size = 2, na.rm = TRUE) +
+  stat_smooth(method = "glm",
+              method.args = list(family = binomial),
+              se = TRUE,
+              color = "#2E86AB",
+              fill  = "#2E86AB",
+              alpha = 0.15,
+              size  = 1.2,
+              na.rm = TRUE) +
+  scale_y_continuous(labels = percent_format(accuracy = 1),
+                     breaks = seq(0, 1, 0.2),
+                     limits = c(0, 1),
+                     expand = expansion(mult = c(0, 0.02))) +
+  scale_color_manual(values = c("Loss/Draw" = "#C0C0C0", "Win" = "#E74C3C"),
+                     name = NULL) +
+  labs(
+    title = "Win Probability vs. Expected Goals Difference (xG_Diff)",
+    subtitle = "Logistic regression fit with 95% confidence band",
+    x = "xG Difference (Team − Opponent)",
+    y = "Probability of Win"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", size = 16),
+    plot.subtitle = element_text(size = 12, colour = "gray40"),
+    axis.title = element_text(face = "bold"),
+    legend.position = "top"
+  )
+
+
+```
+
+
+
+
+```{r}
+
+co <- coef(mod_basic)                
+b0 <- co[["(Intercept)"]]
+b1 <- co[["xG_Diff"]]
+
+grid <- tibble(
+  xG_Diff = seq(-3, 3, by = 0.1),
+  logit   = b0 + b1 * xG_Diff,
+  P_win   = plogis(logit)         
+)
+
+grid %>%
+  filter(xG_Diff %in% seq(-2, 3, by = 0.5)) %>%
+  mutate(P_win = scales::percent(P_win, accuracy = 1)) %>%
+  print(n = Inf)
+
+ggplot(grid, aes(x = xG_Diff, y = P_win)) +
+  geom_line(size = 1) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  labs(
+    title = "Win Probability vs. xG_Diff",
+    x = "xG_Diff (Team − Opponent)",
+    y = "Predicted Win Probability"
+  ) +
+  theme_minimal()
+
+```
+
+```{r}
+
+predict_match_probs <- function(mod_basic, xG_home, xG_away) {
+  xg_diff_home <- xG_home - xG_away
+  xg_diff_away <- -xg_diff_home
+  
+  p_home <- predict(mod_basic, newdata = data.frame(xG_Diff = xg_diff_home), type = "response")
+  p_away <- predict(mod_basic, newdata = data.frame(xG_Diff = xg_diff_away), type = "response")
+  p_draw <- 1 - (p_home + p_away)
+  
+  tibble(
+    Home_Win = p_home,
+    Away_Win = p_away,
+    Draw = p_draw
+  )
+}
+
+predict_match_probs(mod_basic, xG_home = 1.9, xG_away = 1.2)
+
+```
+
+```{r}
+
+matches <- read.csv("sample_matches_w_xg.csv")
+
+predict_match_probs <- function(mod_basic, df) {
+  df %>%
+    mutate(
+      xG_Diff_Home = XG_Home - XG_Away,
+      xG_Diff_Away = -xG_Diff_Home,
+      p_home = predict(mod_basic,
+                       newdata = data.frame(xG_Diff = xG_Diff_Home),
+                       type = "response"),
+      p_away = predict(mod_basic,
+                       newdata = data.frame(xG_Diff = xG_Diff_Away),
+                       type = "response"),
+      p_draw = 1 - (p_home + p_away)
+    ) %>%
+    select(Home, Away, XG_Home, XG_Away, p_home, p_draw, p_away)
+}
+
+sample_prob_df = predict_match_probs(mod_basic, matches)
+
+sample_prob_df = as.data.frame(sample_prob_df)
+
+print(sample_prob_df)
+
+write.csv(sample_prob_df, "sample_match_predictions.csv", row.names = FALSE)
+
+
+```
+
+

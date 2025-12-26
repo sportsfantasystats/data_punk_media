@@ -1,0 +1,372 @@
+Season,Wk,Home_Team,xG_Home,Score,xG_Away,Away_Team,Attendance,Venue,Referee
+2024,1,Current,2.3,5–4,1.4,Thorns,11500,CPKC Stadium,Alex Billeter
+2024,1,Louisville,0.9,2–2,1.1,Pride,6123,Lynn Family Stadium,
+2024,1,Royals,2.2,0–2,1.2,Red Stars,20370,America First Field,
+2024,1,Courage,3.2,5–1,0.2,Dash,5878,Sahlen's Stadium at WakeMed Soccer Park,
+2024,1,Reign,1.6,1–0,0,Spirit,8557,Lumen Field,
+2024,1,Angel City,1.9,0–1,1,Bay FC,22000,BMO Stadium,
+2024,2,Red Stars,0.7,2–1,0.9,Reign,5494,SeatGeek Stadium,
+2024,2,Royals,0.3,2–1,2.8,Courage,8161,America First Field,
+2024,2,Spirit,2.1,2–1,0.8,Bay FC,11734,Audi Field,
+2024,2,Pride,0.7,1–1,1.8,Angel City,6306,Inter&Co Stadium,
+2024,2,Thorns,1.2,0–1,0.7,Gotham FC,19857,Providence Park,
+2024,2,Wave,1.5,1–2,1.7,Current,32066,Snapdragon Stadium,
+2024,2,Dash,0.9,0–0,2,Louisville,8600,Shell Energy Stadium,
+2024,3,Pride,1.9,1–1,0.9,Red Stars,5586,Inter&Co Stadium,
+2024,3,Current,2.5,4–2,1.2,Angel City,11500,Children's Mercy Park,
+2024,3,Thorns,2,2–2,1.4,Louisville,16688,Providence Park,
+2024,3,Wave,0.9,1–0,0.5,Reign,16746,Snapdragon Stadium,
+2024,3,Courage,0.8,1–0,1.4,Gotham FC,5281,Sahlen's Stadium at WakeMed Soccer Park,
+2024,3,Spirit,3.1,2–1,1.2,Royals,8182,Audi Field,
+2024,3,Bay FC,1.1,2–3,2.4,Dash,18000,PayPal Park,
+2024,4,Dash,0.6,1–3,2.3,Spirit,7767,Shell Energy Stadium,
+2024,4,Courage,0.4,2–0,1.1,Thorns,5711,Sahlen's Stadium at WakeMed Soccer Park,
+2024,4,Louisville,1.1,0–0,1,Wave,6818,Lynn Family Stadium,
+2024,4,Royals,0.1,0–1,1.8,Pride,8578,America First Field,
+2024,4,Gotham FC,1.3,1–1,1.3,Current,8573,Red Bull Arena,
+2024,4,Red Stars,0.9,0–1,1,Angel City,3168,SeatGeek Stadium,
+2024,4,Bay FC,1.8,3–2,1,Reign,16719,PayPal Park,
+2024,5,Spirit,1.9,2–0,0.6,Gotham FC,15004,Audi Field,
+2024,5,Louisville,3.9,5–1,0.6,Royals,11365,Lynn Family Stadium,
+2024,5,Current,1.7,5–2,1.4,Bay FC,11500,CPKC Stadium,Rebecca Pagan
+2024,5,Pride,3.7,1–0,0.2,Wave,7701,Inter&Co Stadium,
+2024,5,Reign,1.1,1–2,1.6,Red Stars,9626,Lumen Field,
+2024,5,Angel City,0.4,2–1,2.3,Courage,22000,BMO Stadium,
+2024,5,Thorns,3.6,4–1,0.4,Dash,17580,Providence Park,
+2024,6,Spirit,1.8,2–3,1.5,Pride,11636,Audi Field,
+2024,6,Royals,0.9,0–0,0.5,Dash,10349,America First Field,
+2024,6,Red Stars,1.6,0–2,1.7,Thorns,4544,SeatGeek Stadium,
+2024,6,Courage,2,1–0,1.3,Reign,8135,Sahlen's Stadium at WakeMed Soccer Park,
+2024,6,Angel City,1,1–3,3,Current,19178,BMO Stadium,
+2024,6,Gotham FC,1.6,1–1,1.8,Louisville,6015,Red Bull Arena,
+2024,6,Wave,1.4,2–1,1.8,Bay FC,17206,Snapdragon Stadium,
+2024,7,Pride,2.1,4–1,0.6,Courage,4702,Inter&Co Stadium,
+2024,7,Red Stars,0.9,2–4,1,Spirit,2999,SeatGeek Stadium,
+2024,7,Bay FC,1.9,2–3,1.4,Thorns,10611,PayPal Park,
+2024,8,Reign,1.7,2–1,1.6,Wave,7030,Lumen Field,
+2024,8,Gotham FC,1,1–0,0.8,Courage,6184,Red Bull Arena,
+2024,8,Royals,0.9,1–2,1.4,Angel City,10731,America First Field,
+2024,8,Dash,0.8,1–1,2.5,Current,5099,Shell Energy Stadium,
+2024,8,Pride,1.3,1–0,1,Louisville,6837,Inter&Co Stadium,
+2024,8,Thorns,1.5,2–1,2.2,Spirit,17039,Providence Park,
+2024,8,Bay FC,1,1–2,1.8,Red Stars,14317,PayPal Park,
+2024,7,Reign,0.2,0–0,1.2,Current,5083,Lumen Field,
+2024,7,Wave,2.4,2–0,0.7,Royals,10289,Snapdragon Stadium,
+2024,7,Dash,0.2,0–1,2.4,Gotham FC,4438,Shell Energy Stadium,
+2024,9,Pride,2,1–0,1,Bay FC,7707,Inter&Co Stadium,
+2024,9,Louisville,1.4,1–2,0.9,Spirit,6222,Lynn Family Stadium,Shawn Tehini
+2024,9,Red Stars,2.6,3–1,1.1,Royals,3104,SeatGeek Stadium,
+2024,9,Angel City,0.9,0–1,1.1,Dash,18037,BMO Stadium,
+2024,9,Wave,1.4,1–1,1.6,Gotham FC,16024,Snapdragon Stadium,
+2024,9,Current,2.9,1–0,0.3,Courage,11500,CPKC Stadium,Adam Kilpatrick
+2024,9,Thorns,1.4,4–0,0.8,Reign,20229,Providence Park,
+2024,10,Dash,1.1,0–2,2.8,Thorns,5726,Shell Energy Stadium,
+2024,10,Bay FC,0.4,2–1,1.5,Wave,16930,PayPal Park,
+2024,10,Spirit,2.7,4–2,1.4,Angel City,13342,Audi Field,
+2024,10,Courage,3.1,1–0,0.2,Royals,4528,Sahlen's Stadium at WakeMed Soccer Park,
+2024,10,Reign,1.6,2–3,1.4,Pride,6781,Lumen Field,
+2024,10,Gotham FC,1.9,2–1,1.2,Red Stars,8996,Red Bull Arena,
+2024,10,Current,2,3–3,0.5,Louisville,11500,CPKC Stadium,Nabil Bensalah
+2024,11,Pride,2.4,2–1,2.5,Thorns,9226,Inter&Co Stadium,
+2024,11,Angel City,1.1,0–0,1.9,Wave,19103,BMO Stadium,Elton Garcia
+2024,11,Spirit,2.2,3–2,1,Reign,11551,Audi Field,
+2024,11,Red Stars,1.4,0–1,2.1,Louisville,3872,SeatGeek Stadium,
+2024,11,Bay FC,0.8,0–2,2.1,Gotham FC,12643,PayPal Park,
+2024,11,Dash,1.7,3–0,1,Courage,4732,Shell Energy Stadium,
+2024,11,Royals,0.3,0–1,3.9,Current,7491,America First Field,
+2024,12,Gotham FC,1.9,2–1,0.5,Angel City,11662,Red Bull Arena,
+2024,12,Royals,0.8,0–1,1.4,Spirit,8486,America First Field,
+2024,12,Red Stars,1.2,1–2,3.2,Bay FC,35038,Wrigley Field,
+2024,12,Wave,1,1–1,0.6,Pride,17073,Snapdragon Stadium,
+2024,12,Louisville,1.3,2–0,1.5,Dash,6061,Lynn Family Stadium,
+2024,12,Current,2.9,5–2,1.9,Reign,11500,CPKC Stadium,Brad Jensen
+2024,12,Thorns,1.4,1–0,0.4,Courage,21025,Providence Park,
+2024,13,Louisville,0.4,0–2,1.2,Gotham FC,6412,Lynn Family Stadium,
+2024,13,Current,2.2,2–2,0.3,Red Stars,11500,CPKC Stadium,Gerald Flores
+2024,13,Spirit,1.5,1–1,1,Wave,19897,Audi Field,
+2024,13,Courage,1,0–0,2,Pride,4776,Sahlen's Stadium at WakeMed Soccer Park,
+2024,13,Reign,0.5,0–0,0.7,Thorns,9052,Lumen Field,
+2024,13,Dash,0.7,0–0,2,Angel City,6147,Shell Energy Stadium,
+2024,13,Bay FC,0.8,0–1,0.8,Royals,10367,PayPal Park,
+2024,1,Gotham FC,0.9,2–1,0.3,Wave,10718,Red Bull Arena,
+2024,7,Angel City,1.5,3–2,2,Louisville,16735,BMO Stadium,
+2024,14,Dash,0.6,0–0,0.5,Wave,6473,Shell Energy Stadium,
+2024,14,Pride,3.9,6–0,0.4,Royals,9656,Inter&Co Stadium,
+2024,14,Thorns,0.7,1–4,2.2,Current,20024,Providence Park,
+2024,14,Reign,2,1–1,0.7,Louisville,10715,Lumen Field,
+2024,14,Gotham FC,1.2,0–2,1.6,Spirit,8396,Red Bull Arena,
+2024,14,Courage,1.2,3–1,0.7,Red Stars,5256,Sahlen's Stadium at WakeMed Soccer Park,
+2024,14,Bay FC,1.1,1–0,1.2,Angel City,15640,PayPal Park,
+2024,15,Louisville,0.5,0–1,1.2,Bay FC,8096,Lynn Family Stadium,
+2024,15,Wave,2.1,0–3,1.7,Red Stars,24115,Snapdragon Stadium,
+2024,15,Current,3.1,2–0,0.3,Dash,11500,CPKC Stadium,Greg Dopka
+2024,15,Spirit,1.3,0–1,0.4,Courage,15717,Audi Field,
+2024,15,Gotham FC,1.1,1–1,0.7,Reign,7064,Red Bull Arena,
+2024,15,Angel City,1.2,0–3,2.4,Pride,22000,BMO Stadium,
+2024,15,Royals,1.8,0–0,0.9,Thorns,8677,America First Field,
+2024,16,Red Stars,0.9,1–0,0.8,Dash,5566,SeatGeek Stadium,
+2024,16,Current,1.4,1–2,2.1,Pride,11500,CPKC Stadium,Joshua Encarnacion
+2024,16,Thorns,2.4,1–0,1,Wave,18011,Providence Park,
+2024,16,Reign,2.4,1–1,1.6,Royals,6276,Lumen Field,
+2024,16,Courage,1.9,3–1,0.8,Louisville,4738,Sahlen's Stadium at WakeMed Soccer Park,
+2024,16,Angel City,1.6,1–2,2.6,Gotham FC,16542,BMO Stadium,Katja Koroleva
+2024,16,Bay FC,1.4,0–3,2.4,Spirit,11384,PayPal Park,
+2024,17,Wave,0.9,1–2,2.7,Angel City,20500,Snapdragon Stadium,Eric Tattersall
+2024,17,Gotham FC,1,2–0,0.4,Thorns,10640,Red Bull Arena,
+2024,17,Dash,1.3,0–1,2.6,Pride,6514,Shell Energy Stadium,
+2024,17,Louisville,2,3–1,0.6,Red Stars,6607,Lynn Family Stadium,
+2024,17,Royals,0.8,2–1,1.4,Bay FC,14539,America First Field,
+2024,17,Spirit,0.6,4–1,0.9,Current,17130,Audi Field,Brad Jensen
+2024,17,Reign,2.1,1–0,0.4,Courage,16598,Lumen Field,
+2024,18,Thorns,1.1,1–3,2.3,Bay FC,18018,Providence Park,Shawn Tehini
+2024,18,Louisville,2,2–3,1,Reign,5011,Lynn Family Stadium,Laura Rodriguez
+2024,18,Angel City,1.4,2–1,1.3,Red Stars,18159,BMO Stadium,John Griggs
+2024,18,Courage,1.4,2–1,2.2,Current,6003,Sahlen's Stadium at WakeMed Soccer Park,Elvis Osmanovic
+2024,18,Pride,0.8,2–0,0.8,Gotham FC,8726,Inter&Co Stadium,Thomas Snyder
+2024,18,Dash,1.7,1–3,3.4,Royals,5171,Shell Energy Stadium,Gerald Flores
+2024,18,Wave,0.6,1–1,2.1,Spirit,23541,Snapdragon Stadium,Anya Voigt
+2024,19,Spirit,3.3,2–1,1.8,Thorns,14306,Audi Field,Greg Dopka
+2024,19,Current,1.8,1–0,1.2,Royals,11500,CPKC Stadium,Calin Radosav
+2024,19,Angel City,1.3,2–3,2.4,Reign,16023,BMO Stadium,Trevor Wiseman
+2024,19,Gotham FC,1.6,2–1,0.6,Dash,5883,Red Bull Arena,Joshua Encarnacion
+2024,19,Red Stars,0.1,0–1,1.3,Pride,7291,SeatGeek Stadium,Eric Tattersall
+2024,19,Bay FC,1.5,1–0,1.1,Louisville,11478,PayPal Park,Rebecca Pagan
+2024,19,Wave,1.4,1–4,2.1,Courage,26516,Snapdragon Stadium,Brad Jensen
+2024,20,Courage,0.7,1–1,2.1,Bay FC,6837,Sahlen's Stadium at WakeMed Soccer Park,John Griggs
+2024,20,Thorns,0.8,0–1,1.9,Red Stars,17120,Providence Park,Elton Garcia
+2024,20,Louisville,0.5,2–1,1.2,Angel City,5493,Lynn Family Stadium,Danielle Chesky
+2024,20,Pride,0.7,0–0,1,Current,9396,Inter&Co Stadium,Alyssa Nichols
+2024,20,Spirit,2.2,3–0,0.8,Dash,11792,Audi Field,Mathew Corrigan
+2024,20,Royals,1.1,1–2,1.5,Wave,9494,America First Field,Laura Rodriguez
+2024,20,Reign,0.3,0–2,1.1,Gotham FC,6604,Lumen Field,Shawn Tehini
+2024,21,Current,1,3–0,0.6,Spirit,11500,CPKC Stadium,Matthew Thompson
+2024,21,Louisville,2.6,2–1,1.2,Courage,4653,Lynn Family Stadium,Adorae Monroy
+2024,21,Bay FC,1,0–1,1.3,Pride,11063,PayPal Park,Brad Jensen
+2024,21,Gotham FC,0.7,1–0,0.7,Royals,7680,Red Bull Arena,Eric Tattersall
+2024,21,Dash,0.8,1–0,1.3,Reign,5807,Shell Energy Stadium,Jamie Padilla
+2024,21,Red Stars,1.3,1–0,3.4,Wave,5045,SeatGeek Stadium,Danielle Chesky
+2024,21,Angel City,1.6,2–2,1.6,Thorns,22000,BMO Stadium,Joshua Encarnacion
+2024,22,Current,2.6,1–1,1.1,Gotham FC,11500,CPKC Stadium,Katja Koroleva
+2024,22,Royals,2.1,1–0,1.1,Louisville,9002,America First Field,Alex Billeter
+2024,22,Angel City,1.7,1–2,1.7,Spirit,19257,BMO Stadium,Alyssa Nichols
+2024,22,Pride,3.2,3–1,1.2,Dash,17087,Inter&Co Stadium,Iryna Petrunok
+2024,22,Reign,0.6,0–1,2.1,Bay FC,9051,Lumen Field,Elton Garcia
+2024,22,Red Stars,1.2,1–3,1,Courage,4317,SeatGeek Stadium,Ricardo Fierro
+2024,22,Wave,1.7,2–0,1,Thorns,15271,Snapdragon Stadium,Elijio Arreguin
+2024,23,Courage,2.1,2–1,2.5,Wave,8496,Sahlen's Stadium at WakeMed Soccer Park,Melinda Sopka
+2024,23,Reign,0.6,0–1,1.2,Angel City,6707,Lumen Field,Matthew Thompson
+2024,23,Dash,3,0–2,1.8,Red Stars,5870,Shell Energy Stadium,Katja Koroleva
+2024,23,Gotham FC,4,5–1,1.6,Bay FC,9092,Red Bull Arena,Sergii Demianchuk
+2024,23,Louisville,0.6,0–2,1.4,Current,6013,Lynn Family Stadium,Mathew Corrigan
+2024,23,Pride,1.5,2–0,1,Spirit,7729,Inter&Co Stadium,Danielle Chesky
+2024,23,Thorns,2,1–2,1.7,Royals,17451,Providence Park,Rebecca Pagan
+2024,24,Red Stars,0.2,0–2,2.2,Gotham FC,7050,SeatGeek Stadium,Greg Dopka
+2024,24,Thorns,1.3,2–0,0.5,Pride,17174,Providence Park,John Griggs
+2024,24,Courage,1.6,1–1,1,Angel City,7037,Sahlen's Stadium at WakeMed Soccer Park,Eric Tattersall
+2024,24,Royals,2.5,3–0,0.1,Reign,9002,America First Field,Elvis Osmanovic
+2024,24,Spirit,3.4,4–1,1.4,Louisville,13781,Audi Field,Abdou Ndiaye
+2024,24,Bay FC,0.8,0–1,1.3,Current,12974,PayPal Park,Danielle Chesky
+2024,24,Wave,1.1,0–2,1.5,Dash,15549,Snapdragon Stadium,Jaclyn Metz
+2024,25,Current,2.5,4–1,0.8,Wave,11500,CPKC Stadium,Iryna Petrunok
+2024,25,Reign,1.6,2–1,1.5,Dash,8456,Lumen Field,Brad Jensen
+2024,25,Louisville,0.9,1–0,1,Thorns,5905,Lynn Family Stadium,Calin Radosav
+2024,25,Angel City,1.2,1–1,1.4,Royals,20039,BMO Stadium,Sergii Demianchuk
+2024,25,Spirit,2.5,2–0,0.6,Red Stars,17065,Audi Field,Adam Kilpatrick
+2024,25,Gotham FC,2,3–1,1.9,Pride,20039,Red Bull Arena,Ricardo Fierro
+2024,25,Bay FC,1.7,1–0,0.7,Courage,14901,PayPal Park,Elijio Arreguin
+2024,26,Pride,2.9,3–2,1.4,Reign,7765,Inter&Co Stadium,Melinda Sopka
+2024,26,Thorns,1.5,3–0,0.9,Angel City,23212,Providence Park,Brad Jensen
+2024,26,Royals,1.1,1–4,3.4,Gotham FC,9879,America First Field,Adorae Monroy
+2024,26,Courage,0.4,0–1,0.7,Spirit,10026,Sahlen's Stadium at WakeMed Soccer Park,Elvis Osmanovic
+2024,26,Red Stars,1.3,1–3,1.9,Current,5595,SeatGeek Stadium,Jaclyn Metz
+2024,26,Wave,1.8,3–1,1.8,Louisville,2137,Snapdragon Stadium,Greg Dopka
+2024,26,Dash,1.1,2–3,2.1,Bay FC,8176,Shell Energy Stadium,Matthew Thompson
+2024,27,Current,1.7,1–0,1.4,Courage,11500,CPKC Stadium,Brad Jensen
+2024,27,Pride,4.9,4–1,1.2,Red Stars,11496,Inter&Co Stadium,Alyssa Nichols
+2024,27,Spirit,1.7,2–1,1.5,Bay FC,19215,Audi Field,Katja Koroleva
+2024,27,Gotham FC,0.8,2–1,0.7,Thorns,15540,Red Bull Arena,Danielle Chesky
+2024,27,Spirit,2,(3) 1–1 (0),0.8,Gotham FC,19365,Audi Field,Matthew Thompson
+2024,27,Pride,2.4,3–2,2.6,Current,14524,Inter&Co Stadium,Danielle Chesky
+2024,27,Pride,0.4,1–0,1.8,Spirit,11500,CPKC Stadium (Neutral Site),Alyssa Nichols
+2025,1,Current,1.9,3–1,1.2,Thorns,11500,CPKC Stadium,Alyssa Nichols
+2025,1,Royals,1,1–1,0.8,Bay FC,10624,America First Field,Jaclyn Metz
+2025,1,Dash,1,1–2,1.4,Spirit,7671,Shell Energy Stadium,Matthew Thompson
+2025,1,Pride,2.1,6–0,1.1,Chicago Stars,19237,Inter&Co Stadium,Shawn Tehini
+2025,1,Angel City,0.7,1–1,1.3,Wave,19728,BMO Stadium,Katja Koroleva
+2025,1,Reign,0.7,1–1,1.4,Gotham FC,8467,Lumen Field,Alex Billeter
+2025,1,Louisville,1.7,1–1,1.2,Courage,2847,Lynn Family Stadium,Adorae Monroy
+2025,2,Thorns,1.7,1–1,0.5,Angel City,15839,Providence Park,Greg Dopka
+2025,2,Courage,1.3,1–2,1.1,Reign,8158,First Horizon Stadium at WakeMed Soccer ...,Elvis Osmanovic
+2025,2,Spirit,1.2,0–2,3.1,Current,19254,Audi Field,Elijio Arreguin
+2025,2,Chicago Stars,1.1,1–2,2.2,Dash,3376,SeatGeek Stadium,Iryna Petrunok
+2025,2,Gotham FC,1.1,0–2,1,Pride,9718,Sports Illustrated Stadium,Brad Jensen
+2025,2,Wave,2.2,3–2,1.1,Royals,18465,Snapdragon Stadium,Shawn Tehini
+2025,2,Bay FC,0.9,2–0,1.4,Louisville,14742,PayPal Park,Danielle Chesky
+2025,3,Pride,1.8,2–1,0.3,Wave,7071,Inter&Co Stadium,Adorae Monroy
+2025,3,Current,3.1,3–0,0.2,Royals,11500,CPKC Stadium,Marie Durr
+2025,3,Dash,0.1,0–0,0.4,Gotham FC,5658,Shell Energy Stadium,Shawn Tehini
+2025,3,Spirit,1.1,2–0,1.3,Bay FC,12140,Audi Field,Natalie Simon
+2025,3,Chicago Stars,0.9,0–1,1.8,Louisville,1806,SeatGeek Stadium,Laura Rodriguez
+2025,3,Thorns,1.7,0–0,2.2,Courage,15967,Providence Park,Elton Garcia
+2025,3,Angel City,1.4,2–1,1.5,Reign,15384,BMO Stadium,Gerald Flores
+2025,4,Dash,1.8,1–3,1.6,Angel City,5263,Shell Energy Stadium,Jaclyn Metz
+2025,4,Reign,1.3,0–1,1.5,Pride,7721,Lumen Field,Greg Dopka
+2025,4,Louisville,0.9,0–2,0.6,Spirit,7886,Lynn Family Stadium,Mathew Corrigan
+2025,4,Royals,0.8,0–1,2.4,Thorns,5051,America First Field,Iryna Petrunok
+2025,4,Bay FC,1.7,1–2,1.5,Chicago Stars,12320,PayPal Park,Brad Jensen
+2025,4,Gotham FC,2.4,3–1,0.7,Courage,7115,Sports Illustrated Stadium,Joshua Encarnacion
+2025,4,Wave,0.6,0–2,1.1,Current,10873,Snapdragon Stadium,John Griggs
+2025,5,Louisville,1.4,1–4,0.7,Wave,4431,Lynn Family Stadium,Jaclyn Metz
+2025,5,Pride,1.6,0–1,1.4,Spirit,9021,Inter&Co Stadium,Elton Garcia
+2025,5,Current,1.6,2–0,0.6,Dash,11500,CPKC Stadium,Katja Koroleva
+2025,5,Reign,1.1,1–0,1.2,Thorns,7609,Lumen Field,Jeremy Scheer
+2025,5,Courage,0.3,0–1,0.5,Bay FC,7049,First Horizon Stadium at WakeMed Soccer ...,Iryna Petrunok
+2025,5,Royals,1,1–0,0.5,Chicago Stars,17085,America First Field,John Matto
+2025,5,Angel City,0.5,0–4,1.3,Gotham FC,18465,BMO Stadium,Danielle Chesky
+2025,6,Thorns,2.1,4–1,0.7,Gotham FC,15373,Providence Park,John Griggs
+2025,6,Spirit,2.6,0–3,1.9,Gotham FC,16443,Audi Field,Abdou Ndiaye
+2025,6,Chicago Stars,0.7,0–3,0.9,Wave,2246,SeatGeek Stadium,Danielle Chesky
+2025,6,Dash,1,1–0,1,Royals,5084,Shell Energy Stadium,Adorae Monroy
+2025,6,Courage,1.2,3–2,1.1,Current,6235,First Horizon Stadium at WakeMed Soccer ...,Shawn Tehini
+2025,6,Pride,1.3,3–2,0.8,Angel City,6665,Inter&Co Stadium,Matthew Thompson
+2025,7,Thorns,2.3,3–3,2.9,Louisville,16219,Providence Park,Corbyn May
+2025,6,Bay FC,0.6,1–1,1.1,Reign,11564,PayPal Park,Katja Koroleva
+2025,7,Thorns,1.6,1–0,1,Pride,17776,Providence Park,Nabil Bensalah
+2025,7,Dash,1,1–2,0.8,Louisville,5765,Shell Energy Stadium,Marie Durr
+2025,7,Reign,0.3,1–0,0.7,Current,5912,Lumen Field,Calin Radosav
+2025,7,Spirit,2.4,3–4,2.3,Angel City,13738,Audi Field,Shawn Tehini
+2025,7,Gotham FC,1.2,0–0,0.2,Chicago Stars,7330,Sports Illustrated Stadium,Adorae Monroy
+2025,7,Royals,0.6,0–2,2.9,Courage,7371,America First Field,Laura Rodriguez
+2025,8,Wave,1.9,2–1,0.8,Bay FC,11206,Snapdragon Stadium,Elvis Osmanovic
+2025,8,Chicago Stars,2.1,2–3,1.5,Spirit,3425,SeatGeek Stadium,Trevor Wiseman
+2025,8,Courage,1,1–1,2,Pride,9366,First Horizon Stadium at WakeMed Soccer ...,Brad Jensen
+2025,8,Angel City,1.8,2–0,1,Royals,16533,BMO Stadium,Alex Billeter
+2025,8,Louisville,0.7,1–0,1,Gotham FC,5495,Lynn Family Stadium,Muhammad Hassan
+2025,8,Current,2.5,4–1,0.7,Bay FC,11500,CPKC Stadium,Jaclyn Metz
+2025,8,Wave,0.6,1–1,2.7,Thorns,10433,Snapdragon Stadium,Natalie Simon
+2025,9,Reign,0.6,0–1,1,Dash,6841,Lumen Field,Alyssa Nichols
+2025,9,Louisville,1.1,0–1,0.6,Reign,3039,Lynn Family Stadium,Iryna Petrunok
+2025,9,Gotham FC,0.5,0–1,0.3,Wave,7819,Sports Illustrated Stadium,Thomas Snyder
+2025,9,Courage,1.4,2–0,0.9,Chicago Stars,8592,First Horizon Stadium at WakeMed Soccer ...,Jaclyn Metz
+2025,9,Dash,1,1–4,1.6,Thorns,6217,Shell Energy Stadium,Shawn Tehini
+2025,9,Spirit,3.9,3–3,0.7,Royals,15016,Audi Field,Danielle Chesky
+2025,9,Pride,1.4,0–1,1,Current,8414,Inter&Co Stadium,Natalie Simon
+2025,10,Bay FC,1.3,2–0,1.1,Angel City,14241,PayPal Park,Brandon Stevis
+2025,10,Chicago Stars,0.1,1–3,1.9,Current,3886,SeatGeek Stadium,Matthew Thompson
+2025,10,Reign,0.7,1–2,2.3,Spirit,7080,Lumen Field,Brad Jensen
+2025,10,Royals,0.7,1–3,3.8,Pride,11668,America First Field,John Griggs
+2025,10,Angel City,1.6,2–3,1.5,Louisville,16740,BMO Stadium,Elvis Osmanovic
+2025,10,Dash,0.8,2–2,2.2,Bay FC,5595,Shell Energy Stadium,Alex Billeter
+2025,10,Wave,1.6,5–2,1.8,Courage,12760,Snapdragon Stadium,Elijio Arreguin
+2025,11,Louisville,1.9,3–2,1.1,Royals,3951,Lynn Family Stadium,Adorae Monroy
+2025,11,Gotham FC,0.9,1–2,1.9,Current,10399,Sports Illustrated Stadium,Danielle Chesky
+2025,11,Bay FC,0.9,1–0,1.1,Thorns,14094,PayPal Park,Mathew Corrigan
+2025,11,Pride,1.4,1–0,0.6,Dash,9766,Inter&Co Stadium,Ben Meyer
+2025,11,Wave,0.9,1–2,0.6,Reign,15393,Snapdragon Stadium,Gerald Flores
+2025,11,Spirit,1.5,3–1,2.6,Courage,17625,Audi Field,Brandon Stevis
+2025,11,Angel City,1.5,2–2,0.5,Chicago Stars,17538,BMO Stadium,Brad Jensen
+2025,12,Chicago Stars,1,2–2,1.1,Reign,26942,Soldier Field,Shawn Tehini
+2025,12,Current,2.1,4–2,1.1,Louisville,11500,CPKC Stadium,Jaclyn Metz
+2025,12,Bay FC,1.7,0–1,0.4,Pride,12127,PayPal Park,Muhammad Hassan
+2025,12,Dash,0.8,2–3,1.9,Wave,6241,Shell Energy Stadium,Greg Dopka
+2025,12,Royals,0.6,0–3,1.6,Gotham FC,8351,America First Field,Iryna Petrunok
+2025,12,Thorns,1.5,2–0,1.2,Spirit,21268,Providence Park,Joshua Encarnacion
+2025,12,Angel City,1.4,1–2,2.9,Courage,14933,BMO Stadium,Nabil Bensalah
+2025,13,Royals,1.8,1–4,2.2,Reign,8192,America First Field,Thomas Snyder
+2025,13,Current,2.1,1–0,0.8,Angel City,11500,CPKC Stadium,Elton Garcia
+2025,13,Gotham FC,0.9,2–1,2.8,Bay FC,9009,Sports Illustrated Stadium,Shawn Tehini
+2025,13,Courage,2.1,2–1,0.5,Dash,6642,First Horizon Stadium at WakeMed Soccer ...,Calin Radosav
+2025,13,Louisville,2.5,2–0,0.9,Pride,5469,Lynn Family Stadium,John Matto
+2025,13,Thorns,0.9,1–0,0.3,Chicago Stars,17779,Providence Park,Iryna Petrunok
+2025,13,Wave,0.8,0–0,0.8,Spirit,12011,Snapdragon Stadium,Mathew Corrigan
+2025,14,Chicago Stars,1.3,1–1,1.4,Gotham FC,2874,SeatGeek Stadium,Muhammad Hassan
+2025,14,Reign,0.8,2–0,0.4,Angel City,10117,Lumen Field,Shawn Tehini
+2025,14,Courage,0.2,0–0,1.1,Wave,7109,First Horizon Stadium at WakeMed Soccer ...,Elvis Osmanovic
+2025,14,Louisville,0.4,0–2,1.8,Current,8113,Lynn Family Stadium,Nabil Bensalah
+2025,14,Spirit,2,2–1,1.3,Thorns,16007,Audi Field,Brad Jensen
+2025,14,Pride,1.8,1–1,0.4,Royals,,Inter&Co Stadium,Jaclyn Metz
+2025,14,Bay FC,3.6,2–2,1.7,Dash,15002,PayPal Park,Cristian Campo Hernández
+2025,15,Gotham FC,0.3,0–0,1.1,Spirit,13860,Sports Illustrated Stadium,Jaclyn Metz
+2025,15,Dash,1,2–1,1.7,Courage,5409,Shell Energy Stadium,Shawn Tehini
+2025,15,Pride,2.8,1–1,0.8,Louisville,,Inter&Co Stadium,Iryna Petrunok
+2025,15,Royals,0.6,0–1,1.1,Current,6843,America First Field,Brandon Stevis
+2025,15,Thorns,4.5,4–2,1,Reign,,Providence Park,Katja Koroleva
+2025,15,Chicago Stars,1,1–1,1.5,Bay FC,3624,SeatGeek Stadium,John Griggs
+2025,15,Wave,1,1–1,1.1,Angel City,15834,Snapdragon Stadium,Abdou Ndiaye
+2025,16,Current,,,,Pride,,CPKC Stadium,
+2025,16,Courage,,,,Thorns,,First Horizon Stadium at WakeMed Soccer ...,
+2025,16,Royals,1.1,0–0,0.4,Angel City,6299,America First Field,Alyssa Nichols
+2025,16,Spirit,1,2–2,1.2,Louisville,11691,Audi Field,John Matto
+2025,16,Gotham FC,,,,Dash,,Sports Illustrated Stadium,
+2025,16,Bay FC,,,,Wave,,PayPal Park,
+2025,16,Reign,,,,Chicago Stars,,Lumen Field,
+2025,17,Angel City,,,,Pride,,BMO Stadium,
+2025,17,Bay FC,,,,Spirit,,Oracle Park,
+2025,17,Chicago Stars,,,,Courage,,SeatGeek Stadium,
+2025,17,Gotham FC,,,,Royals,,Sports Illustrated Stadium,
+2025,17,Dash,,,,Reign,,Shell Energy Stadium,
+2025,17,Thorns,,,,Current,,Providence Park,
+2025,17,Wave,,,,Louisville,,Snapdragon Stadium,
+2025,18,Louisville,,,,Dash,,Lynn Family Stadium,
+2025,18,Current,,,,Courage,,CPKC Stadium,
+2025,18,Reign,,,,Wave,,Lumen Field,
+2025,18,Thorns,,,,Royals,,Providence Park,
+2025,18,Pride,,,,Gotham FC,,Inter&Co Stadium,
+2025,18,Spirit,,,,Chicago Stars,,Audi Field,
+2025,18,Angel City,,,,Bay FC,,BMO Stadium,
+2025,19,Courage,,,,Royals,,First Horizon Stadium at WakeMed Soccer ...,
+2025,19,Louisville,,,,Thorns,,Lynn Family Stadium,
+2025,19,Chicago Stars,,,,Pride,,,
+2025,19,Spirit,,,,Reign,,Audi Field,
+2025,19,Gotham FC,,,,Angel City,,Sports Illustrated Stadium,
+2025,19,Bay FC,,,,Current,,PayPal Park,
+2025,19,Wave,,,,Dash,,Snapdragon Stadium,
+2025,20,Courage,,,,Angel City,,First Horizon Stadium at WakeMed Soccer ...,
+2025,20,Pride,,,,Bay FC,,Inter&Co Stadium,
+2025,20,Current,,,,Spirit,,CPKC Stadium,
+2025,20,Wave,,,,Gotham FC,,Snapdragon Stadium,
+2025,20,Chicago Stars,,,,Thorns,,SeatGeek Stadium,
+2025,20,Royals,,,,Dash,,America First Field,
+2025,20,Reign,,,,Louisville,,Lumen Field,
+2025,21,Angel City,,,,Spirit,,BMO Stadium,
+2025,21,Current,,,,Reign,,CPKC Stadium,
+2025,21,Dash,,,,Chicago Stars,,Shell Energy Stadium,
+2025,21,Pride,,,,Courage,,Inter&Co Stadium,
+2025,21,Royals,,,,Louisville,,America First Field,
+2025,21,Thorns,,,,Wave,,Providence Park,
+2025,21,Bay FC,,,,Gotham FC,,PayPal Park,
+2025,22,Current,,,,Chicago Stars,,,
+2025,22,Louisville,,,,Angel City,,,
+2025,22,Wave,,,,Pride,,,
+2025,22,Gotham FC,,,,Thorns,,,
+2025,22,Bay FC,,,,Royals,,,
+2025,22,Spirit,,,,Dash,,,
+2025,22,Reign,,,,Courage,,,
+2025,23,Dash,,,,Pride,,,
+2025,23,Courage,,,,Louisville,,,
+2025,23,Spirit,,,,Wave,,,
+2025,23,Chicago Stars,,,,Royals,,,
+2025,23,Gotham FC,,,,Reign,,,
+2025,23,Thorns,,,,Bay FC,,,
+2025,23,Angel City,,,,Current,,,
+2025,24,Louisville,,,,Chicago Stars,,,
+2025,24,Current,,,,Gotham FC,,,
+2025,24,Reign,,,,Bay FC,,,
+2025,24,Courage,,,,Spirit,,,
+2025,24,Pride,,,,Thorns,,,
+2025,24,Angel City,,,,Dash,,,
+2025,24,Royals,,,,Wave,,,
+2025,25,Bay FC,,,,Courage,,,
+2025,25,Spirit,,,,Pride,,,
+2025,25,Dash,,,,Current,,,
+2025,25,Reign,,,,Royals,,,
+2025,25,Angel City,,,,Thorns,,,
+2025,25,Gotham FC,,,,Louisville,,,
+2025,25,Wave,,,,Chicago Stars,,,
+2025,26,Thorns,,,,Dash,,,
+2025,26,Royals,,,,Spirit,,,
+2025,26,Chicago Stars,,,,Angel City,,,
+2025,26,Current,,,,Wave,,,
+2025,26,Pride,,,,Reign,,,
+2025,26,Courage,,,,Gotham FC,,,
+2025,26,Louisville,,,,Bay FC,,,
