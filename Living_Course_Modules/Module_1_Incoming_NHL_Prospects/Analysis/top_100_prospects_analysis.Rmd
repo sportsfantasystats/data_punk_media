@@ -1,0 +1,129 @@
+---
+title: "Incoming Prospects Analysis"
+output: html_document
+date: "2025-12-26"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+library(lubridate)
+library(stringr)
+library(scales)
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+
+```
+
+
+
+```{r}
+
+
+robust_z <- function(x) {
+med <- median(x, na.rm = TRUE)
+madv <- mad(x, constant = 1, na.rm = TRUE)
+if (is.na(madv) || madv == 0) return(rep(NA_real_, length(x)))
+(x - med) / madv
+}
+
+
+parse_height_in <- function(x) {
+  x <- as.character(x)
+
+  m <- stringr::str_match(
+    x,
+    "^([0-9]+)\\s*'\\s*([0-9]+)"
+  )
+
+  feet <- suppressWarnings(as.numeric(m[, 2]))
+  inch <- suppressWarnings(as.numeric(m[, 3]))
+
+  feet * 12 + inch
+}
+
+
+```
+
+
+
+```{r}
+
+path <- "top_100_prospects.csv"
+
+df_raw <- readr::read_csv(path, show_col_types = FALSE) %>%
+  
+clean_names()
+
+
+df <- df_raw %>%
+rename_with(~ str_replace_all(.x, "__+", "*")) %>%
+rename(
+nhle_score = any_of(c("NHLe_SCORE", "nhle", "nhle_factor")),
+adj_ppg    = any_of(c("ADJ_PPG", "adj_ppg*")),
+ppg        = any_of(c("PPG", "points_per_game")),
+gpg        = any_of(c("GPG")),
+apg        = any_of(c("APG")),
+pimpg      = any_of(c("PIMPG", "pim_per_game")),
+shoots     = any_of(c("SHOOTS", "shot", "shoots_catches")),
+dob        = any_of(c("DOB", "birthdate", "date_of_birth"))
+) %>%
+mutate(
+nationality = as.character(nationality),
+name = as.character(name),
+position = toupper(as.character(position)),
+team = as.character(team),
+league = as.character(league),
+shoots = as.character(shoots),
+gp = suppressWarnings(as.numeric(gp)),
+g  = suppressWarnings(as.numeric(g)),
+a  = suppressWarnings(as.numeric(a)),
+pts = suppressWarnings(as.numeric(pts)),
+pim = suppressWarnings(as.numeric(pim)),
+gpg = suppressWarnings(as.numeric(gpg)),
+apg = suppressWarnings(as.numeric(apg)),
+ppg = suppressWarnings(as.numeric(ppg)),
+adj_ppg = suppressWarnings(as.numeric(adj_ppg)),
+pimpg = suppressWarnings(as.numeric(pimpg)),
+nhle_score = suppressWarnings(as.numeric(nhle_score)),
+dob = suppressWarnings(lubridate::mdy(dob)),
+height_in = parse_height_in(height),
+weight_lb = suppressWarnings(as.numeric(weight))
+)
+
+
+df <- df %>%
+filter(position != "G") %>%
+filter(!is.na(adj_ppg), !is.na(gp), gp > 0)
+
+glimpse(df)
+
+
+```
+
+
+
+```{r}
+
+```
+
+
+
+```{r}
+
+```
+
+
+
+```{r}
+
+```
+
