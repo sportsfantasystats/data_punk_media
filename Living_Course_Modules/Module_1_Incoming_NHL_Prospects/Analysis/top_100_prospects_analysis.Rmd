@@ -8,103 +8,521 @@ date: "2025-12-26"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
+# Load required libraries for analyses. 
 
 ```{r}
 
 library(tidyverse)
 library(janitor)
-library(lubridate)
-library(stringr)
-library(scales)
 library(ggplot2)
-library(knitr)
-library(kableExtra)
+library(scales)
+library(stringr)
+library(showtext)
+library(sysfonts)
+library(ggrepel)
 
 ```
 
-
+# Load external dataset (CSV file) as data frame. (This is the dataset where you manually copied the data from Elite Prospects.)
 
 ```{r}
 
+prospects_file <- "top_100_prospects.csv"
 
-robust_z <- function(x) {
-med <- median(x, na.rm = TRUE)
-madv <- mad(x, constant = 1, na.rm = TRUE)
-if (is.na(madv) || madv == 0) return(rep(NA_real_, length(x)))
-(x - med) / madv
-}
+df_raw <- readr::read_csv(prospects_file, show_col_types = FALSE) %>%
+  janitor::clean_names()
 
 
-parse_height_in <- function(x) {
-  x <- as.character(x)
+```
 
-  m <- stringr::str_match(
-    x,
-    "^([0-9]+)\\s*'\\s*([0-9]+)"
+# Filter the dataset down to only forwards. (We're only interested in the top forwards.)
+
+```{r}
+
+fwd_df <- df_raw %>%
+  filter(position %in% c("F")) %>% 
+  filter(!is.na(adj_ppg), !is.na(ppg))
+
+```
+
+# Create quartile views and save as CSV files for later use.
+
+```{r}
+
+q <- quantile(fwd_df$adj_ppg, probs = c(0.25, 0.50, 0.75), na.rm = TRUE, type = 7)
+
+fwd_df <- fwd_df %>%
+  mutate(
+    adj_ppg_quartile = case_when(
+      adj_ppg <= q[[1]] ~ "Q1 (Lower)",
+      adj_ppg <= q[[2]] ~ "Q2",
+      adj_ppg <= q[[3]] ~ "Q3",
+      TRUE ~ "Q4 (Elite)"
+    ) %>% factor(levels = c("Q1 (Lower)", "Q2", "Q3", "Q4 (Elite)"))
   )
 
-  feet <- suppressWarnings(as.numeric(m[, 2]))
-  inch <- suppressWarnings(as.numeric(m[, 3]))
 
-  feet * 12 + inch
-}
+quartile_summary <- fwd_df %>%
+  group_by(adj_ppg_quartile) %>%
+  summarise(
+    n = n(),
+    avg_ppg = mean(ppg, na.rm = TRUE),
+    avg_adj_ppg = mean(adj_ppg, na.rm = TRUE),
+    .groups = "drop"
+  )
 
+print(quartile_summary)
+
+write.csv(fwd_df, "forwards_only_w_quartiles.csv", row.names = FALSE)
+write.csv(quartile_summary, "avg_adj_ppg_by_quartile.csv", row.names = FALSE)
 
 ```
 
-
+# Create a visualization and save as PNG file for use in article/web.
 
 ```{r}
 
-path <- "top_100_prospects.csv"
+font_add_google(name = "Teko", family = "teko")
+showtext_auto()    
 
-df_raw <- readr::read_csv(path, show_col_types = FALSE) %>%
-  
-clean_names()
+quartile_summary$adj_ppg_quartile <- factor(
+  quartile_summary$adj_ppg_quartile,
+  levels = c("Q1 (Lower)", "Q2", "Q3", "Q4 (Elite)")
+)
+
+p_quartile_avg <- ggplot(
+  quartile_summary,
+  aes(x = adj_ppg_quartile, y = avg_ppg)
+) +
+  geom_col(
+    width = 0.68,
+    fill = "#DE297B",
+    alpha = 0.95
+  ) +
+  geom_text(
+    aes(label = sprintf("%.2f", avg_ppg)),
+    vjust = -0.4,
+    size = 6,
+    family = "teko",
+    color = "black"
+  ) +
+  scale_y_continuous(
+    labels = label_number(accuracy = 0.01),
+    expand = expansion(mult = c(0, 0.12))
+  ) +
+  labs(
+    title = "Average PPG by Adjusted PPG Quartile (Forwards)",
+    subtitle = "Quartiles built from ADJ_PPG with Mean within Each Quartile",
+    x = NULL,
+    y = "Average PPG"
+  ) +
+  theme_minimal(base_family = "teko") +
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_text(
+      size = 28,
+      face = "bold",
+      margin = margin(b = 6)
+    ),
+    plot.subtitle = element_text(
+      size = 18,
+      margin = margin(b = 14)
+    ),
+    axis.title.y = element_text(
+      size = 16,
+      margin = margin(r = 10)
+    ),
+    axis.text.x = element_text(size = 16),
+    axis.text.y = element_text(size = 14),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(linewidth = 0.3),
+    plot.margin = margin(14, 16, 14, 16)
+  )
+
+print(p_quartile_avg)
 
 
-df <- df_raw %>%
-rename_with(~ str_replace_all(.x, "__+", "*")) %>%
-rename(
-nhle_score = any_of(c("NHLe_SCORE", "nhle", "nhle_factor")),
-adj_ppg    = any_of(c("ADJ_PPG", "adj_ppg*")),
-ppg        = any_of(c("PPG", "points_per_game")),
-gpg        = any_of(c("GPG")),
-apg        = any_of(c("APG")),
-pimpg      = any_of(c("PIMPG", "pim_per_game")),
-shoots     = any_of(c("SHOOTS", "shot", "shoots_catches")),
-dob        = any_of(c("DOB", "birthdate", "date_of_birth"))
-) %>%
-mutate(
-nationality = as.character(nationality),
-name = as.character(name),
-position = toupper(as.character(position)),
-team = as.character(team),
-league = as.character(league),
-shoots = as.character(shoots),
-gp = suppressWarnings(as.numeric(gp)),
-g  = suppressWarnings(as.numeric(g)),
-a  = suppressWarnings(as.numeric(a)),
-pts = suppressWarnings(as.numeric(pts)),
-pim = suppressWarnings(as.numeric(pim)),
-gpg = suppressWarnings(as.numeric(gpg)),
-apg = suppressWarnings(as.numeric(apg)),
-ppg = suppressWarnings(as.numeric(ppg)),
-adj_ppg = suppressWarnings(as.numeric(adj_ppg)),
-pimpg = suppressWarnings(as.numeric(pimpg)),
-nhle_score = suppressWarnings(as.numeric(nhle_score)),
-dob = suppressWarnings(lubridate::mdy(dob)),
-height_in = parse_height_in(height),
-weight_lb = suppressWarnings(as.numeric(weight))
+ggsave(
+  filename = "avg_ppg_by_adj_ppg_quartile.png",
+  plot = p_quartile_avg,
+  width = 12,
+  height = 6.75,
+  units = "in",
+  dpi = 200,
+  bg = "white"
+)
+
+```
+# Create a histogram of the top players to see distribution of Adjusted PPG.
+
+```{r}
+
+p_dist <- ggplot(fwd, aes(x = adj_ppg)) +
+  geom_histogram(
+    bins = 25,
+    fill = "#DE297B",
+    color = "white",     #
+    alpha = 0.95
+  ) +
+  scale_x_continuous(
+    labels = label_number(accuracy = 0.01)
+  ) +
+  labs(
+    title = "Distribution of Adjusted PPG (Forwards)",
+    subtitle = "League-adjusted PPG across Top Forward Prospects",
+    x = "ADJ_PPG",
+    y = "Number of Players"
+  ) +
+  theme_minimal(base_family = "teko") +
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_text(
+      size = 28,
+      face = "bold",
+      margin = margin(b = 6)
+    ),
+    plot.subtitle = element_text(
+      size = 18,
+      margin = margin(b = 14)
+    ),
+    axis.title.x = element_text(size = 16, margin = margin(t = 10)),
+    axis.title.y = element_text(size = 16, margin = margin(r = 10)),
+    axis.text.x = element_text(size = 14),
+    axis.text.y = element_text(size = 14),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(linewidth = 0.3),
+    plot.margin = margin(14, 16, 14, 16)
+  )
+
+print(p_dist)
+
+ggsave(
+  filename = "adj_ppg_distribution_forwards.png",
+  plot = p_dist,
+  width = 12,
+  height = 6.75,   # 16:9 aspect (great for web + Ghost)
+  units = "in",
+  dpi = 200,
+  bg = "white"
+)
+
+```
+
+# Create Z-Scores for the players for measure of variability.
+
+```{r}
+
+mu <- mean(fwd_df$adj_ppg, na.rm = TRUE)
+s  <- sd(fwd_df$adj_ppg, na.rm = TRUE)
+
+fwd_df <- fwd_df %>%
+  mutate(
+    z_adj_ppg = (adj_ppg - mu) / s
+  )
+
+med <- median(fwd_df$adj_ppg, na.rm = TRUE)
+madv <- mad(fwd_df$adj_ppg, constant = 1, na.rm = TRUE)
+fwd_df <- fwd_df %>%
+  mutate(
+    rz_adj_ppg = ifelse(is.na(madv) | madv == 0, NA_real_, (adj_ppg - med) / madv)
+  )
+
+Z_CUTOFF <- 2.0 
+RZ_CUTOFF <- 2.5
+
+outliers <- fwd_df %>%
+  filter(!is.na(rz_adj_ppg)) %>%
+  mutate(is_outlier = rz_adj_ppg >= RZ_CUTOFF) %>%
+  arrange(desc(rz_adj_ppg), desc(adj_ppg))
+
+print(outliers %>% select(name, position, adj_ppg, ppg, adj_ppg_quartile, z_adj_ppg, rz_adj_ppg) %>% head(15))
+
+write.csv(outliers, "top_prospects_as_outliers.csv", row.names = FALSE)
+
+```
+
+# Plot the players on a scatter plot. (Not a super effective visualization.)
+
+```{r}
+
+BRAND_PINK <- "#DE297B"
+
+outliers_plot <- outliers %>%
+  filter(is_outlier) %>%
+  distinct(name, adj_ppg, rz_adj_ppg, .keep_all = TRUE)
+
+p_z <- ggplot(fwd_df, aes(x = adj_ppg, y = rz_adj_ppg)) +
+  # Main cloud
+  geom_point(
+    alpha = 0.35,
+    size = 2,
+    color = BRAND_PINK
+  ) +
+  # Threshold line
+  geom_hline(
+    yintercept = RZ_CUTOFF,
+    linetype = "dashed",
+    linewidth = 0.9,
+    color = "grey35"
+  ) +
+  # Highlight outliers (ring + fill so they pop)
+  geom_point(
+    data = outliers_plot,
+    aes(x = adj_ppg, y = rz_adj_ppg),
+    shape = 21,
+    fill = BRAND_PINK,
+    color = "white",
+    stroke = 1.0,
+    size = 4
+  ) +
+  scale_x_continuous(labels = label_number(accuracy = 0.01)) +
+  scale_y_continuous(labels = label_number(accuracy = 0.1)) +
+  labs(
+    title = "Robust Z-Score Outliers (Forwards)",
+    subtitle = paste0("Outliers Highlighted Where Robust Z-score ≥ ", RZ_CUTOFF),
+    x = "ADJ_PPG",
+    y = "Robust z-score (median / MAD)"
+  ) +
+  theme_minimal(base_family = "teko") +
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_text(size = 28, face = "bold", margin = margin(b = 6)),
+    plot.subtitle = element_text(size = 18, margin = margin(b = 14)),
+    axis.title.x = element_text(size = 16, margin = margin(t = 10)),
+    axis.title.y = element_text(size = 16, margin = margin(r = 10)),
+    axis.text = element_text(size = 14),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(linewidth = 0.3),
+    plot.margin = margin(14, 16, 14, 16)
+  )
+
+print(p_z)
+
+
+p_z <- p_z +
+  ggrepel::geom_text_repel(
+    data = outliers_plot,
+    aes(label = name),
+    family = "teko",
+    size = 5,
+    max.overlaps = 20
+  )
+print(p_z)
+
+ggsave(
+  filename = "robust_z_outliers_forwards.png",
+  plot = p_z,
+  width = 12,
+  height = 6.75,
+  units = "in",
+  dpi = 200,
+  bg = "white"
 )
 
 
-df <- df %>%
-filter(position != "G") %>%
-filter(!is.na(adj_ppg), !is.na(gp), gp > 0)
+```
 
-glimpse(df)
+
+# Create a custom image with a bell curve to see if there are any outliers using the Z-Score.
+
+```{r}
+
+BRAND_PINK <- "#DE297B"
+font_add_google(name = "Teko", family = "teko")
+showtext_auto()
+
+outliers_only <- fwd_df %>%
+  filter(!is.na(rz_adj_ppg)) %>%
+  mutate(is_outlier = rz_adj_ppg >= RZ_CUTOFF) %>%
+  filter(is_outlier)
+
+# Create bell curve background in z-score space
+x_min <- min(-4, floor(min(outliers_only$rz_adj_ppg, na.rm = TRUE)) - 1)
+x_max <- max( 4, ceiling(max(outliers_only$rz_adj_ppg, na.rm = TRUE)) + 1)
+
+bell <- tibble(
+  z = seq(x_min, x_max, by = 0.01),
+  density = dnorm(z, mean = 0, sd = 1)
+)
+
+outliers_only <- outliers_only %>%
+  mutate(density = dnorm(rz_adj_ppg, mean = 0, sd = 1))
+
+p_bell_outliers <- ggplot() +
+  geom_area(data = bell, aes(x = z, y = density), fill = "grey92") +
+  geom_line(data = bell, aes(x = z, y = density), linewidth = 1.0, color = "grey35") +
+  geom_vline(xintercept = RZ_CUTOFF, linetype = "dashed", linewidth = 0.9, color = "grey35") +
+  geom_point(
+    data = outliers_only,
+    aes(x = rz_adj_ppg, y = density),
+    shape = 21,
+    size = 4.5,
+    fill = BRAND_PINK,
+    color = "white",
+    stroke = 1.0
+  ) +
+  scale_x_continuous(
+    breaks = pretty_breaks(9)
+  ) +
+  scale_y_continuous(
+    labels = label_number(accuracy = 0.01),
+    expand = expansion(mult = c(0.02, 0.10))
+  ) +
+  labs(
+    title = "Where the Outliers Live",
+    subtitle = paste0("Bell curve is standard normal; points show forwards with robust z-score ≥ ", RZ_CUTOFF),
+    x = "Robust Z-Score (median / MAD)",
+    y = "Normal Density (reference)"
+  ) +
+  theme_minimal(base_family = "teko") +
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_text(size = 30, face = "bold", margin = margin(b = 6)),
+    plot.subtitle = element_text(size = 18, margin = margin(b = 14)),
+    axis.title = element_text(size = 16),
+    axis.text = element_text(size = 14),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.major.x = element_line(linewidth = 0.3),
+    plot.margin = margin(14, 16, 14, 16)
+  )
+
+print(p_bell_outliers)
+
+ggsave(
+  filename = "bell_curve_outliers.png",
+  plot = p_bell_outliers,
+  width = 12,
+  height = 6.75,
+  units = "in",
+  dpi = 200,
+  bg = "white"
+)
+
+```
+
+
+# Create the inputs for the Kmeans clustering algorithm. 
+
+```{r}
+
+# candidate_cols <- c("adj_ppg", "ppg", "gpg", "apg", "pimpg", "nhle_score", "gp", "g", "a", "pts", "weight", "height_in")
+candidate_cols <- c("adj_ppg", "ppg", "gpg", "apg", "nhle_score")
+
+available_cols <- intersect(candidate_cols, names(fwd))
+
+features <- fwd %>%
+  select(all_of(available_cols)) %>%
+  mutate(across(everything(), ~ suppressWarnings(as.numeric(.x))))
+
+for (nm in names(features)) {
+  medv <- median(features[[nm]], na.rm = TRUE)
+  features[[nm]][is.na(features[[nm]])] <- medv
+}
+
+set.seed(42)
+K <- 4
+
+km <- kmeans(scale(features), centers = K, nstart = 25)
+
+```
+
+
+# Plot the clusters and identify which players are elite.
+
+```{r}
+
+cluster_summary <- fwd %>%
+  group_by(cluster) %>%
+  summarise(
+    mean_adj_ppg = mean(adj_ppg, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(mean_adj_ppg))
+
+elite_cluster <- cluster_summary$cluster[1]
+
+fwd <- fwd %>%
+  mutate(
+    cluster_type = if_else(cluster == elite_cluster, "Elite Cluster", "Other Clusters")
+  )
+
+
+
+```
+
+# Plot the clusters, calling out the elite
+
+```{r}
+
+font_add_google("Teko", "teko")
+showtext_auto()
+
+BRAND_PINK <- "#DE297B"
+GRAY_LIGHT <- "#C7C7C7"
+GRAY_DARK  <- "#7A7A7A"
+
+p_cluster_elite <- ggplot(
+  fwd,
+  aes(x = adj_ppg, y = ppg)
+) +
+  geom_point(
+    data = fwd %>% filter(cluster_type == "Other Clusters"),
+    color = GRAY_LIGHT,
+    alpha = 0.45,
+    size = 2.5
+  ) +
+  geom_point(
+    data = fwd %>% filter(cluster_type == "Elite Cluster"),
+    color = BRAND_PINK,
+    alpha = 0.9,
+    size = 3.2
+  ) +
+  geom_smooth(
+    data = fwd,
+    aes(group = 1),
+    method = "lm",
+    se = FALSE,
+    linewidth = 0.8,
+    color = GRAY_DARK,
+    linetype = "dashed"
+  ) +
+  scale_x_continuous(labels = label_number(accuracy = 0.01)) +
+  scale_y_continuous(labels = label_number(accuracy = 0.01)) +
+  labs(
+    title = "Prospect Clusters (Forwards)",
+    subtitle = "Elite Cluster (Pink) Identified by Highest Mean League-Adjusted Scoring",
+    x = "ADJ_PPG",
+    y = "PPG"
+  ) +
+  theme_minimal(base_family = "teko") +
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_text(size = 28, face = "bold", margin = margin(b = 6)),
+    plot.subtitle = element_text(size = 18, margin = margin(b = 14)),
+    axis.title = element_text(size = 16),
+    axis.text = element_text(size = 14),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linewidth = 0.3),
+    plot.margin = margin(14, 16, 14, 16)
+  )
+
+print(p_cluster_elite)
+
+
+ggsave(
+  filename = "prospect_clusters_elite_highlighted.png",
+  plot = p_cluster_elite,
+  width = 12,
+  height = 6.75,
+  units = "in",
+  dpi = 200,
+  bg = "white"
+)
 
 
 ```
@@ -113,17 +531,240 @@ glimpse(df)
 
 ```{r}
 
-```
+if ("nhle_score" %in% names(fwd)) {
+  p_cluster2 <- ggplot(fwd, aes(x = nhle_score, y = adj_ppg, color = cluster)) +
+    geom_point(alpha = 0.85) +
+    labs(
+      title = "Prospect Clusters (Forwards) — ADJ_PPG vs NHLe Score",
+      x = "NHLe Score",
+      y = "ADJ_PPG",
+      color = "Cluster"
+    ) +
+    theme_minimal()
+  print(p_cluster2)
+}
 
+```
 
 
 ```{r}
 
+set.seed(42)
+
+# Choose number of tiers
+K <- 4
+
+# 1-D k-means on ADJ_PPG
+km_1d <- kmeans(fwd$adj_ppg, centers = K, nstart = 50)
+
+fwd <- fwd %>%
+  mutate(
+    adj_ppg_cluster = factor(km_1d$cluster)
+  )
+
+# Order clusters by performance
+cluster_order <- fwd %>%
+  group_by(adj_ppg_cluster) %>%
+  summarise(mean_adj_ppg = mean(adj_ppg)) %>%
+  arrange(desc(mean_adj_ppg)) %>%
+  mutate(tier = paste0("Tier ", row_number()))
+
+fwd <- fwd %>%
+  left_join(cluster_order, by = "adj_ppg_cluster")
+
+
 ```
 
-
+# Redo histogram with biggest outlier called out. 
 
 ```{r}
+
+font_add_google("Teko", "teko")
+showtext_auto()
+
+BRAND_PINK <- "#DE297B"
+GRAY_LIGHT <- "#C7C7C7"
+
+elite_tier <- "Tier 1"
+
+fwd_plot <- fwd %>%
+  mutate(
+    tier_type = if_else(tier == elite_tier, "Elite", "Other")
+  )
+
+p_tier_hist <- ggplot() +
+  geom_histogram(
+    data = fwd_plot %>% filter(tier_type == "Other"),
+    aes(x = adj_ppg),
+    bins = 25,
+    fill = GRAY_LIGHT,
+    color = "white",
+    alpha = 0.6
+  ) +
+  geom_histogram(
+    data = fwd_plot %>% filter(tier_type == "Elite"),
+    aes(x = adj_ppg),
+    bins = 25,
+    fill = BRAND_PINK,
+    color = "white",
+    alpha = 0.95
+  ) +
+  scale_x_continuous(
+    labels = label_number(accuracy = 0.01)
+  ) +
+  labs(
+    title = "Forward Performance Tiers Based on Adjusted PPG",
+    subtitle = "Elite Tier Highlighted by League-Adjusted Scoring Separation",
+    x = "ADJ_PPG",
+    y = "Number of Players"
+  ) +
+  theme_minimal(base_family = "teko") +
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_text(size = 28, face = "bold", margin = margin(b = 6)),
+    plot.subtitle = element_text(size = 18, margin = margin(b = 14)),
+    axis.title.x = element_text(size = 16, margin = margin(t = 10)),
+    axis.title.y = element_text(size = 16, margin = margin(r = 10)),
+    axis.text = element_text(size = 14),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(linewidth = 0.3),
+    legend.position = "none",
+    plot.margin = margin(14, 16, 14, 16)
+  )
+
+print(p_tier_hist)
+
+
+```
+# Create a toered view.
+
+```{r}
+
+p_tier_facet <- ggplot(fwd, aes(x = adj_ppg)) +
+  geom_histogram(
+    bins = 20,
+    fill = BRAND_PINK,
+    color = "white",
+    alpha = 0.9
+  ) +
+  facet_wrap(~ tier, ncol = 1, scales = "free_y") +
+  scale_x_continuous(
+    labels = label_number(accuracy = 0.01)
+  ) +
+  labs(
+    title = "Forward Performance Tiers Based on ADJ_PPG",
+    subtitle = "Each panel shows the distribution within a performance tier",
+    x = "ADJ_PPG",
+    y = "Number of Players"
+  ) +
+  theme_minimal(base_family = "teko") +
+  theme(
+    strip.text = element_text(size = 16, face = "bold"),
+    plot.title.position = "plot",
+    plot.title = element_text(size = 28, face = "bold"),
+    plot.subtitle = element_text(size = 18, margin = margin(b = 14)),
+    axis.title = element_text(size = 16),
+    axis.text = element_text(size = 14),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank()
+  )
+
+print(p_tier_facet)
+
+
+```
+# Save image for use in article/web.
+
+```{r}
+
+ggsave(
+  filename = "forward_tiers_adj_ppg_histogram.png",
+  plot = p_tier_hist,   # or p_tier_facet
+  width = 12,
+  height = 6.75,
+  units = "in",
+  dpi = 200,
+  bg = "white"
+)
+
+```
+
+# Final plot showing outlier (as potential alternative visualization).
+
+```{r}
+
+fwd <- fwd %>%
+  mutate(
+    label_player = adj_ppg >= quantile(adj_ppg, 0.90, na.rm = TRUE)
+  )
+
+
+BRAND_PINK <- "#DE297B"
+GRAY_LIGHT <- "#C7C7C7"
+GRAY_DARK  <- "#7A7A7A"
+
+elite_tier <- "Tier 1"
+
+fwd_plot <- fwd %>%
+  mutate(
+    tier_type = if_else(tier == elite_tier, "Elite", "Other")
+  )
+
+p_tier_strip <- ggplot(fwd_plot, aes(x = adj_ppg, y = 0)) +
+  geom_jitter(
+    data = fwd_plot %>% filter(tier_type == "Other"),
+    height = 0.06,
+    size = 2.2,
+    alpha = 0.45,
+    color = GRAY_LIGHT
+  ) +
+  # Foreground: elite tier
+  geom_jitter(
+    data = fwd_plot %>% filter(tier_type == "Elite"),
+    height = 0.06,
+    size = 3.2,
+    alpha = 0.95,
+    color = BRAND_PINK
+  ) +
+  scale_x_continuous(
+    labels = label_number(accuracy = 0.01)
+  ) +
+  labs(
+    title = "Forward Prospect Tiers Based on Adjusted PPG",
+    subtitle = "Elite Tier Highlighted by Separation in League-Adjusted Scoring",
+    x = "ADJ_PPG",
+    y = NULL
+  ) +
+  theme_minimal(base_family = "teko") +
+  theme(
+    plot.title.position = "plot",
+    plot.title = element_text(size = 28, face = "bold", margin = margin(b = 6)),
+    plot.subtitle = element_text(size = 18, margin = margin(b = 14)),
+    axis.title.x = element_text(size = 16, margin = margin(t = 10)),
+    axis.text.x = element_text(size = 14),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_line(linewidth = 0.3),
+    legend.position = "none",
+    plot.margin = margin(14, 16, 14, 16)
+  )
+
+print(p_tier_strip)
+
+
+ggsave(
+  filename = "forward_tiers_adj_ppg_strip.png",
+  plot = p_tier_strip,
+  width = 12,
+  height = 4.5,
+  units = "in",
+  dpi = 200,
+  bg = "white"
+)
+
 
 ```
 
