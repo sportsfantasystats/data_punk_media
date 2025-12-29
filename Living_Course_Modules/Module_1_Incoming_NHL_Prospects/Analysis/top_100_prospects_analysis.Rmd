@@ -410,7 +410,7 @@ ggsave(
 ```{r}
 
 # candidate_cols <- c("adj_ppg", "ppg", "gpg", "apg", "pimpg", "nhle_score", "gp", "g", "a", "pts", "weight", "height_in")
-candidate_cols <- c("adj_ppg", "ppg", "gpg", "apg", "nhle_score")
+candidate_cols <- c("adj_ppg", "ppg", "gp, gpg", "apg", "nhle_score")
 
 available_cols <- intersect(candidate_cols, names(fwd))
 
@@ -523,6 +523,20 @@ ggsave(
   dpi = 200,
   bg = "white"
 )
+
+
+```
+
+
+```{r}
+
+elite_players <- fwd %>%
+  filter(cluster == elite_cluster) %>%
+  arrange(desc(adj_ppg)) %>%
+  select(name)
+
+elite_players
+
 
 
 ```
