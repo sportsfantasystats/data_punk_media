@@ -158,7 +158,7 @@ ggsave(
 
 ```{r}
 
-p_dist <- ggplot(fwd, aes(x = adj_ppg)) +
+p_dist <- ggplot(fwd_df, aes(x = adj_ppg)) +
   geom_histogram(
     bins = 25,
     fill = "#DE297B",

@@ -1,0 +1,664 @@
+---
+title: "analyze_nfl_data"
+output: html_document
+date: "2026-01-02"
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r}
+
+library(tidyverse)
+library(readr)
+library(scales)
+library(nflreadr)
+library(showtext)
+library(sysfonts)
+
+font_add_google("Teko", "teko")
+showtext_auto()
+
+```
+
+
+```{r}
+
+nfl_metric_data_df <- readr::read_csv("team_season_raw_derived_REG_POST_2005_2024.csv",
+                      show_col_types = FALSE)
+
+```
+
+
+```{r}
+
+pct_rank <- function(x) {
+  dplyr::percent_rank(x)
+}
+
+inv <- function(p) { 1 - p }
+
+```
+
+
+
+```{r}
+
+scored <- nfl_metric_data_df %>%
+  group_by(season) %>%
+  mutate(
+    
+    p_off_epa    = pct_rank(EPA_per_play_off),
+    p_off_succ   = pct_rank(Success_rate_off),
+    p_off_to     = pct_rank(Turnover_rate_off),     
+    p_off_rztd   = pct_rank(RedZone_TD_pct_off),
+
+    p_def_epa    = pct_rank(Def_EPA_per_play),  
+    p_def_press  = pct_rank(Pressure_rate_def),
+    p_def_take   = pct_rank(Takeaway_rate_def),
+    p_def_3dstp  = pct_rank(Third_down_stop_rate_def),
+
+    p_3d_conv    = pct_rank(Third_down_conv_pct),
+    p_close_win  = pct_rank(Close_game_win_pct),
+    p_pen_yd_g   = pct_rank(Penalty_yards_per_game),
+
+    p_qb_epa     = pct_rank(QB_EPA_per_play),
+    p_qb_to      = pct_rank(QB_turnover_rate),       
+    p_qb_pts     = pct_rank(Pressure_to_sack_rate),  
+  ) %>%
+  ungroup() %>%
+  mutate(
+    s_off_to   = inv(p_off_to),
+    s_def_epa  = inv(p_def_epa),
+    s_pen_yd_g = inv(p_pen_yd_g),
+    s_qb_to    = inv(p_qb_to),
+    s_qb_pts   = inv(p_qb_pts),
+  )
+
+```
+
+
+
+```{r}
+
+scored <- scored %>%
+  mutate(
+    Offensive_Score =
+      0.40 * p_off_epa +
+      0.30 * p_off_succ +
+      0.20 * s_off_to +
+      0.10 * p_off_rztd,
+
+    Defensive_Score =
+      0.30 * p_def_press +
+      0.30 * p_def_take +
+      0.25 * s_def_epa +
+      0.15 * p_def_3dstp,
+
+    Situational_Score =
+      0.40 * p_3d_conv +
+      0.30 * p_close_win +
+      0.30 * s_pen_yd_g,
+
+    QB_Score =
+      0.45 * p_qb_epa +
+      0.25 * s_qb_to +
+      0.15 * s_qb_pts 
+  ) %>%
+  mutate(
+    SBWI =
+      0.30 * Offensive_Score +
+      0.30 * Defensive_Score +
+      0.20 * Situational_Score +
+      0.20 * QB_Score
+  )
+
+season_rank <- scored %>%
+  group_by(season) %>%
+  mutate(SBWI_rank = dense_rank(desc(SBWI))) %>%
+  ungroup() %>%
+  arrange(season, SBWI_rank)
+
+print(season_rank %>% select(season, team, SBWI, SBWI_rank) %>% head(30))
+
+readr::write_csv(scored, "team_season_SBWI_2005_2024.csv")
+
+```
+
+
+```{r}
+
+raw <- readr::read_csv("team_season_raw_derived_REG_POST_2005_2024.csv", show_col_types = FALSE)
+
+required <- c(
+  "season", "team",
+  "EPA_per_play_off", "Success_rate_off", "Turnover_rate_off", "RedZone_TD_pct_off",
+  "Def_EPA_per_play", "Pressure_rate_def", "Takeaway_rate_def", "Third_down_stop_rate_def",
+  "Third_down_conv_pct", "Close_game_win_pct", "Penalty_yards_per_game",
+  "QB_EPA_per_play", "QB_turnover_rate", "Pressure_to_sack_rate"
+)
+missing <- setdiff(required, names(raw))
+if (length(missing) > 0) {
+  stop(
+    "Your raw file is missing required columns:\n - ",
+    paste(missing, collapse = ", "),
+    "\n\nAvailable columns include:\n - ",
+    paste(names(raw), collapse = ", ")
+  )
+}
+
+```
+
+
+
+```{r}
+
+pct_rank <- function(x) dplyr::percent_rank(x)
+inv <- function(p) 1 - p
+
+scored <- raw %>%
+  group_by(season) %>%
+  mutate(
+    # --- Offense percentiles ---
+    p_off_epa  = pct_rank(EPA_per_play_off),
+    p_off_succ = pct_rank(Success_rate_off),
+    p_off_to   = pct_rank(Turnover_rate_off),   
+    p_off_rztd = pct_rank(RedZone_TD_pct_off),
+
+    # --- Defense percentiles ---
+    p_def_epa   = pct_rank(Def_EPA_per_play),   
+    p_def_press = pct_rank(Pressure_rate_def),
+    p_def_take  = pct_rank(Takeaway_rate_def),
+    p_def_3dstp = pct_rank(Third_down_stop_rate_def),
+
+    # --- Situational percentiles ---
+    p_3d_conv   = pct_rank(Third_down_conv_pct),
+    p_close_win = pct_rank(Close_game_win_pct),
+    p_pen_yd_g  = pct_rank(Penalty_yards_per_game),  
+
+    # --- QB percentiles ---
+    p_qb_epa = pct_rank(QB_EPA_per_play),
+    p_qb_to  = pct_rank(QB_turnover_rate),       
+    p_qb_pts = pct_rank(Pressure_to_sack_rate)   
+  ) %>%
+  ungroup() %>%
+  mutate(
+    # Inversions (so higher = better)
+    s_off_to   = inv(p_off_to),
+    s_def_epa  = inv(p_def_epa),
+    s_pen_yd_g = inv(p_pen_yd_g),
+    s_qb_to    = inv(p_qb_to),
+    s_qb_pts   = inv(p_qb_pts)
+  ) %>%
+  mutate(
+    # Pillar weights (same as earlier)
+    Offensive_Score =
+      0.40 * p_off_epa +
+      0.30 * p_off_succ +
+      0.20 * s_off_to +
+      0.10 * p_off_rztd,
+
+    Defensive_Score =
+      0.30 * p_def_press +
+      0.30 * p_def_take +
+      0.25 * s_def_epa +
+      0.15 * p_def_3dstp,
+
+    Situational_Score =
+      0.40 * p_3d_conv +
+      0.30 * p_close_win +
+      0.30 * s_pen_yd_g,
+
+    QB_Score =
+      0.5294118 * p_qb_epa +
+      0.2941176 * s_qb_to +
+      0.1764706 * s_qb_pts,
+
+    SBWI =
+      0.30 * Offensive_Score +
+      0.30 * Defensive_Score +
+      0.20 * Situational_Score +
+      0.20 * QB_Score
+  )
+
+readr::write_csv(scored, "team_season_SBWI_REG_POST_2005_2024.csv")
+
+```
+
+
+
+```{r}
+
+sched <- nflreadr::load_schedules(sort(unique(scored$season)))
+
+sb_winners <- sched %>%
+  filter(game_type == "SB") %>%
+  mutate(
+    winner = case_when(
+      home_score > away_score ~ home_team,
+      away_score > home_score ~ away_team,
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  select(season, winner) %>%
+  distinct()
+
+winners_sbwi <- scored %>%
+  inner_join(sb_winners, by = "season") %>%
+  filter(team == winner) %>%
+  arrange(season)
+
+winners_sbwi
+
+```
+
+
+
+```{r}
+
+avg_sbwi <- winners_sbwi %>%
+  summarise(avg = mean(SBWI, na.rm = TRUE)) %>%
+  pull(avg)
+
+plot_df <- winners_sbwi %>%
+  mutate(
+    above_avg = if_else(SBWI >= avg_sbwi, "Above avg", "Below avg")
+  )
+
+pink_above <- "#F2A1B3"   # light pink
+gray_below <- "#C7C7C7"   # light gray
+
+trend_plot_teko <- ggplot(plot_df, aes(x = season, y = SBWI)) +
+
+  geom_line(
+    linewidth = 1.2,
+    alpha = 0.75,
+    color = "#3A3A3A"
+  ) +
+
+  geom_point(
+    aes(color = above_avg),
+    size = 3.8,
+    alpha = 0.95
+  ) +
+
+  geom_hline(
+    yintercept = avg_sbwi,
+    linetype = "longdash",
+    linewidth = 1.1,
+    color = "#6B6B6B",
+    alpha = 0.9
+  ) +
+
+  annotate(
+    "text",
+    x = min(plot_df$season) + 0.2,
+    y = avg_sbwi + 0.006,
+    label = paste0("20-YEAR CHAMP AVG  •  ", round(avg_sbwi, 3)),
+    family = "teko",
+    size = 4.2,
+    hjust = 0,
+    color = "#6B6B6B"
+  ) +
+
+  geom_text(
+    aes(label = team),
+    nudge_y = 0.014,
+    family = "teko",
+    size = 4.2,
+    color = "white",
+    stroke = 0.35,
+    show.legend = FALSE
+  ) +
+
+  geom_text(
+    aes(label = team),
+    nudge_y = 0.014,
+    family = "teko",
+    size = 4.2,
+    color = "#1A1A1A",
+    show.legend = FALSE
+  ) +
+
+  scale_color_manual(
+    values = c(
+      "Above avg" = pink_above,
+      "Below avg" = gray_below
+    )
+  ) +
+
+  scale_x_continuous(
+    breaks = seq(min(plot_df$season), max(plot_df$season), by = 1),
+    expand = expansion(mult = c(0.01, 0.02))
+  ) +
+  scale_y_continuous(
+    labels = number_format(accuracy = 0.01),
+    expand = expansion(mult = c(0.08, 0.15))
+  ) +
+
+  labs(
+    title = "SUPER BOWL CHAMPIONS: SBWI OVER TIME",
+    subtitle = "Each point = Super Bowl winner • Dashed line = 20-year champion average",
+    x = "SEASON",
+    y = "SUPER BOWL WINNER INDEX (SBWI)",
+    color = ""
+  ) +
+
+  theme_minimal(base_family = "teko") +
+  theme(
+    plot.title = element_text(size = 22, face = "bold"),
+    plot.subtitle = element_text(size = 14, margin = margin(b = 12)),
+    axis.title.x = element_text(size = 16),
+    axis.title.y = element_text(size = 16),
+    axis.text = element_text(size = 12),
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.minor = element_blank(),
+    legend.position = "top"
+  )
+
+print(trend_plot_teko)
+
+ggsave(
+  "sbwi_trend_superbowl_winners_teko.png",
+  trend_plot_teko,
+  width = 13,
+  height = 6.5,
+  dpi = 300
+)
+
+
+```
+
+
+
+```{r}
+
+
+heat_long <- winners_sbwi %>%
+  select(season, team, Offensive_Score, Defensive_Score, Situational_Score, QB_Score, SBWI) %>%
+  pivot_longer(
+    cols = c(Offensive_Score, Defensive_Score, Situational_Score, QB_Score, SBWI),
+    names_to = "metric",
+    values_to = "value"
+  ) %>%
+  mutate(
+    metric = factor(
+      metric,
+      levels = c(
+        "Offensive_Score",
+        "Defensive_Score",
+        "Situational_Score",
+        "QB_Score",
+        "SBWI"
+      ),
+      labels = c("OFFENSE", "DEFENSE", "SITUATIONAL", "QB", "SBWI")
+    ),
+    season = factor(season, levels = rev(sort(unique(season))))
+  )
+
+SHOW_VALUES <- TRUE
+
+heatmap_plot <- ggplot(heat_long, aes(x = metric, y = season, fill = value)) +
+
+  geom_tile(
+    color = "white",
+    linewidth = 0.6
+  ) +
+
+  { if (SHOW_VALUES)
+      geom_text(
+        aes(label = sprintf("%.2f", value)),
+        family = "teko",
+        size = 4,
+        color = "#111111",
+        alpha = 0.9
+      )
+  } +
+
+  scale_fill_viridis_c(
+    limits = c(0, 1),
+    labels = number_format(accuracy = 0.01),
+    option = "C"
+  ) +
+
+  labs(
+    title = "SUPER BOWL CHAMPIONS — PILLAR SCORES & SBWI",
+    subtitle = "Each row = Super Bowl winner • Scores are 0–1 (season-relative)",
+    x = "",
+    y = "SEASON",
+    fill = "SCORE"
+  ) +
+
+  theme_minimal(base_family = "teko") +
+  theme(
+    plot.title = element_text(size = 22, face = "bold"),
+    plot.subtitle = element_text(size = 14, margin = margin(b = 12)),
+    axis.text.x = element_text(size = 14, face = "bold"),
+    axis.text.y = element_text(size = 12),
+    axis.title.y = element_text(size = 16),
+    panel.grid = element_blank(),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12),
+    legend.position = "right",
+    plot.margin = margin(12, 16, 12, 16)
+  )
+
+print(heatmap_plot)
+
+ggsave(
+  "sbwi_heatmap_superbowl_winners_teko.png",
+  heatmap_plot,
+  width = 10,
+  height = 9,
+  dpi = 300
+)
+
+
+```
+
+
+
+```{r}
+
+top5 <- winners_sbwi %>%
+  arrange(desc(SBWI)) %>%
+  slice_head(n = 5) %>%
+  select(season, team, SBWI, Offensive_Score, Defensive_Score, Situational_Score, QB_Score)
+
+print(top5)
+readr::write_csv(top5, "sbwi_top5_superbowl_winners.csv")
+
+```
+
+```{r}
+
+
+top5_long <- top5 %>%
+  mutate(
+    team_season = paste0(team, " ", season)
+  ) %>%
+  select(
+    team_season,
+    Offensive_Score,
+    Defensive_Score,
+    Situational_Score,
+    QB_Score,
+    SBWI
+  ) %>%
+  pivot_longer(
+    cols = -team_season,
+    names_to = "metric",
+    values_to = "value"
+  ) %>%
+  mutate(
+    metric = factor(
+      metric,
+      levels = c(
+        "Offensive_Score",
+        "Defensive_Score",
+        "Situational_Score",
+        "QB_Score",
+        "SBWI"
+      ),
+      labels = c(
+        "OFFENSE",
+        "DEFENSE",
+        "SITUATIONAL",
+        "QB",
+        "SBWI"
+      )
+    ),
+    team_season = factor(team_season, levels = rev(unique(team_season)))
+  )
+
+
+```
+
+
+
+```{r}
+
+top5_heatmap <- ggplot(
+  top5_long,
+  aes(x = metric, y = team_season, fill = value)
+) +
+
+  geom_tile(
+    color = "white",
+    linewidth = 0.8
+  ) +
+
+  geom_text(
+    aes(label = sprintf("%.2f", value)),
+    family = "teko",
+    size = 5,
+    color = "#111111",
+    alpha = 0.95
+  ) +
+
+  scale_fill_viridis_c(
+    limits = c(0, 1),
+    labels = number_format(accuracy = 0.01),
+    option = "C"
+  ) +
+
+  labs(
+    title = "TOP 5 SUPER BOWL CHAMPIONS — SBWI BREAKDOWN",
+    subtitle = "Pillar scores and overall Super Bowl Winner Index (SBWI)",
+    x = "",
+    y = "",
+    fill = "SCORE"
+  ) +
+
+  theme_minimal(base_family = "teko") +
+  theme(
+    plot.title = element_text(size = 24, face = "bold"),
+    plot.subtitle = element_text(size = 15, margin = margin(b = 14)),
+    axis.text.x = element_text(size = 15, face = "bold"),
+    axis.text.y = element_text(size = 14),
+    panel.grid = element_blank(),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12),
+    legend.position = "right",
+    plot.margin = margin(14, 18, 14, 18)
+  )
+
+print(top5_heatmap)
+
+ggsave(
+  "sbwi_top5_heatmap_teko.png",
+  top5_heatmap,
+  width = 9,
+  height = 6,
+  dpi = 300
+)
+
+
+```
+
+
+
+```{r}
+
+champ_avgs <- winners_sbwi %>%
+  summarise(
+    avg_SBWI = mean(SBWI, na.rm = TRUE),
+    avg_off  = mean(Offensive_Score, na.rm = TRUE),
+    avg_def  = mean(Defensive_Score, na.rm = TRUE),
+    avg_sit  = mean(Situational_Score, na.rm = TRUE),
+    avg_qb   = mean(QB_Score, na.rm = TRUE)
+  )
+
+top5_decomp <- winners_sbwi %>%
+  inner_join(top5 %>% select(season, team), by = c("season", "team")) %>%
+  mutate(
+    sbwi_vs_champ_avg = SBWI - champ_avgs$avg_SBWI,
+    off_vs_champ_avg  = Offensive_Score - champ_avgs$avg_off,
+    def_vs_champ_avg  = Defensive_Score - champ_avgs$avg_def,
+    sit_vs_champ_avg  = Situational_Score - champ_avgs$avg_sit,
+    qb_vs_champ_avg   = QB_Score - champ_avgs$avg_qb
+  ) %>%
+  select(
+    season, team, SBWI, sbwi_vs_champ_avg,
+    Offensive_Score, off_vs_champ_avg,
+    Defensive_Score, def_vs_champ_avg,
+    Situational_Score, sit_vs_champ_avg,
+    QB_Score, qb_vs_champ_avg
+  ) %>%
+  arrange(desc(SBWI))
+
+print(top5_decomp)
+readr::write_csv(top5_decomp, "sbwi_top5_decomposition_vs_champ_avg.csv")
+
+top5_signatures <- winners_sbwi %>%
+  inner_join(top5 %>% select(season, team), by = c("season", "team")) %>%
+  select(
+    season, team, SBWI,
+    Offensive_Score, Defensive_Score, Situational_Score, QB_Score,
+    # Offense rates
+    EPA_per_play_off, Success_rate_off, Turnover_rate_off, RedZone_TD_pct_off,
+    # Defense rates
+    Def_EPA_per_play, Pressure_rate_def, Takeaway_rate_def, Third_down_stop_rate_def,
+    # Situational rates
+    Third_down_conv_pct, Close_game_win_pct, Penalty_yards_per_game,
+    # QB rates
+    QB_EPA_per_play, QB_turnover_rate, Pressure_to_sack_rate
+  ) %>%
+  arrange(desc(SBWI))
+
+print(top5_signatures)
+readr::write_csv(top5_signatures, "sbwi_top5_signature_metrics.csv")
+
+top5_callouts <- winners_sbwi %>%
+  inner_join(top5 %>% select(season, team), by = c("season", "team")) %>%
+  rowwise() %>%
+  mutate(
+    top_pillars = paste(
+      names(sort(c(
+        Offense = Offensive_Score,
+        Defense = Defensive_Score,
+        Situational = Situational_Score,
+        QB = QB_Score
+      ), decreasing = TRUE))[1:2],
+      collapse = ", "
+    )
+  ) %>%
+  ungroup() %>%
+  select(season, team, SBWI, top_pillars) %>%
+  arrange(desc(SBWI))
+
+print(top5_callouts)
+readr::write_csv(top5_callouts, "sbwi_top5_pillar_callouts.csv")
+
+winner_table <- winners_sbwi %>%
+  select(season, team, SBWI, Offensive_Score, Defensive_Score, Situational_Score, QB_Score) %>%
+  arrange(season)
+
+readr::write_csv(winner_table, "sbwi_superbowl_winners_table.csv")
+
+```
+
