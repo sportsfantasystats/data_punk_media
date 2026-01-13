@@ -1,0 +1,372 @@
+---
+title: "olympic_player_analysis"
+output: html_document
+date: "2026-01-10"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+library(scales)
+
+```
+
+
+```{r}
+
+df <- readr::read_csv("olympic_hockey_players_dataset.csv", show_col_types = FALSE)
+
+df <- df %>% clean_names()
+
+df %>% count(country) %>% print(n = Inf)
+df %>% count(position) %>% print(n = Inf)
+
+```
+
+
+```{r}
+
+df2 <- df %>%
+  mutate(
+    gp = as.numeric(gp),
+
+    sog_pg   = if_else(gp > 0, sog / gp, NA_real_),
+    hits_pg  = if_else(gp > 0, hits / gp, NA_real_),
+    blocks_pg= if_else(gp > 0, blocked_shots / gp, NA_real_),
+
+    # plus-minus per game (no TOI available)
+    pm_pg    = if_else(gp > 0, plus_minus / gp, NA_real_),
+
+    # penalty minutes per game (often "bad" defensively/discipline)
+    pim_pg   = if_else(gp > 0, pim / gp, NA_real_)
+  )
+
+```
+
+
+```{r}
+
+off_metrics <- c(
+  "ppg",     
+  "gpg",
+  "apg",
+  "sog_pg",
+  "sht_pct"  
+)
+
+
+def_metrics <- c(
+  "blocks_pg",
+  "hits_pg",
+  "net_puck_diff",
+  "possession",
+  "pm_pg",
+  "pim_pg"
+)
+
+```
+
+
+```{r}
+
+country_summary <- df2 %>%
+  group_by(country) %>%
+  summarise(
+    players = n(),
+
+    # Totals (context)
+    gp_total  = sum(gp, na.rm = TRUE),
+    g_total   = sum(g,  na.rm = TRUE),
+    a_total   = sum(a,  na.rm = TRUE),
+    pts_total = sum(pts,na.rm = TRUE),
+    sog_total = sum(sog,na.rm = TRUE),
+
+    # Means of key rates (analysis)
+    across(all_of(off_metrics), ~ mean(.x, na.rm = TRUE), .names = "avg_{.col}"),
+    across(all_of(def_metrics), ~ mean(.x, na.rm = TRUE), .names = "avg_{.col}"),
+
+    .groups = "drop"
+  )
+
+print(country_summary)
+
+write.csv(country_summary, "olympic_country_summaries.csv", row.names = FALSE)
+
+```
+
+```{r}
+
+
+library(ggplot2)
+library(tidyverse)
+library(showtext)
+
+font_add_google("Teko", "teko")
+showtext_auto()
+
+PINK  <- "#E83E8C"
+GRAY  <- "#2E2E2E"
+LIGHT <- "#F5F5F5"
+
+base_theme <- theme_minimal(base_family = "teko") +
+  theme(
+    plot.title = element_text(size = 22, face = "bold"),
+    plot.subtitle = element_text(size = 14),
+    axis.title = element_text(size = 14),
+    axis.text = element_text(size = 12),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank(),
+    legend.position = "none"
+  )
+
+
+```
+
+
+```{r}
+
+prod_totals <- country_summary %>%
+  select(country, gp_total, g_total, a_total, pts_total, sog_total) %>%
+  pivot_longer(-country, names_to = "metric", values_to = "value")
+
+ggplot(prod_totals, aes(country, value, fill = metric)) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = c(
+    gp_total = LIGHT,
+    g_total = PINK,
+    a_total = "#B23A6F",
+    pts_total = "#7A1F46",
+    sog_total = GRAY
+  )) +
+  labs(
+    title = "Olympic Team Production Summary",
+    subtitle = "Total on-ice production across roster players",
+    x = NULL,
+    y = "Total"
+  ) +
+  base_theme
+
+
+```
+
+
+```{r}
+
+prod_avg <- country_summary %>%
+  select(country, avg_ppg, avg_gpg, avg_apg) %>%
+  pivot_longer(-country, names_to = "metric", values_to = "value")
+
+ggplot(prod_avg, aes(metric, value, fill = country)) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = rep(PINK, length(unique(prod_avg$country)))) +
+  labs(
+    title = "Average Offensive Production",
+    subtitle = "Per-player scoring efficiency",
+    x = NULL,
+    y = "Average Rate"
+  ) +
+  base_theme
+
+
+```
+
+
+```{r}
+
+ggplot(country_summary,
+       aes(avg_sog_pg, avg_sht_pct, label = country)) +
+  geom_point(size = 6, color = PINK) +
+  geom_text(vjust = -1.1, family = "teko", size = 6) +
+  labs(
+    title = "Shot Volume vs Shooting Efficiency",
+    subtitle = "Do teams generate chances or finish them?",
+    x = "Shots per Game",
+    y = "Shooting %"
+  ) +
+  base_theme
+
+
+```
+
+```{r}
+
+ggplot(country_summary,
+       aes(avg_hits_pg, avg_blocks_pg, label = country)) +
+  geom_point(size = 6, color = PINK) +
+  geom_text(vjust = -1.1, family = "teko", size = 6) +
+  geom_vline(xintercept = mean(country_summary$avg_hits_pg),
+             linetype = "dashed", color = GRAY) +
+  geom_hline(yintercept = mean(country_summary$avg_blocks_pg),
+             linetype = "dashed", color = GRAY) +
+  labs(
+    title = "Defensive Identity Map",
+    subtitle = "Physical pressure vs shot denial",
+    x = "Hits per Game",
+    y = "Blocks per Game"
+  ) +
+  base_theme
+
+
+```
+
+```{r}
+
+ggplot(country_summary %>% arrange(avg_possession),
+       aes(x = reorder(country, avg_possession),
+           y = avg_possession)) +
+  geom_segment(aes(xend = country, y = 0, yend = avg_possession),
+               color = GRAY, linewidth = 1) +
+  geom_point(size = 6, color = PINK) +
+  coord_flip() +
+  labs(
+    title = "Average Possession Control",
+    subtitle = "Takeaway efficiency across roster players",
+    x = NULL,
+    y = "Possession Rate"
+  ) +
+  base_theme
+
+```
+
+
+
+```{r}
+
+
+country_scores <- country_summary %>%
+  select(country,
+         starts_with("avg_"),
+         players, gp_total, pts_total) %>%
+  mutate(
+    avg_pim_pg = -avg_pim_pg
+  ) %>%
+  mutate(across(starts_with("avg_"), ~ as.numeric(scale(.x)))) %>%
+  rowwise() %>%
+  mutate(
+    offense_score = mean(c_across(all_of(paste0("avg_", off_metrics))), na.rm = TRUE),
+    defense_score = mean(c_across(all_of(paste0("avg_", def_metrics))), na.rm = TRUE),
+    two_way_score = 0.55 * offense_score + 0.45 * defense_score
+  ) %>%
+  ungroup() %>%
+  arrange(desc(two_way_score))
+
+```
+
+
+```{r}
+
+offense_rank <- country_scores %>% arrange(desc(offense_score)) %>%
+  select(country, offense_score, two_way_score, defense_score, players, gp_total, pts_total)
+
+defense_rank <- country_scores %>% arrange(desc(defense_score)) %>%
+  select(country, defense_score, two_way_score, offense_score, players, gp_total, pts_total)
+
+two_way_rank <- country_scores %>% arrange(desc(two_way_score)) %>%
+  select(country, two_way_score, offense_score, defense_score, players, gp_total, pts_total)
+
+print(offense_rank)
+print(defense_rank)
+print(two_way_rank)
+
+```
+
+
+
+```{r}
+
+to_heatmap_long <- function(scores_df, metric_list, title_label) {
+  scores_df %>%
+    select(country, all_of(paste0("avg_", metric_list))) %>%
+    pivot_longer(-country, names_to = "metric", values_to = "z") %>%
+    mutate(
+      metric = str_remove(metric, "^avg_"),
+      group  = title_label
+    )
+}
+
+off_heat <- to_heatmap_long(country_scores, off_metrics, "Offense")
+def_heat <- to_heatmap_long(country_scores, def_metrics, "Defense")
+
+metric_labels <- c(
+  ppg = "Points / Game (PPG)",
+  gpg = "Goals / Game (GPG)",
+  apg = "Assists / Game (APG)",
+  sog_pg = "Shots / Game",
+  sht_pct = "Shooting %",
+
+  blocks_pg = "Blocks / Game",
+  hits_pg = "Hits / Game",
+  net_puck_diff = "Net Puck Diff",
+  possession = "Possession (TA/(TA+GA))",
+  pm_pg = "+/- per Game",
+  pim_pg = "PIM / Game (lower=better)"
+)
+
+```
+
+
+
+```{r}
+
+ggplot(off_heat, aes(x = metric, y = country, fill = z)) +
+  geom_tile(color = "white", linewidth = 0.6) +
+  scale_x_discrete(labels = metric_labels) +
+  scale_fill_gradient2(labels = label_number(accuracy = 0.1)) +
+  labs(
+    title = "Olympic Teams — Offensive Strengths vs Challenges (Z-scores)",
+    x = NULL, y = NULL, fill = "Strength\n(Z)"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    axis.text.x = element_text(angle = 35, hjust = 1),
+    panel.grid = element_blank()
+  )
+
+```
+
+
+```{r}
+
+ggplot(def_heat, aes(x = metric, y = country, fill = z)) +
+  geom_tile(color = "white", linewidth = 0.6) +
+  scale_x_discrete(labels = metric_labels) +
+  scale_fill_gradient2(labels = label_number(accuracy = 0.1)) +
+  labs(
+    title = "Olympic Teams — Defensive Strengths vs Challenges (Z-scores)",
+    x = NULL, y = NULL, fill = "Strength\n(Z)"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    axis.text.x = element_text(angle = 35, hjust = 1),
+    panel.grid = element_blank()
+  )
+
+```
+
+
+
+```{r}
+
+top_bottom_summary <- bind_rows(off_heat, def_heat) %>%
+  group_by(country, group) %>%
+  summarise(
+    top2 = paste(metric[order(z, decreasing = TRUE)][1:2], collapse = ", "),
+    bot2 = paste(metric[order(z, decreasing = FALSE)][1:2], collapse = ", "),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    top2 = str_replace_all(top2, metric_labels),
+    bot2 = str_replace_all(bot2, metric_labels)
+  )
+
+print(top_bottom_summary)
+
+
+```
+
