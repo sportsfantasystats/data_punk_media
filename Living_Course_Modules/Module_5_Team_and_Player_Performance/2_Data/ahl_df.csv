@@ -1,0 +1,986 @@
+PLAYER,TEAM,GP,G,A,PTS,APG,GPG,PPG,PIMPG,PLUS_MIN,LINK,SEASON,LEAGUE
+Laurent Dauphin,Laval Rocket,49,15,41,56,0.837,0.306,1.14,0.653,26,https://www.eliteprospects.com/player/126400/laurent-dauphin,2025-2026,ahl
+Jakob Pelletier,Syracuse Crunch,45,20,33,53,0.733,0.444,1.18,0.244,20,https://www.eliteprospects.com/player/410525/jakob-pelletier,2025-2026,ahl
+Alex Barre-Boulet,Colorado Eagles,49,17,35,52,0.714,0.347,1.06,0.449,18,https://www.eliteprospects.com/player/227670/alex-barre-boulet,2025-2026,ahl
+Arthur Kaliyev,Belleville Senators,52,30,20,50,0.385,0.577,0.96,0.5,-15,https://www.eliteprospects.com/player/316114/arthur-kaliyev,2025-2026,ahl
+Logan Morrison,Coachella Valley Firebirds,50,24,25,49,0.5,0.48,0.98,0.76,21,https://www.eliteprospects.com/player/201937/logan-morrison,2025-2026,ahl
+Conor Geekie,Syracuse Crunch,45,13,36,49,0.8,0.289,1.09,0.933,14,https://www.eliteprospects.com/player/571034/conor-geekie,2025-2026,ahl
+Jagger Firkus,Coachella Valley Firebirds,50,19,29,48,0.58,0.38,0.96,0.2,12,https://www.eliteprospects.com/player/565465/jagger-firkus,2025-2026,ahl
+Seth Griffith,Bakersfield Condors,51,15,33,48,0.647,0.294,0.94,0.706,0,https://www.eliteprospects.com/player/45606/seth-griffith,2025-2026,ahl
+Justin Robidas,Chicago Wolves,45,21,26,47,0.578,0.467,1.04,0.267,25,https://www.eliteprospects.com/player/411012/justin-robidas,2025-2026,ahl
+Patrick Brown,Providence Bruins,50,17,30,47,0.6,0.34,0.94,0.46,33,https://www.eliteprospects.com/player/75038/patrick-brown,2025-2026,ahl
+Cameron Hughes,Texas Stars,50,12,35,47,0.7,0.24,0.94,0.52,6,https://www.eliteprospects.com/player/62155/cameron-hughes,2025-2026,ahl
+Alex Belzile,Laval Rocket,51,24,22,46,0.431,0.471,0.9,1.137,19,https://www.eliteprospects.com/player/68593/alex-belzile,2025-2026,ahl
+Benoit-Olivier Groulx,Toronto Marlies,50,23,23,46,0.46,0.46,0.92,0.64,12,https://www.eliteprospects.com/player/335689/benoit-olivier-groulx,2025-2026,ahl
+Ben McCartney,Tucson Roadrunners,47,21,25,46,0.532,0.447,0.98,1.404,7,https://www.eliteprospects.com/player/351230/ben-mccartney,2025-2026,ahl
+Quinn Hutson,Bakersfield Condors,46,24,21,45,0.457,0.522,0.98,1.435,1,https://www.eliteprospects.com/player/201721/quinn-hutson,2025-2026,ahl
+Bradly Nadeau,Chicago Wolves,39,21,24,45,0.615,0.538,1.15,0.513,23,https://www.eliteprospects.com/player/619153/bradly-nadeau,2025-2026,ahl
+Rory Kerins,Calgary Wranglers,49,17,28,45,0.571,0.347,0.92,0.327,-10,https://www.eliteprospects.com/player/504297/rory-kerins,2025-2026,ahl
+Felix Unger Sorum,Chicago Wolves,48,11,33,44,0.688,0.229,0.92,0.333,8,https://www.eliteprospects.com/player/618598/felix-unger-sorum,2025-2026,ahl
+Zac Jones,Rochester Americans,40,7,37,44,0.925,0.175,1.1,0.25,2,https://www.eliteprospects.com/player/364649/zac-jones,2025-2026,ahl
+Dylan Duke,Syracuse Crunch,51,25,18,43,0.353,0.49,0.84,0.549,-6,https://www.eliteprospects.com/player/512163/dylan-duke,2025-2026,ahl
+Tanner Laczynski,Henderson Silver Knights,40,15,28,43,0.7,0.375,1.08,0.825,25,https://www.eliteprospects.com/player/234312/tanner-laczynski,2025-2026,ahl
+Philippe Daoust,Belleville Senators,50,13,30,43,0.6,0.26,0.86,0.48,-11,https://www.eliteprospects.com/player/574526/philippe-daoust,2025-2026,ahl
+Viljami Marjala,Bakersfield Condors,51,13,30,43,0.588,0.255,0.84,0.275,2,https://www.eliteprospects.com/player/525657/viljami-marjala,2025-2026,ahl
+Nikita Alexandrov,totals,51,11,32,43,0.627,0.216,0.84,0.431,-18,https://www.eliteprospects.com/player/238111/nikita-alexandrov,2025-2026,ahl
+Isak Rosen,Rochester Americans,35,25,17,42,0.486,0.714,1.2,0.114,5,https://www.eliteprospects.com/player/420269/isak-rosen,2025-2026,ahl
+Martin Frk,Calgary Wranglers,52,19,23,42,0.442,0.365,0.81,1.077,10,https://www.eliteprospects.com/player/56033/martin-frk,2025-2026,ahl
+Georgii Merkulov,Providence Bruins,48,17,25,42,0.521,0.354,0.88,0.667,12,https://www.eliteprospects.com/player/395630/georgii-merkulov,2025-2026,ahl
+Luca Del Bel Belluz,Cleveland Monsters,39,14,28,42,0.718,0.359,1.08,0.051,5,https://www.eliteprospects.com/player/525669/luca-del-bel-belluz,2025-2026,ahl
+Ryan Ufko,Milwaukee Admirals,47,11,31,42,0.66,0.234,0.89,0.34,-12,https://www.eliteprospects.com/player/511993/ryan-ufko,2025-2026,ahl
+Ilya Protas,Hershey Bears,51,20,21,41,0.412,0.392,0.8,0.471,8,https://www.eliteprospects.com/player/949987/ilya-protas,2025-2026,ahl
+Cameron Hebig,Tucson Roadrunners,45,16,25,41,0.556,0.356,0.91,0.533,4,https://www.eliteprospects.com/player/199897/cameron-hebig,2025-2026,ahl
+Xavier Bourgault,Belleville Senators,52,14,27,41,0.519,0.269,0.79,0.385,-12,https://www.eliteprospects.com/player/341629/xavier-bourgault,2025-2026,ahl
+John Leonard,Grand Rapids Griffins,32,26,14,40,0.438,0.812,1.25,0.188,9,https://www.eliteprospects.com/player/272976/john-leonard,2025-2026,ahl
+Riley Tufte,Providence Bruins,43,22,18,40,0.419,0.512,0.93,1.186,26,https://www.eliteprospects.com/player/291903/riley-tufte,2025-2026,ahl
+Dryden Hunt,Calgary Wranglers,33,14,26,40,0.788,0.424,1.21,0.848,6,https://www.eliteprospects.com/player/84609/dryden-hunt,2025-2026,ahl
+Glenn Gawdin,Ontario Reign,52,11,29,40,0.558,0.212,0.77,1.096,-5,https://www.eliteprospects.com/player/192245/glenn-gawdin,2025-2026,ahl
+Andrew Cristall,Hershey Bears,51,10,30,40,0.588,0.196,0.78,0.353,-9,https://www.eliteprospects.com/player/603591/andrew-cristall,2025-2026,ahl
+Mitchell Chaffee,Syracuse Crunch,39,17,22,39,0.564,0.436,1,1.256,3,https://www.eliteprospects.com/player/296327/mitchell-chaffee,2025-2026,ahl
+Martin Chromiak,Ontario Reign,51,17,22,39,0.431,0.333,0.76,0.235,0,https://www.eliteprospects.com/player/292067/martin-chromiak,2025-2026,ahl
+Matt Luff,totals,42,14,25,39,0.595,0.333,0.93,0.69,-14,https://www.eliteprospects.com/player/238487/matt-luff,2025-2026,ahl
+Konsta Helenius,Rochester Americans,41,13,26,39,0.634,0.317,0.95,0.244,0,https://www.eliteprospects.com/player/796075/konsta-helenius,2025-2026,ahl
+Brett Seney,Rockford IceHogs,45,11,28,39,0.622,0.244,0.87,1.222,10,https://www.eliteprospects.com/player/204125/brett-seney,2025-2026,ahl
+Jayson Megna,Colorado Eagles,49,22,16,38,0.327,0.449,0.78,0.408,21,https://www.eliteprospects.com/player/46027/jayson-megna,2025-2026,ahl
+Jake Lucchini,Milwaukee Admirals,49,13,25,38,0.51,0.265,0.78,0.347,-10,https://www.eliteprospects.com/player/102374/jake-lucchini,2025-2026,ahl
+William Stromgren,Calgary Wranglers,46,10,28,38,0.609,0.217,0.83,0.739,6,https://www.eliteprospects.com/player/486944/william-stromgren,2025-2026,ahl
+Dominik Shine,Grand Rapids Griffins,38,21,16,37,0.421,0.553,0.97,1.079,25,https://www.eliteprospects.com/player/45858/dominik-shine,2025-2026,ahl
+Cole Guttman,Ontario Reign,48,18,19,37,0.396,0.375,0.77,0.833,0,https://www.eliteprospects.com/player/201449/cole-guttman,2025-2026,ahl
+Fabian Lysell,Providence Bruins,46,15,22,37,0.478,0.326,0.8,0.696,13,https://www.eliteprospects.com/player/472769/fabian-lysell,2025-2026,ahl
+Sean Farrell,Laval Rocket,54,13,24,37,0.444,0.241,0.69,0.333,2,https://www.eliteprospects.com/player/386329/sean-farrell,2025-2026,ahl
+Sasha Pastujov,San Diego Gulls,49,12,25,37,0.51,0.245,0.76,0.531,6,https://www.eliteprospects.com/player/512165/sasha-pastujov,2025-2026,ahl
+Ryan Suzuki,Chicago Wolves,46,9,28,37,0.609,0.196,0.8,0.565,17,https://www.eliteprospects.com/player/418345/ryan-suzuki,2025-2026,ahl
+Nick Abruzzese,Syracuse Crunch,40,8,29,37,0.725,0.2,0.93,0.15,11,https://www.eliteprospects.com/player/201476/nick-abruzzese,2025-2026,ahl
+Andre Lee,Ontario Reign,45,21,15,36,0.333,0.467,0.8,0.867,7,https://www.eliteprospects.com/player/350001/andre-lee,2025-2026,ahl
+Logan Shaw,Toronto Marlies,50,17,19,36,0.38,0.34,0.72,0.42,0,https://www.eliteprospects.com/player/37280/logan-shaw,2025-2026,ahl
+Samuel Poulin,totals,50,14,22,36,0.44,0.28,0.72,0.48,16,https://www.eliteprospects.com/player/290171/samuel-poulin,2025-2026,ahl
+Filip Bystedt,San Jose Barracuda,41,13,23,36,0.561,0.317,0.88,0.488,4,https://www.eliteprospects.com/player/578760/filip-bystedt,2025-2026,ahl
+Dominic Toninato,Rockford IceHogs,44,12,24,36,0.545,0.273,0.82,1.068,-7,https://www.eliteprospects.com/player/122004/dominic-toninato,2025-2026,ahl
+Matthew Phillips,San Diego Gulls,49,10,26,36,0.531,0.204,0.73,0.204,-7,https://www.eliteprospects.com/player/161060/matthew-phillips,2025-2026,ahl
+Jack Ahcan,Colorado Eagles,39,7,29,36,0.744,0.179,0.92,0.718,23,https://www.eliteprospects.com/player/248456/jack-ahcan,2025-2026,ahl
+Adam Beckman,Bridgeport Islanders,49,21,14,35,0.286,0.429,0.71,0.327,6,https://www.eliteprospects.com/player/291514/adam-beckman,2025-2026,ahl
+Mikael Pyyhtia,Cleveland Monsters,38,12,23,35,0.605,0.316,0.92,0.526,5,https://www.eliteprospects.com/player/470710/mikael-pyyhtia,2025-2026,ahl
+Vinni Lettieri,Toronto Marlies,41,11,24,35,0.585,0.268,0.85,0.683,7,https://www.eliteprospects.com/player/118656/vinni-lettieri,2025-2026,ahl
+Sheldon Dries,Grand Rapids Griffins,43,18,16,34,0.372,0.419,0.79,0.302,19,https://www.eliteprospects.com/player/97620/sheldon-dries,2025-2026,ahl
+Rem Pitlick,totals,48,15,19,34,0.396,0.312,0.71,0.75,-18,https://www.eliteprospects.com/player/199968/rem-pitlick,2025-2026,ahl
+Austin Poganski,Tucson Roadrunners,47,14,20,34,0.426,0.298,0.72,0.213,2,https://www.eliteprospects.com/player/231724/austin-poganski,2025-2026,ahl
+Matej Blumel,Providence Bruins,36,11,23,34,0.639,0.306,0.94,0.389,16,https://www.eliteprospects.com/player/272376/matej-blumel,2025-2026,ahl
+Lukas Cormier,Henderson Silver Knights,35,7,27,34,0.771,0.2,0.97,0.343,-2,https://www.eliteprospects.com/player/201780/lukas-cormier,2025-2026,ahl
+Tyson Jugnauth,Coachella Valley Firebirds,50,6,28,34,0.56,0.12,0.68,0.68,3,https://www.eliteprospects.com/player/650072/tyson-jugnauth,2025-2026,ahl
+T.J. Tynan,Colorado Eagles,46,3,31,34,0.674,0.065,0.74,0.826,5,https://www.eliteprospects.com/player/45686/t.j.-tynan,2025-2026,ahl
+Ben Steeves,Charlotte Checkers,50,18,15,33,0.3,0.36,0.66,1.28,3,https://www.eliteprospects.com/player/510338/ben-steeves,2025-2026,ahl
+Wilmer Skoog,Charlotte Checkers,50,17,16,33,0.32,0.34,0.66,0.58,13,https://www.eliteprospects.com/player/344665/wilmer-skoog,2025-2026,ahl
+Lane Pederson,Lehigh Valley Phantoms,46,16,17,33,0.37,0.348,0.72,0.783,-2,https://www.eliteprospects.com/player/199918/lane-pederson,2025-2026,ahl
+Tristan Broz,Wilkes-Barre/Scranton Penguins,43,14,19,33,0.442,0.326,0.77,0.674,16,https://www.eliteprospects.com/player/470024/tristan-broz,2025-2026,ahl
+Adam Engstrom,Laval Rocket,40,10,23,33,0.575,0.25,0.83,0.4,15,https://www.eliteprospects.com/player/491616/adam-engstrom,2025-2026,ahl
+Jimmy Huntington,San Jose Barracuda,47,10,23,33,0.489,0.213,0.7,0.596,2,https://www.eliteprospects.com/player/254885/jimmy-huntington,2025-2026,ahl
+Luca Pinelli,Cleveland Monsters,47,10,23,33,0.489,0.213,0.7,0.936,-2,https://www.eliteprospects.com/player/603563/luca-pinelli,2025-2026,ahl
+Mason Shaw,Manitoba Moose,46,14,18,32,0.391,0.304,0.7,0.957,14,https://www.eliteprospects.com/player/162926/mason-shaw,2025-2026,ahl
+Jack Devine,Charlotte Checkers,41,13,19,32,0.463,0.317,0.78,0.902,17,https://www.eliteprospects.com/player/464780/jack-devine,2025-2026,ahl
+Valtteri Puustinen,totals,46,10,22,32,0.478,0.217,0.7,0.261,3,https://www.eliteprospects.com/player/332963/valtteri-puustinen,2025-2026,ahl
+Calle Rosen,totals,51,7,25,32,0.49,0.137,0.63,0.275,-13,https://www.eliteprospects.com/player/37021/calle-rosen,2025-2026,ahl
+Liam Foudy,Bridgeport Islanders,41,18,13,31,0.317,0.439,0.76,0.244,-2,https://www.eliteprospects.com/player/397650/liam-foudy,2025-2026,ahl
+Tristen Nielsen,Colorado Eagles,45,18,13,31,0.289,0.4,0.69,0.889,13,https://www.eliteprospects.com/player/299754/tristen-nielsen,2025-2026,ahl
+Trey Fix-Wolansky,Hartford Wolf Pack,50,18,13,31,0.26,0.36,0.62,1.3,-4,https://www.eliteprospects.com/player/257717/trey-fix-wolansky,2025-2026,ahl
+Roby Jarventie,Bakersfield Condors,44,15,16,31,0.364,0.341,0.7,0.545,12,https://www.eliteprospects.com/player/534236/roby-jarventie,2025-2026,ahl
+Matthew Seminoff,Texas Stars,50,15,16,31,0.32,0.3,0.62,0.28,9,https://www.eliteprospects.com/player/538928/matthew-seminoff,2025-2026,ahl
+Isaac Howard,Bakersfield Condors,27,13,18,31,0.667,0.481,1.15,0.222,7,https://www.eliteprospects.com/player/603668/isaac-howard,2025-2026,ahl
+Jacob Quillan,Toronto Marlies,36,11,20,31,0.556,0.306,0.86,0.639,9,https://www.eliteprospects.com/player/318454/jacob-quillan,2025-2026,ahl
+Ville Koivunen,Wilkes-Barre/Scranton Penguins,25,10,21,31,0.84,0.4,1.24,1.36,11,https://www.eliteprospects.com/player/525660/ville-koivunen,2025-2026,ahl
+Scott Perunovich,Tucson Roadrunners,44,4,27,31,0.614,0.091,0.7,0.864,2,https://www.eliteprospects.com/player/300906/scott-perunovich,2025-2026,ahl
+Avery Hayes,Wilkes-Barre/Scranton Penguins,36,19,11,30,0.306,0.528,0.83,1.278,3,https://www.eliteprospects.com/player/418255/avery-hayes,2025-2026,ahl
+James Hamblin,Bakersfield Condors,44,18,12,30,0.273,0.409,0.68,0.591,12,https://www.eliteprospects.com/player/201363/james-hamblin,2025-2026,ahl
+Nick Lardis,Rockford IceHogs,31,16,14,30,0.452,0.516,0.97,0.387,9,https://www.eliteprospects.com/player/603122/nick-lardis,2025-2026,ahl
+Daniel Carr,Milwaukee Admirals,46,16,14,30,0.304,0.348,0.65,0.652,-19,https://www.eliteprospects.com/player/39435/daniel-carr,2025-2026,ahl
+Michael Brandsegg-Nygard,Grand Rapids Griffins,46,12,18,30,0.391,0.261,0.65,0.609,19,https://www.eliteprospects.com/player/619176/michael-brandsegg-nygard,2025-2026,ahl
+Ivan Miroshnichenko,Hershey Bears,34,11,19,30,0.559,0.324,0.88,1.265,0,https://www.eliteprospects.com/player/526255/ivan-miroshnichenko,2025-2026,ahl
+Sam Morton,Calgary Wranglers,48,11,19,30,0.396,0.229,0.63,0.542,-4,https://www.eliteprospects.com/player/274009/sam-morton,2025-2026,ahl
+David Gustafsson,Manitoba Moose,44,9,21,30,0.477,0.205,0.68,0.273,11,https://www.eliteprospects.com/player/293796/david-gustafsson,2025-2026,ahl
+Matthew Poitras,Providence Bruins,47,9,21,30,0.447,0.191,0.64,0.894,-5,https://www.eliteprospects.com/player/661581/matthew-poitras,2025-2026,ahl
+Luca Cagnoni,San Jose Barracuda,46,6,24,30,0.522,0.13,0.65,0.391,-6,https://www.eliteprospects.com/player/529803/luca-cagnoni,2025-2026,ahl
+Igor Chernyshov,San Jose Barracuda,36,13,16,29,0.444,0.361,0.81,0.944,4,https://www.eliteprospects.com/player/779993/igor-chernyshov,2025-2026,ahl
+Anthony Richard,Lehigh Valley Phantoms,44,13,16,29,0.364,0.295,0.66,0.227,-9,https://www.eliteprospects.com/player/155661/anthony-richard,2025-2026,ahl
+Brett Leason,Hershey Bears,35,11,18,29,0.514,0.314,0.83,0.857,8,https://www.eliteprospects.com/player/257755/brett-leason,2025-2026,ahl
+Ryan Carpenter,San Diego Gulls,49,11,18,29,0.367,0.224,0.59,0.408,-8,https://www.eliteprospects.com/player/46952/ryan-carpenter,2025-2026,ahl
+Travis Boyd,Toronto Marlies,34,10,19,29,0.559,0.294,0.85,0.176,-8,https://www.eliteprospects.com/player/38621/travis-boyd,2025-2026,ahl
+Matvei Gridin,Calgary Wranglers,36,10,19,29,0.528,0.278,0.81,0.5,1,https://www.eliteprospects.com/player/527724/matvei-gridin,2025-2026,ahl
+Joakim Kemell,Milwaukee Admirals,43,10,19,29,0.442,0.233,0.67,1.302,-18,https://www.eliteprospects.com/player/526043/joakim-kemell,2025-2026,ahl
+Amadeus Lombardi,Grand Rapids Griffins,31,9,20,29,0.645,0.29,0.94,0.645,12,https://www.eliteprospects.com/player/640282/amadeus-lombardi,2025-2026,ahl
+Kenny Connors,Ontario Reign,49,9,20,29,0.408,0.184,0.59,0.429,13,https://www.eliteprospects.com/player/478379/kenny-connors,2025-2026,ahl
+Matthew Maggio,Bridgeport Islanders,52,9,20,29,0.385,0.173,0.56,0.308,-3,https://www.eliteprospects.com/player/505365/matthew-maggio,2025-2026,ahl
+Matthew Peca,Springfield Thunderbirds,44,8,21,29,0.477,0.182,0.66,0.273,-12,https://www.eliteprospects.com/player/78295/matthew-peca,2025-2026,ahl
+Stephen Halliday,Belleville Senators,29,2,27,29,0.931,0.069,1,0.552,-14,https://www.eliteprospects.com/player/462499/stephen-halliday,2025-2026,ahl
+Chris Wagner,Springfield Thunderbirds,47,17,11,28,0.234,0.362,0.6,0.702,-21,https://www.eliteprospects.com/player/39429/chris-wagner,2025-2026,ahl
+Justin Bailey,San Diego Gulls,49,17,11,28,0.224,0.347,0.57,0.735,9,https://www.eliteprospects.com/player/116970/justin-bailey,2025-2026,ahl
+Dans Locmelis,Providence Bruins,43,15,13,28,0.302,0.349,0.65,0.14,16,https://www.eliteprospects.com/player/638391/dans-locmelis,2025-2026,ahl
+Zachary L'Heureux,Milwaukee Admirals,28,14,14,28,0.5,0.5,1,2.321,0,https://www.eliteprospects.com/player/419758/zachary-l-heureux,2025-2026,ahl
+Judd Caulfield,San Diego Gulls,49,14,14,28,0.286,0.286,0.57,0.204,6,https://www.eliteprospects.com/player/444997/judd-caulfield,2025-2026,ahl
+Joshua Roy,Laval Rocket,40,13,15,28,0.375,0.325,0.7,0.75,-6,https://www.eliteprospects.com/player/483757/joshua-roy,2025-2026,ahl
+Cole O'Hara,Milwaukee Admirals,45,13,15,28,0.333,0.289,0.62,0.178,-6,https://www.eliteprospects.com/player/201938/cole-o-hara,2025-2026,ahl
+Ty Mueller,Abbotsford Canucks,47,11,17,28,0.362,0.234,0.6,0.34,-15,https://www.eliteprospects.com/player/475179/ty-mueller,2025-2026,ahl
+Atley Calvert,Wilkes-Barre/Scranton Penguins,51,10,18,28,0.353,0.196,0.55,0.353,14,https://www.eliteprospects.com/player/406413/atley-calvert,2025-2026,ahl
+Justin Dowling,Hartford Wolf Pack,42,9,19,28,0.452,0.214,0.67,0.095,-5,https://www.eliteprospects.com/player/23320/justin-dowling,2025-2026,ahl
+Domenick Fensore,Chicago Wolves,40,8,20,28,0.5,0.2,0.7,0.675,10,https://www.eliteprospects.com/player/424459/domenick-fensore,2025-2026,ahl
+Christian Kyrou,totals,44,8,20,28,0.455,0.182,0.64,0.227,2,https://www.eliteprospects.com/player/582653/christian-kyrou,2025-2026,ahl
+Mike Benning,Charlotte Checkers,50,8,20,28,0.4,0.16,0.56,0.72,5,https://www.eliteprospects.com/player/201914/mike-benning,2025-2026,ahl
+Josh Samanski,Bakersfield Condors,41,7,21,28,0.512,0.171,0.68,0.927,5,https://www.eliteprospects.com/player/427110/josh-samanski,2025-2026,ahl
+Jeremy Davies,Henderson Silver Knights,47,5,23,28,0.489,0.106,0.6,1.532,-2,https://www.eliteprospects.com/player/213454/jeremy-davies,2025-2026,ahl
+Riley Fiddler-Schultz,Rochester Americans,50,15,12,27,0.24,0.3,0.54,0.4,-8,https://www.eliteprospects.com/player/408219/riley-fiddler-schultz,2025-2026,ahl
+Tim Washe,San Diego Gulls,36,14,13,27,0.361,0.389,0.75,0.778,6,https://www.eliteprospects.com/player/321143/tim-washe,2025-2026,ahl
+Skyler Brind'Amour,Chicago Wolves,48,14,13,27,0.271,0.292,0.56,0.375,-2,https://www.eliteprospects.com/player/345585/skyler-brind-amour,2025-2026,ahl
+Tye Felhaber,Colorado Eagles,48,14,13,27,0.271,0.292,0.56,0.667,14,https://www.eliteprospects.com/player/251448/tye-felhaber,2025-2026,ahl
+Jared Wright,Ontario Reign,52,14,13,27,0.25,0.269,0.52,0.212,23,https://www.eliteprospects.com/player/616241/jared-wright,2025-2026,ahl
+Ben Hemmerling,Henderson Silver Knights,44,13,14,27,0.318,0.295,0.61,0.318,19,https://www.eliteprospects.com/player/558211/ben-hemmerling,2025-2026,ahl
+Alexander Nylander,Toronto Marlies,44,11,16,27,0.364,0.25,0.61,0.182,-4,https://www.eliteprospects.com/player/212641/alexander-nylander,2025-2026,ahl
+Frederic Brunet,Providence Bruins,50,10,17,27,0.34,0.2,0.54,0.44,11,https://www.eliteprospects.com/player/502761/frederic-brunet,2025-2026,ahl
+Philip Tomasino,totals,33,8,19,27,0.576,0.242,0.82,0.818,1,https://www.eliteprospects.com/player/418531/philip-tomasino,2025-2026,ahl
+Matthew Highmore,Bridgeport Islanders,52,8,19,27,0.365,0.154,0.52,0.192,-1,https://www.eliteprospects.com/player/130125/matthew-highmore,2025-2026,ahl
+Kai Uchacz,Henderson Silver Knights,44,7,20,27,0.455,0.159,0.61,0.523,-7,https://www.eliteprospects.com/player/505754/kai-uchacz,2025-2026,ahl
+Louie Belpedio,Hershey Bears,48,7,20,27,0.417,0.146,0.56,1.104,0,https://www.eliteprospects.com/player/177686/louie-belpedio,2025-2026,ahl
+Jordan Oesterle,Milwaukee Admirals,49,5,22,27,0.449,0.102,0.55,0.449,-14,https://www.eliteprospects.com/player/84700/jordan-oesterle,2025-2026,ahl
+Oliver Wahlstrom,San Jose Barracuda,42,18,8,26,0.19,0.429,0.62,0.667,-9,https://www.eliteprospects.com/player/241370/oliver-wahlstrom,2025-2026,ahl
+Joey Larson,Bridgeport Islanders,51,15,11,26,0.216,0.294,0.51,0.412,0,https://www.eliteprospects.com/player/359529/joey-larson,2025-2026,ahl
+Owen Sillinger,Cleveland Monsters,48,13,13,26,0.271,0.271,0.54,0.854,-6,https://www.eliteprospects.com/player/199994/owen-sillinger,2025-2026,ahl
+Walker Duehr,Manitoba Moose,39,12,14,26,0.359,0.308,0.67,0.462,12,https://www.eliteprospects.com/player/234647/walker-duehr,2025-2026,ahl
+Colin White,San Jose Barracuda,29,11,15,26,0.517,0.379,0.9,0.828,2,https://www.eliteprospects.com/player/183810/colin-white,2025-2026,ahl
+Nolan Foote,Charlotte Checkers,47,11,15,26,0.319,0.234,0.55,0.766,-4,https://www.eliteprospects.com/player/240385/nolan-foote,2025-2026,ahl
+Ben Berard,Abbotsford Canucks,50,11,15,26,0.3,0.22,0.52,0.3,-20,https://www.eliteprospects.com/player/297996/ben-berard,2025-2026,ahl
+Jack Williams,Cleveland Monsters,51,10,16,26,0.314,0.196,0.51,0.196,6,https://www.eliteprospects.com/player/498800/jack-williams,2025-2026,ahl
+Quentin Musty,San Jose Barracuda,37,9,17,26,0.459,0.243,0.7,0.811,-8,https://www.eliteprospects.com/player/685701/quentin-musty,2025-2026,ahl
+Alex Jefferies,Bridgeport Islanders,40,7,19,26,0.475,0.175,0.65,0.6,-1,https://www.eliteprospects.com/player/466015/alex-jefferies,2025-2026,ahl
+Garrett Pilon,Belleville Senators,38,6,20,26,0.526,0.158,0.68,0.053,1,https://www.eliteprospects.com/player/49041/garrett-pilon,2025-2026,ahl
+Nils Aman,Abbotsford Canucks,39,4,22,26,0.564,0.103,0.67,0.256,-4,https://www.eliteprospects.com/player/343876/nils-aman,2025-2026,ahl
+Derrick Pouliot,Hartford Wolf Pack,49,1,25,26,0.51,0.02,0.53,0.612,-10,https://www.eliteprospects.com/player/59741/derrick-pouliot,2025-2026,ahl
+Yegor Sidorov,San Diego Gulls,48,13,12,25,0.25,0.271,0.52,0.667,-9,https://www.eliteprospects.com/player/679585/yegor-sidorov,2025-2026,ahl
+Trevor Kuntar,Rochester Americans,49,13,12,25,0.245,0.265,0.51,1.327,-6,https://www.eliteprospects.com/player/290309/trevor-kuntar,2025-2026,ahl
+Aleksanteri Kaskimaki,Springfield Thunderbirds,43,12,13,25,0.302,0.279,0.58,0.186,-18,https://www.eliteprospects.com/player/640621/aleksanteri-kaskimaki,2025-2026,ahl
+Aidan McDonough,Wilkes-Barre/Scranton Penguins,47,12,13,25,0.277,0.255,0.53,0.383,13,https://www.eliteprospects.com/player/348494/aidan-mcdonough,2025-2026,ahl
+Wyatt Bongiovanni,Belleville Senators,52,12,13,25,0.25,0.231,0.48,0.577,-10,https://www.eliteprospects.com/player/233479/wyatt-bongiovanni,2025-2026,ahl
+Nicolas Aube-Kubel,Iowa Wild,42,10,15,25,0.357,0.238,0.6,0.905,-2,https://www.eliteprospects.com/player/151146/nicolas-aube-kubel,2025-2026,ahl
+Jack Becker,Texas Stars,49,10,15,25,0.306,0.204,0.51,0.551,5,https://www.eliteprospects.com/player/248382/jack-becker,2025-2026,ahl
+Cameron Lund,San Jose Barracuda,37,9,16,25,0.432,0.243,0.68,0.324,-3,https://www.eliteprospects.com/player/603638/cameron-lund,2025-2026,ahl
+Francesco Pinelli,Ontario Reign,45,9,16,25,0.356,0.2,0.56,0.733,10,https://www.eliteprospects.com/player/617488/francesco-pinelli,2025-2026,ahl
+Daniil Miromanov,Calgary Wranglers,46,9,16,25,0.348,0.196,0.54,0.391,-2,https://www.eliteprospects.com/player/289399/daniil-miromanov,2025-2026,ahl
+Henrik Rybinski,Hershey Bears,46,9,16,25,0.348,0.196,0.54,0.435,10,https://www.eliteprospects.com/player/351688/henrik-rybinski,2025-2026,ahl
+Kole Lind,Texas Stars,49,9,16,25,0.327,0.184,0.51,1.408,-6,https://www.eliteprospects.com/player/200933/kole-lind,2025-2026,ahl
+Jaroslav Chmelar,Hartford Wolf Pack,44,8,17,25,0.386,0.182,0.57,0.955,-6,https://www.eliteprospects.com/player/579280/jaroslav-chmelar,2025-2026,ahl
+Dmitri Simashev,Tucson Roadrunners,27,7,18,25,0.667,0.259,0.93,0.852,0,https://www.eliteprospects.com/player/708607/dmitri-simashev,2025-2026,ahl
+Carter Yakemchuk,Belleville Senators,41,7,18,25,0.439,0.171,0.61,0.537,-33,https://www.eliteprospects.com/player/599451/carter-yakemchuk,2025-2026,ahl
+Anton Wahlberg,Rochester Americans,47,6,19,25,0.404,0.128,0.53,0.255,12,https://www.eliteprospects.com/player/643681/anton-wahlberg,2025-2026,ahl
+Corey Schueneman,totals,50,4,21,25,0.42,0.08,0.5,0.28,1,https://www.eliteprospects.com/player/118661/corey-schueneman,2025-2026,ahl
+Eduards Tralmaks,Grand Rapids Griffins,44,18,6,24,0.136,0.409,0.55,0.136,19,https://www.eliteprospects.com/player/214279/eduards-tralmaks,2025-2026,ahl
+Brian Halonen,Utica Comets,33,15,9,24,0.273,0.455,0.73,0.545,7,https://www.eliteprospects.com/player/419044/brian-halonen,2025-2026,ahl
+Samuel Fagemo,Manitoba Moose,47,14,10,24,0.213,0.298,0.51,0.34,-9,https://www.eliteprospects.com/player/288459/samuel-fagemo,2025-2026,ahl
+Rafael Harvey-Pinard,Wilkes-Barre/Scranton Penguins,48,13,11,24,0.229,0.271,0.5,0.604,10,https://www.eliteprospects.com/player/354123/rafael-harvey-pinard,2025-2026,ahl
+Hunter Drew,Bridgeport Islanders,49,13,11,24,0.224,0.265,0.49,1.878,-2,https://www.eliteprospects.com/player/267823/hunter-drew,2025-2026,ahl
+Lassi Thomson,Belleville Senators,51,13,11,24,0.216,0.255,0.47,1.02,4,https://www.eliteprospects.com/player/372919/lassi-thomson,2025-2026,ahl
+Dylan Coghlan,Henderson Silver Knights,37,11,13,24,0.351,0.297,0.65,0.324,5,https://www.eliteprospects.com/player/247901/dylan-coghlan,2025-2026,ahl
+Alex Bump,Lehigh Valley Phantoms,33,10,14,24,0.424,0.303,0.73,0.545,-1,https://www.eliteprospects.com/player/623782/alex-bump,2025-2026,ahl
+Yegor Afanasyev,San Jose Barracuda,41,10,14,24,0.341,0.244,0.59,1.049,4,https://www.eliteprospects.com/player/450909/yegor-afanasyev,2025-2026,ahl
+Maksymilian Szuber,Tucson Roadrunners,44,10,14,24,0.318,0.227,0.55,0.864,5,https://www.eliteprospects.com/player/393666/maksymilian-szuber,2025-2026,ahl
+Antonio Stranges,Texas Stars,48,10,14,24,0.292,0.208,0.5,0.083,-21,https://www.eliteprospects.com/player/369848/antonio-stranges,2025-2026,ahl
+Oskar Olausson,Iowa Wild,44,9,15,24,0.341,0.205,0.55,0.318,-3,https://www.eliteprospects.com/player/430916/oskar-olausson,2025-2026,ahl
+Noel Gunler,Chicago Wolves,47,9,15,24,0.319,0.191,0.51,0.596,-11,https://www.eliteprospects.com/player/393444/noel-gunler,2025-2026,ahl
+Kyle Criscuolo,Utica Comets,40,8,16,24,0.4,0.2,0.6,0.5,-5,https://www.eliteprospects.com/player/74212/kyle-criscuolo,2025-2026,ahl
+Atro Leppanen,Bakersfield Condors,32,6,18,24,0.562,0.188,0.75,0.562,-6,https://www.eliteprospects.com/player/326877/atro-leppanen,2025-2026,ahl
+Ty Nelson,Coachella Valley Firebirds,45,6,18,24,0.4,0.133,0.53,0.489,9,https://www.eliteprospects.com/player/603794/ty-nelson,2025-2026,ahl
+Juraj Pekarcik,Springfield Thunderbirds,49,6,18,24,0.367,0.122,0.49,0.204,-10,https://www.eliteprospects.com/player/731900/juraj-pekarcik,2025-2026,ahl
+Gerald Mayhew,Iowa Wild,39,14,9,23,0.231,0.359,0.59,0.718,-15,https://www.eliteprospects.com/player/151849/gerald-mayhew,2025-2026,ahl
+Aatu Jamsen,Ontario Reign,49,14,9,23,0.184,0.286,0.47,0.449,1,https://www.eliteprospects.com/player/557189/aatu-jamsen,2025-2026,ahl
+Gabe Klassen,Wilkes-Barre/Scranton Penguins,41,13,10,23,0.244,0.317,0.56,0.39,4,https://www.eliteprospects.com/player/485361/gabe-klassen,2025-2026,ahl
+Brendan Brisson,Hartford Wolf Pack,46,13,10,23,0.217,0.283,0.5,0.826,-21,https://www.eliteprospects.com/player/299642/brendan-brisson,2025-2026,ahl
+Jonas Rondbjerg,Henderson Silver Knights,36,12,11,23,0.306,0.333,0.64,0.167,12,https://www.eliteprospects.com/player/220099/jonas-rondbjerg,2025-2026,ahl
+Reid Schaefer,Milwaukee Admirals,28,11,12,23,0.429,0.393,0.82,1.679,3,https://www.eliteprospects.com/player/506838/reid-schaefer,2025-2026,ahl
+Carson Meyer,Rochester Americans,34,11,12,23,0.353,0.324,0.68,0.176,-2,https://www.eliteprospects.com/player/272540/carson-meyer,2025-2026,ahl
+Bogdan Trineyev,Hershey Bears,41,10,13,23,0.317,0.244,0.56,0.39,5,https://www.eliteprospects.com/player/537760/bogdan-trineyev,2025-2026,ahl
+Kasper Halttunen,San Jose Barracuda,45,10,13,23,0.289,0.222,0.51,0.778,1,https://www.eliteprospects.com/player/709538/kasper-halttunen,2025-2026,ahl
+Brendan Furry,Syracuse Crunch,51,10,13,23,0.255,0.196,0.45,0.392,-6,https://www.eliteprospects.com/player/474371/brendan-furry,2025-2026,ahl
+Jackson Hallum,Henderson Silver Knights,46,8,15,23,0.326,0.174,0.5,0.913,12,https://www.eliteprospects.com/player/587538/jackson-hallum,2025-2026,ahl
+Brian Pinho,Charlotte Checkers,50,8,15,23,0.3,0.16,0.46,0.32,6,https://www.eliteprospects.com/player/132024/brian-pinho,2025-2026,ahl
+Marshall Warren,Bridgeport Islanders,38,4,19,23,0.5,0.105,0.61,0.684,8,https://www.eliteprospects.com/player/381692/marshall-warren,2025-2026,ahl
+Kevin Korchinski,Rockford IceHogs,45,2,21,23,0.467,0.044,0.51,1.022,-22,https://www.eliteprospects.com/player/516605/kevin-korchinski,2025-2026,ahl
+Graeme Clarke,Hershey Bears,47,14,8,22,0.17,0.298,0.47,0.426,-9,https://www.eliteprospects.com/player/286955/graeme-clarke,2025-2026,ahl
+Evan Vierling,Chicago Wolves,47,12,10,22,0.213,0.255,0.47,0.213,-8,https://www.eliteprospects.com/player/503023/evan-vierling,2025-2026,ahl
+Luke Haymes,Toronto Marlies,48,12,10,22,0.208,0.25,0.46,0.375,-6,https://www.eliteprospects.com/player/479794/luke-haymes,2025-2026,ahl
+Gavin Hayes,Rockford IceHogs,49,12,10,22,0.204,0.245,0.45,0.286,-12,https://www.eliteprospects.com/player/635399/gavin-hayes,2025-2026,ahl
+Tucker Robertson,Lehigh Valley Phantoms,41,11,11,22,0.268,0.268,0.54,0.707,9,https://www.eliteprospects.com/player/619190/tucker-robertson,2025-2026,ahl
+Harrison Scott,Texas Stars,50,11,11,22,0.22,0.22,0.44,0.44,2,https://www.eliteprospects.com/player/393183/harrison-scott,2025-2026,ahl
+Alexis Gendron,Lehigh Valley Phantoms,44,10,12,22,0.273,0.227,0.5,0.909,-11,https://www.eliteprospects.com/player/485293/alexis-gendron,2025-2026,ahl
+Jacob Gaucher,Lehigh Valley Phantoms,47,10,12,22,0.255,0.213,0.47,0.766,-9,https://www.eliteprospects.com/player/290162/jacob-gaucher,2025-2026,ahl
+Lenni Hameenaho,Utica Comets,34,9,13,22,0.382,0.265,0.65,0.294,-13,https://www.eliteprospects.com/player/642183/lenni-hameenaho,2025-2026,ahl
+Sammy Walker,Tucson Roadrunners,44,9,13,22,0.295,0.205,0.5,0.273,-5,https://www.eliteprospects.com/player/300078/sammy-walker,2025-2026,ahl
+Jaret Anderson-Dolan,Manitoba Moose,47,8,14,22,0.298,0.17,0.47,0.809,-4,https://www.eliteprospects.com/player/278859/jaret-anderson-dolan,2025-2026,ahl
+Oscar Fisker Molgaard,Coachella Valley Firebirds,36,7,15,22,0.417,0.194,0.61,0.167,0,https://www.eliteprospects.com/player/729161/oscar-fisker-molgaard,2025-2026,ahl
+Christian Wolanin,Providence Bruins,35,6,16,22,0.457,0.171,0.63,0.171,11,https://www.eliteprospects.com/player/188788/christian-wolanin,2025-2026,ahl
+Lleyton Roed,Coachella Valley Firebirds,43,6,16,22,0.372,0.14,0.51,0.186,10,https://www.eliteprospects.com/player/551465/lleyton-roed,2025-2026,ahl
+Ondrej Becher,Grand Rapids Griffins,46,6,16,22,0.348,0.13,0.48,0.652,11,https://www.eliteprospects.com/player/593187/ond%C5%99ej-becher,2025-2026,ahl
+Jared Davidson,Laval Rocket,35,14,7,21,0.2,0.4,0.6,1.314,1,https://www.eliteprospects.com/player/475625/jared-davidson,2025-2026,ahl
+Angus Crookshank,Utica Comets,40,14,7,21,0.175,0.35,0.53,0.2,-14,https://www.eliteprospects.com/player/201687/angus-crookshank,2025-2026,ahl
+Artem Shlaine,Texas Stars,48,13,8,21,0.167,0.271,0.44,0.208,-5,https://www.eliteprospects.com/player/498107/artem-shlaine,2025-2026,ahl
+Taylor Ward,Ontario Reign,32,12,9,21,0.281,0.375,0.66,0.719,1,https://www.eliteprospects.com/player/247054/taylor-ward,2025-2026,ahl
+Robert Mastrosimone,Charlotte Checkers,28,10,11,21,0.393,0.357,0.75,0.571,9,https://www.eliteprospects.com/player/385680/robert-mastrosimone,2025-2026,ahl
+Oasiz Wiesblatt,Milwaukee Admirals,45,9,12,21,0.267,0.2,0.47,2.044,-12,https://www.eliteprospects.com/player/562425/oasiz-wiesblatt,2025-2026,ahl
+Jan Mysak,San Diego Gulls,47,9,12,21,0.255,0.191,0.45,0.66,2,https://www.eliteprospects.com/player/427906/jan-mysak,2025-2026,ahl
+Adam Sykora,Hartford Wolf Pack,50,9,12,21,0.24,0.18,0.42,0.28,2,https://www.eliteprospects.com/player/527426/adam-sykora,2025-2026,ahl
+Cross Hanas,Texas Stars,37,8,13,21,0.351,0.216,0.57,0.595,3,https://www.eliteprospects.com/player/252712/cross-hanas,2025-2026,ahl
+Kale Clague,Manitoba Moose,44,8,13,21,0.295,0.182,0.48,0.682,-12,https://www.eliteprospects.com/player/108472/kale-clague,2025-2026,ahl
+Antti Tuomisto,Grand Rapids Griffins,49,7,14,21,0.286,0.143,0.43,0.367,21,https://www.eliteprospects.com/player/396170/antti-tuomisto,2025-2026,ahl
+Trey Taylor,Texas Stars,49,7,14,21,0.286,0.143,0.43,0.449,-1,https://www.eliteprospects.com/player/485649/trey-taylor,2025-2026,ahl
+Filip Mesar,Laval Rocket,54,6,15,21,0.278,0.111,0.39,0.333,-1,https://www.eliteprospects.com/player/527430/filip-mesar,2025-2026,ahl
+Cole McWard,Bridgeport Islanders,43,5,16,21,0.372,0.116,0.49,0.186,-1,https://www.eliteprospects.com/player/376492/cole-mcward,2025-2026,ahl
+Owen Pickering,Wilkes-Barre/Scranton Penguins,50,5,16,21,0.32,0.1,0.42,0.44,12,https://www.eliteprospects.com/player/580641/owen-pickering,2025-2026,ahl
+Jorian Donovan,Belleville Senators,54,4,17,21,0.315,0.074,0.39,0.944,-9,https://www.eliteprospects.com/player/562241/jorian-donovan,2025-2026,ahl
+Ville Heinola,Manitoba Moose,44,3,18,21,0.409,0.068,0.48,0.545,-2,https://www.eliteprospects.com/player/428795/ville-heinola,2025-2026,ahl
+Wyatt Aamodt,Colorado Eagles,49,3,18,21,0.367,0.061,0.43,0.653,25,https://www.eliteprospects.com/player/300969/wyatt-aamodt,2025-2026,ahl
+Jani Nyman,Coachella Valley Firebirds,22,15,5,20,0.227,0.682,0.91,0.864,13,https://www.eliteprospects.com/player/611825/jani-nyman,2025-2026,ahl
+Jonathan Lekkerimaki,Abbotsford Canucks,21,13,7,20,0.333,0.619,0.95,0.381,5,https://www.eliteprospects.com/player/649220/jonathan-lekkerimaki,2025-2026,ahl
+Austin Watson,Grand Rapids Griffins,43,11,9,20,0.209,0.256,0.47,2.86,5,https://www.eliteprospects.com/player/33753/austin-watson,2025-2026,ahl
+Lucas Carlsson,San Jose Barracuda,46,11,9,20,0.196,0.239,0.43,0.609,-3,https://www.eliteprospects.com/player/212334/lucas-carlsson,2025-2026,ahl
+Mitch McLain,Henderson Silver Knights,46,11,9,20,0.196,0.239,0.43,1.543,-9,https://www.eliteprospects.com/player/193228/mitch-mclain,2025-2026,ahl
+Florian Xhekaj,Laval Rocket,49,10,10,20,0.204,0.204,0.41,2.571,6,https://www.eliteprospects.com/player/620316/florian-xhekaj,2025-2026,ahl
+Raphael Lavoie,Henderson Silver Knights,21,9,11,20,0.524,0.429,0.95,0.19,-5,https://www.eliteprospects.com/player/335712/raphael-lavoie,2025-2026,ahl
+Xavier Parent,Utica Comets,41,9,11,20,0.268,0.22,0.49,1.61,-6,https://www.eliteprospects.com/player/241379/xavier-parent,2025-2026,ahl
+Brett Chorske,Charlotte Checkers,47,9,11,20,0.234,0.191,0.43,0.298,6,https://www.eliteprospects.com/player/511065/brett-chorske,2025-2026,ahl
+Dylan Roobroeck,Hartford Wolf Pack,50,9,11,20,0.22,0.18,0.4,1.04,-11,https://www.eliteprospects.com/player/603612/dylan-roobroeck,2025-2026,ahl
+Chase Wouters,Abbotsford Canucks,51,9,11,20,0.216,0.176,0.39,0.961,-24,https://www.eliteprospects.com/player/282350/chase-wouters,2025-2026,ahl
+Andrew Agozzino,Tucson Roadrunners,33,8,12,20,0.364,0.242,0.61,0.242,-5,https://www.eliteprospects.com/player/23816/andrew-agozzino,2025-2026,ahl
+Phil Di Giuseppe,Manitoba Moose,46,8,12,20,0.261,0.174,0.43,1.043,-14,https://www.eliteprospects.com/player/62746/phil-di-giuseppe,2025-2026,ahl
+Corson Ceulemans,Cleveland Monsters,49,8,12,20,0.245,0.163,0.41,0.714,-7,https://www.eliteprospects.com/player/475841/corson-ceulemans,2025-2026,ahl
+Marc Del Gaizo,Laval Rocket,45,7,13,20,0.289,0.156,0.44,0.533,20,https://www.eliteprospects.com/player/201481/marc-del-gaizo,2025-2026,ahl
+Jamie Engelbert,Rockford IceHogs,49,7,13,20,0.265,0.143,0.41,0.653,-12,https://www.eliteprospects.com/player/416714/jamie-engelbert,2025-2026,ahl
+Owen Beck,Laval Rocket,40,6,14,20,0.35,0.15,0.5,0.6,0,https://www.eliteprospects.com/player/647942/owen-beck,2025-2026,ahl
+Dylan Gambrell,Iowa Wild,22,5,15,20,0.682,0.227,0.91,0.091,-3,https://www.eliteprospects.com/player/192301/dylan-gambrell,2025-2026,ahl
+Victor Soderstrom,Providence Bruins,38,5,15,20,0.395,0.132,0.53,0.711,4,https://www.eliteprospects.com/player/344555/victor-soderstrom,2025-2026,ahl
+Samuel Bolduc,Ontario Reign,51,5,15,20,0.294,0.098,0.39,0.353,6,https://www.eliteprospects.com/player/356985/samuel-bolduc,2025-2026,ahl
+David Spacek,Iowa Wild,37,4,16,20,0.432,0.108,0.54,0.27,-6,https://www.eliteprospects.com/player/559551/david-spacek,2025-2026,ahl
+Josiah Slavin,Chicago Wolves,48,4,16,20,0.333,0.083,0.42,0.375,0,https://www.eliteprospects.com/player/324913/josiah-slavin,2025-2026,ahl
+Erik Gustafsson,Grand Rapids Griffins,22,2,18,20,0.818,0.091,0.91,0.955,18,https://www.eliteprospects.com/player/15372/erik-gustafsson,2025-2026,ahl
+Lucas Mercuri,Syracuse Crunch,47,11,8,19,0.17,0.234,0.4,1.638,13,https://www.eliteprospects.com/player/296187/lucas-mercuri,2025-2026,ahl
+Hunter Haight,Iowa Wild,37,10,9,19,0.243,0.27,0.51,0.324,-14,https://www.eliteprospects.com/player/603614/hunter-haight,2025-2026,ahl
+Danny Zhilkin,Manitoba Moose,41,10,9,19,0.22,0.244,0.46,0.293,-5,https://www.eliteprospects.com/player/619189/danny-zhilkin,2025-2026,ahl
+Daniil But,Tucson Roadrunners,22,9,10,19,0.455,0.409,0.86,0.545,-7,https://www.eliteprospects.com/player/779971/daniil-but,2025-2026,ahl
+Brendan Gaunce,Cleveland Monsters,23,9,10,19,0.435,0.391,0.83,0.609,-4,https://www.eliteprospects.com/player/76290/brendan-gaunce,2025-2026,ahl
+Jason Polin,Colorado Eagles,36,9,10,19,0.278,0.25,0.53,0.278,3,https://www.eliteprospects.com/player/284027/jason-polin,2025-2026,ahl
+Justin Pearson,Cleveland Monsters,43,9,10,19,0.233,0.209,0.44,0.651,5,https://www.eliteprospects.com/player/386534/justin-pearson,2025-2026,ahl
+Shane Lachance,Utica Comets,46,9,10,19,0.217,0.196,0.41,0.261,-17,https://www.eliteprospects.com/player/659483/shane-lachance,2025-2026,ahl
+Hunter McKown,Cleveland Monsters,48,9,10,19,0.208,0.188,0.4,0.521,-11,https://www.eliteprospects.com/player/417327/hunter-mckown,2025-2026,ahl
+Sandis Vilmanis,Charlotte Checkers,31,8,11,19,0.355,0.258,0.61,0.516,7,https://www.eliteprospects.com/player/638444/sandis-vilmanis,2025-2026,ahl
+Riese Gaber,Charlotte Checkers,34,8,11,19,0.324,0.235,0.56,0.941,9,https://www.eliteprospects.com/player/283845/riese-gaber,2025-2026,ahl
+William Trudeau,Laval Rocket,45,8,11,19,0.244,0.178,0.42,0.933,8,https://www.eliteprospects.com/player/425657/william-trudeau,2025-2026,ahl
+Karsen Dorwart,Lehigh Valley Phantoms,49,8,11,19,0.224,0.163,0.39,0.286,-4,https://www.eliteprospects.com/player/561422/karsen-dorwart,2025-2026,ahl
+Trevor Connelly,Henderson Silver Knights,21,7,12,19,0.571,0.333,0.9,0.19,-7,https://www.eliteprospects.com/player/597781/trevor-connelly,2025-2026,ahl
+Eduard Sale,Coachella Valley Firebirds,37,7,12,19,0.324,0.189,0.51,0.27,2,https://www.eliteprospects.com/player/595291/eduard-sale,2025-2026,ahl
+Ryan Tverberg,Toronto Marlies,44,7,12,19,0.273,0.159,0.43,0.455,5,https://www.eliteprospects.com/player/201945/ryan-tverberg,2025-2026,ahl
+Jagger Joshua,Rochester Americans,49,7,12,19,0.245,0.143,0.39,1.51,-1,https://www.eliteprospects.com/player/317021/jagger-joshua,2025-2026,ahl
+Gracyn Sawchyn,Charlotte Checkers,29,6,13,19,0.448,0.207,0.66,0.069,11,https://www.eliteprospects.com/player/535611/gracyn-sawchyn,2025-2026,ahl
+Cooper Marody,Lehigh Valley Phantoms,36,6,13,19,0.361,0.167,0.53,0.278,-3,https://www.eliteprospects.com/player/248334/cooper-marody,2025-2026,ahl
+Daylan Kuefler,Bridgeport Islanders,49,6,13,19,0.265,0.122,0.39,0.612,4,https://www.eliteprospects.com/player/413108/daylan-kuefler,2025-2026,ahl
+Roland McKeown,San Diego Gulls,49,5,14,19,0.286,0.102,0.39,0.673,-3,https://www.eliteprospects.com/player/189364/roland-mckeown,2025-2026,ahl
+Tyler Angle,Grand Rapids Griffins,41,4,15,19,0.366,0.098,0.46,0.439,10,https://www.eliteprospects.com/player/403916/tyler-angle,2025-2026,ahl
+William Villeneuve,Toronto Marlies,43,3,16,19,0.372,0.07,0.44,0.791,-8,https://www.eliteprospects.com/player/410562/william-villeneuve,2025-2026,ahl
+Tristan Bertucci,Texas Stars,44,3,16,19,0.364,0.068,0.43,0.682,-1,https://www.eliteprospects.com/player/603546/tristan-bertucci,2025-2026,ahl
+Seamus Casey,Utica Comets,29,1,18,19,0.621,0.034,0.66,0.448,-13,https://www.eliteprospects.com/player/526229/seamus-casey,2025-2026,ahl
+Olle Lycksell,Belleville Senators,28,10,8,18,0.286,0.357,0.64,0.286,-10,https://www.eliteprospects.com/player/265290/olle-lycksell,2025-2026,ahl
+Borya Valis,Toronto Marlies,42,10,8,18,0.19,0.238,0.43,0.738,-2,https://www.eliteprospects.com/player/571887/borya-valis,2025-2026,ahl
+Matyas Sapovaliv,Henderson Silver Knights,47,10,8,18,0.17,0.213,0.38,0.085,-10,https://www.eliteprospects.com/player/559506/matyas-sapovaliv,2025-2026,ahl
+Nathan Smith,Charlotte Checkers,26,9,9,18,0.346,0.346,0.69,1.192,-10,https://www.eliteprospects.com/player/484201/nathan-smith,2025-2026,ahl
+Samuel Savoie,Rockford IceHogs,47,9,9,18,0.191,0.191,0.38,0.872,-9,https://www.eliteprospects.com/player/573943/samuel-savoie,2025-2026,ahl
+Tyler Tullio,Tucson Roadrunners,30,8,10,18,0.333,0.267,0.6,0.467,2,https://www.eliteprospects.com/player/201944/tyler-tullio,2025-2026,ahl
+Danila Klimovich,Abbotsford Canucks,44,8,10,18,0.227,0.182,0.41,1.136,-18,https://www.eliteprospects.com/player/618501/danila-klimovich,2025-2026,ahl
+Sam Colangelo,San Diego Gulls,29,7,11,18,0.379,0.241,0.62,0.138,-6,https://www.eliteprospects.com/player/386333/sam-colangelo,2025-2026,ahl
+Jordan Dumais,Cleveland Monsters,39,7,11,18,0.282,0.179,0.46,0.154,-10,https://www.eliteprospects.com/player/568363/jordan-dumais,2025-2026,ahl
+Viktor Neuchev,totals,43,7,11,18,0.256,0.163,0.42,0.14,0,https://www.eliteprospects.com/player/618304/viktor-neuchev,2025-2026,ahl
+Matteo Pietroniro,Syracuse Crunch,45,7,11,18,0.244,0.156,0.4,1.333,19,https://www.eliteprospects.com/player/266502/matteo-pietroniro,2025-2026,ahl
+Danton Heinen,totals,13,6,12,18,0.923,0.462,1.38,0.462,10,https://www.eliteprospects.com/player/105821/danton-heinen,2025-2026,ahl
+Brett Berard,Hartford Wolf Pack,34,6,12,18,0.353,0.176,0.53,1.235,-13,https://www.eliteprospects.com/player/201740/brett-berard,2025-2026,ahl
+Noel Nordh,Tucson Roadrunners,44,6,12,18,0.273,0.136,0.41,0.227,-7,https://www.eliteprospects.com/player/637582/noel-nordh,2025-2026,ahl
+Michael Karow,Texas Stars,48,6,12,18,0.25,0.125,0.38,0.292,20,https://www.eliteprospects.com/player/350368/michael-karow,2025-2026,ahl
+Nikita Novikov,Rochester Americans,48,6,12,18,0.25,0.125,0.38,0.875,6,https://www.eliteprospects.com/player/539224/nikita-novikov,2025-2026,ahl
+Rutger McGroarty,Wilkes-Barre/Scranton Penguins,15,5,13,18,0.867,0.333,1.2,0.133,9,https://www.eliteprospects.com/player/526095/rutger-mcgroarty,2025-2026,ahl
+Matt Dumba,Wilkes-Barre/Scranton Penguins,24,5,13,18,0.542,0.208,0.75,1.208,3,https://www.eliteprospects.com/player/53542/matt-dumba,2025-2026,ahl
+Isaak Phillips,Manitoba Moose,42,5,13,18,0.31,0.119,0.43,0.714,0,https://www.eliteprospects.com/player/416750/isaak-phillips,2025-2026,ahl
+Hugh McGing,Springfield Thunderbirds,46,5,13,18,0.283,0.109,0.39,0.913,-9,https://www.eliteprospects.com/player/233569/hugh-mcging,2025-2026,ahl
+Riley Heidt,Iowa Wild,49,5,13,18,0.265,0.102,0.37,0.531,-14,https://www.eliteprospects.com/player/565748/riley-heidt,2025-2026,ahl
+Tristan Allard,Syracuse Crunch,49,5,13,18,0.265,0.102,0.37,0.959,-1,https://www.eliteprospects.com/player/413671/tristan-allard,2025-2026,ahl
+Trevor Carrick,Charlotte Checkers,40,4,14,18,0.35,0.1,0.45,0.75,9,https://www.eliteprospects.com/player/69391/trevor-carrick,2025-2026,ahl
+Gavin Bayreuther,totals,43,4,14,18,0.326,0.093,0.42,0.698,9,https://www.eliteprospects.com/player/178941/gavin-bayreuther,2025-2026,ahl
+Jakub Rychlovsky,Grand Rapids Griffins,49,4,14,18,0.286,0.082,0.37,0.367,9,https://www.eliteprospects.com/player/386542/jakub-rychlovsky,2025-2026,ahl
+Tristan Luneau,San Diego Gulls,49,4,14,18,0.286,0.082,0.37,0.51,-11,https://www.eliteprospects.com/player/491564/tristan-luneau,2025-2026,ahl
+Will Butcher,Cleveland Monsters,43,3,15,18,0.349,0.07,0.42,0.186,-13,https://www.eliteprospects.com/player/97590/will-butcher,2025-2026,ahl
+Ethan Del Mastro,Rockford IceHogs,43,2,16,18,0.372,0.047,0.42,0.698,6,https://www.eliteprospects.com/player/525637/ethan-del-mastro,2025-2026,ahl
+Ben Gleason,Iowa Wild,45,1,17,18,0.378,0.022,0.4,0.4,-16,https://www.eliteprospects.com/player/233504/ben-gleason,2025-2026,ahl
+Daniil Gushchin,Colorado Eagles,29,13,4,17,0.138,0.448,0.59,0.621,3,https://www.eliteprospects.com/player/512924/daniil-gushchin,2025-2026,ahl
+Kevin Rooney,Tucson Roadrunners,28,11,6,17,0.214,0.393,0.61,0.214,3,https://www.eliteprospects.com/player/180925/kevin-rooney,2025-2026,ahl
+John Hayden,Coachella Valley Firebirds,45,11,6,17,0.133,0.244,0.38,2.156,-3,https://www.eliteprospects.com/player/151828/john-hayden,2025-2026,ahl
+Gabe Perreault,Hartford Wolf Pack,20,10,7,17,0.35,0.5,0.85,0.7,5,https://www.eliteprospects.com/player/637625/gabe-perreault,2025-2026,ahl
+Jake Leschyshyn,Rochester Americans,44,10,7,17,0.159,0.227,0.39,0.318,-9,https://www.eliteprospects.com/player/279125/jake-leschyshyn,2025-2026,ahl
+Roman Ahcan,Cleveland Monsters,46,10,7,17,0.152,0.217,0.37,1.174,8,https://www.eliteprospects.com/player/340279/roman-ahcan,2025-2026,ahl
+Wojciech Stachowiak,Syracuse Crunch,38,9,8,17,0.211,0.237,0.45,0.737,-6,https://www.eliteprospects.com/player/215916/wojciech-stachowiak,2025-2026,ahl
+Jan Jenik,Belleville Senators,41,9,8,17,0.195,0.22,0.41,0.61,0,https://www.eliteprospects.com/player/247318/jan-jenik,2025-2026,ahl
+Nikita Pavlychev,Chicago Wolves,46,9,8,17,0.174,0.196,0.37,0.674,3,https://www.eliteprospects.com/player/248436/nikita-pavlychev,2025-2026,ahl
+Ethan Edwards,Utica Comets,47,9,8,17,0.17,0.191,0.36,0.915,-9,https://www.eliteprospects.com/player/413501/ethan-edwards,2025-2026,ahl
+Zayde Wisdom,Lehigh Valley Phantoms,48,9,8,17,0.167,0.188,0.35,0.354,4,https://www.eliteprospects.com/player/537563/zayde-wisdom,2025-2026,ahl
+Dillon Dube,Springfield Thunderbirds,25,8,9,17,0.36,0.32,0.68,0.16,-12,https://www.eliteprospects.com/player/157256/dillon-dube,2025-2026,ahl
+Chris Terry,Bridgeport Islanders,44,8,9,17,0.205,0.182,0.39,0.273,-8,https://www.eliteprospects.com/player/14370/chris-terry,2025-2026,ahl
+Arttu Hyry,Texas Stars,26,7,10,17,0.385,0.269,0.65,0.5,-4,https://www.eliteprospects.com/player/470647/arttu-hyry,2025-2026,ahl
+Dylan Peterson,Springfield Thunderbirds,38,7,10,17,0.263,0.184,0.45,1.711,-12,https://www.eliteprospects.com/player/342192/dylan-peterson,2025-2026,ahl
+Brayden Yager,Manitoba Moose,47,6,11,17,0.234,0.128,0.36,0.17,-9,https://www.eliteprospects.com/player/565757/brayden-yager,2025-2026,ahl
+Juuso Valimaki,totals,20,5,12,17,0.6,0.25,0.85,0.4,11,https://www.eliteprospects.com/player/221525/juuso-valimaki,2025-2026,ahl
+Matthew Barbolini,Toronto Marlies,44,5,12,17,0.273,0.114,0.39,0.318,-10,https://www.eliteprospects.com/player/439045/matthew-barbolini,2025-2026,ahl
+Samuel Blais,Laval Rocket,18,4,13,17,0.722,0.222,0.94,1.889,5,https://www.eliteprospects.com/player/213830/samuel-blais,2025-2026,ahl
+Ian Mitchell,Grand Rapids Griffins,40,4,13,17,0.325,0.1,0.43,0.25,23,https://www.eliteprospects.com/player/201362/ian-mitchell,2025-2026,ahl
+Dysin Mayo,Cleveland Monsters,38,3,14,17,0.368,0.079,0.45,0.737,8,https://www.eliteprospects.com/player/120638/dysin-mayo,2025-2026,ahl
+Maxim Groshev,Syracuse Crunch,42,3,14,17,0.333,0.071,0.4,0.286,11,https://www.eliteprospects.com/player/532511/maxim-groshev,2025-2026,ahl
+Calen Addison,Utica Comets,43,3,14,17,0.326,0.07,0.4,0.372,-13,https://www.eliteprospects.com/player/278861/calen-addison,2025-2026,ahl
+Noah Chadwick,Toronto Marlies,48,3,14,17,0.292,0.062,0.35,0.417,-5,https://www.eliteprospects.com/player/603568/noah-chadwick,2025-2026,ahl
+Joe Hicketts,Ontario Reign,48,3,14,17,0.292,0.062,0.35,0.938,-6,https://www.eliteprospects.com/player/120210/joe-hicketts,2025-2026,ahl
+Casey Fitzgerald,Hartford Wolf Pack,49,2,15,17,0.306,0.041,0.35,1.367,-1,https://www.eliteprospects.com/player/177660/casey-fitzgerald,2025-2026,ahl
+Nikolas Brouillard,San Diego Gulls,44,1,16,17,0.364,0.023,0.39,0.614,12,https://www.eliteprospects.com/player/128256/nikolas-brouillard,2025-2026,ahl
+Carson Rehkopf,Coachella Valley Firebirds,48,11,5,16,0.104,0.229,0.33,0.375,-1,https://www.eliteprospects.com/player/603556/carson-rehkopf,2025-2026,ahl
+Jakub Stancl,Springfield Thunderbirds,39,9,7,16,0.179,0.231,0.41,0.308,-5,https://www.eliteprospects.com/player/672903/jakub-stancl,2025-2026,ahl
+Oskar Pettersson,Belleville Senators,51,9,7,16,0.137,0.176,0.31,0.314,-8,https://www.eliteprospects.com/player/562987/oskar-pettersson,2025-2026,ahl
+Brett Harrison,Providence Bruins,43,8,8,16,0.186,0.186,0.37,0.093,6,https://www.eliteprospects.com/player/529247/brett-harrison,2025-2026,ahl
+Denver Barkey,Lehigh Valley Phantoms,26,7,9,16,0.346,0.269,0.62,0.769,-2,https://www.eliteprospects.com/player/723026/denver-barkey,2025-2026,ahl
+Jacob Melanson,Coachella Valley Firebirds,26,7,9,16,0.346,0.269,0.62,1.077,7,https://www.eliteprospects.com/player/473633/jacob-melanson,2025-2026,ahl
+Cedric Pare,Toronto Marlies,41,7,9,16,0.22,0.171,0.39,0.878,0,https://www.eliteprospects.com/player/319958/cedric-pare,2025-2026,ahl
+Nathan Gaucher,San Diego Gulls,44,7,9,16,0.205,0.159,0.36,0.886,1,https://www.eliteprospects.com/player/340644/nathan-gaucher,2025-2026,ahl
+Damien Carfagna,Bakersfield Condors,45,7,9,16,0.2,0.156,0.36,0.4,10,https://www.eliteprospects.com/player/478646/damien-carfagna,2025-2026,ahl
+Carson Lambos,Iowa Wild,48,7,9,16,0.188,0.146,0.33,0.708,-4,https://www.eliteprospects.com/player/472875/carson-lambos,2025-2026,ahl
+Tyler Boucher,Belleville Senators,29,6,10,16,0.345,0.207,0.55,0.897,6,https://www.eliteprospects.com/player/478374/tyler-boucher,2025-2026,ahl
+Joey Anderson,Rockford IceHogs,31,6,10,16,0.323,0.194,0.52,0.129,4,https://www.eliteprospects.com/player/247964/joey-anderson,2025-2026,ahl
+Koehn Ziemmer,Ontario Reign,37,6,10,16,0.27,0.162,0.43,0.351,9,https://www.eliteprospects.com/player/564977/koehn-ziemmer,2025-2026,ahl
+Rhett Pitlick,Bakersfield Condors,44,6,10,16,0.227,0.136,0.36,0.5,-11,https://www.eliteprospects.com/player/497477/rhett-pitlick,2025-2026,ahl
+Ben Jones,Iowa Wild,18,5,11,16,0.611,0.278,0.89,0.667,-2,https://www.eliteprospects.com/player/273677/ben-jones,2025-2026,ahl
+Matthew Strome,Hershey Bears,36,5,11,16,0.306,0.139,0.44,0.556,1,https://www.eliteprospects.com/player/268417/matthew-strome,2025-2026,ahl
+Jakub Brabenec,Henderson Silver Knights,39,5,11,16,0.282,0.128,0.41,0.359,-3,https://www.eliteprospects.com/player/522504/jakub-brabenec,2025-2026,ahl
+Jack Rathbone,Rochester Americans,41,5,11,16,0.268,0.122,0.39,0.512,-10,https://www.eliteprospects.com/player/311766/jack-rathbone,2025-2026,ahl
+Nick Cicek,Calgary Wranglers,51,5,11,16,0.216,0.098,0.31,1.431,-10,https://www.eliteprospects.com/player/296031/nick-cicek,2025-2026,ahl
+Jack Studnicka,Charlotte Checkers,21,4,12,16,0.571,0.19,0.76,0.952,-2,https://www.eliteprospects.com/player/284096/jack-studnicka,2025-2026,ahl
+David Reinbacher,Laval Rocket,40,4,12,16,0.3,0.1,0.4,0.6,10,https://www.eliteprospects.com/player/703646/david-reinbacher,2025-2026,ahl
+Gustav Olofsson,Coachella Valley Firebirds,27,2,14,16,0.519,0.074,0.59,0.519,15,https://www.eliteprospects.com/player/39017/gustav-olofsson,2025-2026,ahl
+Max Jones,Bakersfield Condors,33,10,5,15,0.152,0.303,0.45,1.788,0,https://www.eliteprospects.com/player/233448/max-jones,2025-2026,ahl
+Tuomas Uronen,Henderson Silver Knights,43,10,5,15,0.116,0.233,0.35,0.372,1,https://www.eliteprospects.com/player/540333/tuomas-uronen,2025-2026,ahl
+Bryce McConnell-Barker,Hartford Wolf Pack,47,8,7,15,0.149,0.17,0.32,0.298,-9,https://www.eliteprospects.com/player/640853/bryce-mcconnell-barker,2025-2026,ahl
+Ethan Cardwell,San Jose Barracuda,24,7,8,15,0.333,0.292,0.63,0.708,2,https://www.eliteprospects.com/player/201866/ethan-cardwell,2025-2026,ahl
+Mitchell Stephens,Coachella Valley Firebirds,47,7,8,15,0.17,0.149,0.32,0.426,-11,https://www.eliteprospects.com/player/186392/mitchell-stephens,2025-2026,ahl
+John Farinacci,Providence Bruins,50,7,8,15,0.16,0.14,0.3,0.12,0,https://www.eliteprospects.com/player/445599/john-farinacci,2025-2026,ahl
+Lucas Condotta,Laval Rocket,53,7,8,15,0.151,0.132,0.28,1.415,9,https://www.eliteprospects.com/player/238558/lucas-condotta,2025-2026,ahl
+Carl Grundstrom,Lehigh Valley Phantoms,19,6,9,15,0.474,0.316,0.79,0.316,5,https://www.eliteprospects.com/player/113516/carl-grundstrom,2025-2026,ahl
+Jon-Randall Avon,Coachella Valley Firebirds,23,6,9,15,0.391,0.261,0.65,0.261,0,https://www.eliteprospects.com/player/582515/jon-randall-avon,2025-2026,ahl
+Joona Koppanen,Wilkes-Barre/Scranton Penguins,27,6,9,15,0.333,0.222,0.56,0.148,12,https://www.eliteprospects.com/player/279893/joona-koppanen,2025-2026,ahl
+Clark Bishop,Calgary Wranglers,52,6,9,15,0.173,0.115,0.29,0.942,-8,https://www.eliteprospects.com/player/191376/clark-bishop,2025-2026,ahl
+Jonathan Gruden,Utica Comets,46,5,10,15,0.217,0.109,0.33,0.935,-4,https://www.eliteprospects.com/player/276187/jonathan-gruden,2025-2026,ahl
+Daniel D'Amato,Bakersfield Condors,47,5,10,15,0.213,0.106,0.32,0.426,4,https://www.eliteprospects.com/player/583011/daniel-d-amato,2025-2026,ahl
+Garrett Wilson,Lehigh Valley Phantoms,48,4,11,15,0.229,0.083,0.31,2.021,-2,https://www.eliteprospects.com/player/23809/garrett-wilson,2025-2026,ahl
+Nate Danielson,Grand Rapids Griffins,18,3,12,15,0.667,0.167,0.83,0.222,7,https://www.eliteprospects.com/player/562426/nate-danielson,2025-2026,ahl
+Henry Thrun,Toronto Marlies,34,3,12,15,0.353,0.088,0.44,0.441,-2,https://www.eliteprospects.com/player/445218/henry-thrun,2025-2026,ahl
+Riley Stillman,Bakersfield Condors,37,3,12,15,0.324,0.081,0.41,1.541,-6,https://www.eliteprospects.com/player/252469/riley-stillman,2025-2026,ahl
+Sawyer Mynio,Abbotsford Canucks,40,3,12,15,0.3,0.075,0.38,0.55,-20,https://www.eliteprospects.com/player/603585/sawyer-mynio,2025-2026,ahl
+Jean-Luc Foudy,Iowa Wild,46,3,12,15,0.261,0.065,0.33,0.565,-14,https://www.eliteprospects.com/player/534469/jean-luc-foudy,2025-2026,ahl
+Scott Harrington,Belleville Senators,51,3,12,15,0.235,0.059,0.29,0.431,-18,https://www.eliteprospects.com/player/39653/scott-harrington,2025-2026,ahl
+Zach Metsa,Rochester Americans,16,2,13,15,0.812,0.125,0.94,0.125,4,https://www.eliteprospects.com/player/272304/zach-metsa,2025-2026,ahl
+Isaiah George,Bridgeport Islanders,36,2,13,15,0.361,0.056,0.42,0.389,11,https://www.eliteprospects.com/player/526091/isaiah-george,2025-2026,ahl
+Aydar Suniev,Calgary Wranglers,41,11,3,14,0.073,0.268,0.34,0.195,-26,https://www.eliteprospects.com/player/620335/aydar-suniev,2025-2026,ahl
+Arshdeep Bains,Abbotsford Canucks,18,8,6,14,0.333,0.444,0.78,0.556,7,https://www.eliteprospects.com/player/290353/arshdeep-bains,2025-2026,ahl
+Taylor Makar,Colorado Eagles,39,8,6,14,0.154,0.205,0.36,1.179,8,https://www.eliteprospects.com/player/351159/taylor-makar,2025-2026,ahl
+Stian Solberg,San Diego Gulls,48,8,6,14,0.125,0.167,0.29,1.5,-12,https://www.eliteprospects.com/player/619175/stian-solberg,2025-2026,ahl
+Kevin Lombardi,Rockford IceHogs,24,7,7,14,0.292,0.292,0.58,1.083,-3,https://www.eliteprospects.com/player/317209/kevin-lombardi,2025-2026,ahl
+Marc Johnstone,Toronto Marlies,36,7,7,14,0.194,0.194,0.39,1.056,-2,https://www.eliteprospects.com/player/293866/marc-johnstone,2025-2026,ahl
+Ethan Gauthier,Syracuse Crunch,39,7,7,14,0.179,0.179,0.36,0.256,2,https://www.eliteprospects.com/player/599319/ethan-gauthier,2025-2026,ahl
+Brennan Othmann,Hartford Wolf Pack,23,6,8,14,0.348,0.261,0.61,1.957,-9,https://www.eliteprospects.com/player/529248/brennan-othmann,2025-2026,ahl
+Aidan Thompson,Rockford IceHogs,37,6,8,14,0.216,0.162,0.38,0.324,-8,https://www.eliteprospects.com/player/536536/aidan-thompson,2025-2026,ahl
+Cameron Berg,Bridgeport Islanders,40,6,8,14,0.2,0.15,0.35,0.35,-10,https://www.eliteprospects.com/player/536648/cameron-berg,2025-2026,ahl
+Ronan Seeley,Chicago Wolves,48,5,9,14,0.188,0.104,0.29,0.167,-11,https://www.eliteprospects.com/player/413245/ronan-seeley,2025-2026,ahl
+Curtis McKenzie,Texas Stars,50,5,9,14,0.18,0.1,0.28,1.02,-11,https://www.eliteprospects.com/player/19277/curtis-mckenzie,2025-2026,ahl
+Parker Ford,Manitoba Moose,31,4,10,14,0.323,0.129,0.45,0.452,1,https://www.eliteprospects.com/player/394933/parker-ford,2025-2026,ahl
+Ivan Ivan,Colorado Eagles,45,4,10,14,0.222,0.089,0.31,0.533,1,https://www.eliteprospects.com/player/427962/ivan-ivan,2025-2026,ahl
+Ryan Johnson,Rochester Americans,46,4,10,14,0.217,0.087,0.3,0.652,-6,https://www.eliteprospects.com/player/290138/ryan-johnson,2025-2026,ahl
+Aleksi Heimosalmi,Chicago Wolves,39,3,11,14,0.282,0.077,0.36,0.821,4,https://www.eliteprospects.com/player/601642/aleksi-heimosalmi,2025-2026,ahl
+William Lagesson,Grand Rapids Griffins,41,3,11,14,0.268,0.073,0.34,0.634,26,https://www.eliteprospects.com/player/86158/william-lagesson,2025-2026,ahl
+Maveric Lamoureux,Tucson Roadrunners,42,3,11,14,0.262,0.071,0.33,1.143,4,https://www.eliteprospects.com/player/578989/maveric-lamoureux,2025-2026,ahl
+Topias Vilen,Utica Comets,44,3,11,14,0.25,0.068,0.32,0.364,2,https://www.eliteprospects.com/player/557184/topias-vilen,2025-2026,ahl
+Sam Rinzel,Rockford IceHogs,23,2,12,14,0.522,0.087,0.61,0.696,-8,https://www.eliteprospects.com/player/670126/sam-rinzel,2025-2026,ahl
+Sean Behrens,Colorado Eagles,35,2,12,14,0.343,0.057,0.4,0.457,6,https://www.eliteprospects.com/player/464775/sean-behrens,2025-2026,ahl
+Ronnie Attard,Colorado Eagles,39,2,12,14,0.308,0.051,0.36,0.821,5,https://www.eliteprospects.com/player/284030/ronnie-attard,2025-2026,ahl
+Jimmy Schuldt,Abbotsford Canucks,52,2,12,14,0.231,0.038,0.27,0.731,-18,https://www.eliteprospects.com/player/196941/jimmy-schuldt,2025-2026,ahl
+Finn Harding,Wilkes-Barre/Scranton Penguins,38,1,13,14,0.342,0.026,0.37,0.842,23,https://www.eliteprospects.com/player/603127/finn-harding,2025-2026,ahl
+William Wallinder,Grand Rapids Griffins,50,1,13,14,0.26,0.02,0.28,0.38,14,https://www.eliteprospects.com/player/482190/william-wallinder,2025-2026,ahl
+Ben Meyers,Coachella Valley Firebirds,11,9,4,13,0.364,0.818,1.18,0.182,2,https://www.eliteprospects.com/player/300838/ben-meyers,2025-2026,ahl
+David Edstrom,Milwaukee Admirals,39,7,6,13,0.154,0.179,0.33,0.462,5,https://www.eliteprospects.com/player/608308/david-edstrom,2025-2026,ahl
+Keean Washkurak,Belleville Senators,49,7,6,13,0.122,0.143,0.27,1.837,-11,https://www.eliteprospects.com/player/433833/keean-washkurak,2025-2026,ahl
+Brad Lambert,Manitoba Moose,32,6,7,13,0.219,0.188,0.41,0.562,-7,https://www.eliteprospects.com/player/414961/brad-lambert,2025-2026,ahl
+Olivier Nadeau,Rochester Americans,34,6,7,13,0.206,0.176,0.38,0.353,2,https://www.eliteprospects.com/player/483754/olivier-nadeau,2025-2026,ahl
+Caedan Bankier,Iowa Wild,45,6,7,13,0.156,0.133,0.29,0.267,-10,https://www.eliteprospects.com/player/538921/caedan-bankier,2025-2026,ahl
+Theo Lindstein,Springfield Thunderbirds,51,6,7,13,0.137,0.118,0.25,0.353,-23,https://www.eliteprospects.com/player/704824/theo-lindstein,2025-2026,ahl
+Reese Johnson,Toronto Marlies,38,5,8,13,0.211,0.132,0.34,0.711,1,https://www.eliteprospects.com/player/279121/reese-johnson,2025-2026,ahl
+Jake Schmaltz,Providence Bruins,42,5,8,13,0.19,0.119,0.31,0.19,3,https://www.eliteprospects.com/player/316160/jake-schmaltz,2025-2026,ahl
+Jamieson Rees,Belleville Senators,43,5,8,13,0.186,0.116,0.3,0.791,-7,https://www.eliteprospects.com/player/418060/jamieson-rees,2025-2026,ahl
+Hudson Fasching,Cleveland Monsters,49,5,8,13,0.163,0.102,0.27,0.163,-6,https://www.eliteprospects.com/player/114801/hudson-fasching,2025-2026,ahl
+Owen Allard,Tucson Roadrunners,49,5,8,13,0.163,0.102,0.27,0.245,-10,https://www.eliteprospects.com/player/562236/owen-allard,2025-2026,ahl
+Nico Myatovic,San Diego Gulls,49,5,8,13,0.163,0.102,0.27,0.449,5,https://www.eliteprospects.com/player/650108/nico-myatovic,2025-2026,ahl
+Akil Thomas,totals,23,4,9,13,0.391,0.174,0.57,0.261,-6,https://www.eliteprospects.com/player/364033/akil-thomas,2025-2026,ahl
+Hunter Brzustewicz,Calgary Wranglers,30,4,9,13,0.3,0.133,0.43,0.267,-3,https://www.eliteprospects.com/player/526088/hunter-brzustewicz,2025-2026,ahl
+Andrei Loshko,Coachella Valley Firebirds,41,4,9,13,0.22,0.098,0.32,0.195,6,https://www.eliteprospects.com/player/707666/andrei-loshko,2025-2026,ahl
+Jack Peart,Iowa Wild,43,4,9,13,0.209,0.093,0.3,0.372,-16,https://www.eliteprospects.com/player/616254/jack-peart,2025-2026,ahl
+Nolan Allan,totals,44,4,9,13,0.205,0.091,0.3,1.091,-6,https://www.eliteprospects.com/player/482413/nolan-allan,2025-2026,ahl
+Jack Hughes,Ontario Reign,42,3,10,13,0.238,0.071,0.31,0.619,3,https://www.eliteprospects.com/player/617526/jack-hughes,2025-2026,ahl
+Sean Day,Bridgeport Islanders,48,3,10,13,0.208,0.062,0.27,0.083,-5,https://www.eliteprospects.com/player/228106/sean-day,2025-2026,ahl
+Ethan Bear,Bridgeport Islanders,20,2,11,13,0.55,0.1,0.65,0.4,5,https://www.eliteprospects.com/player/197561/ethan-bear,2025-2026,ahl
+Maxence Guenette,Lehigh Valley Phantoms,26,2,11,13,0.423,0.077,0.5,0.385,-3,https://www.eliteprospects.com/player/410616/maxence-guenette,2025-2026,ahl
+Artyom Duda,Tucson Roadrunners,27,2,11,13,0.407,0.074,0.48,0.815,7,https://www.eliteprospects.com/player/620321/artyom-duda,2025-2026,ahl
+Justin Holl,Grand Rapids Griffins,39,2,11,13,0.282,0.051,0.33,0.256,18,https://www.eliteprospects.com/player/46905/justin-holl,2025-2026,ahl
+Ville Ottavainen,Coachella Valley Firebirds,39,2,11,13,0.282,0.051,0.33,1.308,8,https://www.eliteprospects.com/player/530727/ville-ottavainen,2025-2026,ahl
+Ryan Schmelzer,Utica Comets,50,2,11,13,0.22,0.04,0.26,0.68,-15,https://www.eliteprospects.com/player/103818/ryan-schmelzer,2025-2026,ahl
+Kirill Kudryavtsev,Abbotsford Canucks,28,1,12,13,0.429,0.036,0.46,0.071,-11,https://www.eliteprospects.com/player/699365/kirill-kudryavtsev,2025-2026,ahl
+Alex Gagne,Colorado Eagles,49,1,12,13,0.245,0.02,0.27,0.796,13,https://www.eliteprospects.com/player/510343/alex-gagne,2025-2026,ahl
+Chase Pietila,Wilkes-Barre/Scranton Penguins,49,1,12,13,0.245,0.02,0.27,1.082,18,https://www.eliteprospects.com/player/655358/chase-pietila,2025-2026,ahl
+Grant Cruikshank,Hershey Bears,46,8,4,12,0.087,0.174,0.26,0.935,-12,https://www.eliteprospects.com/player/272303/grant-cruikshank,2025-2026,ahl
+Braeden Bowman,Henderson Silver Knights,12,7,5,12,0.417,0.583,1,0.5,1,https://www.eliteprospects.com/player/582646/braeden-bowman,2025-2026,ahl
+Mike Hardman,Utica Comets,36,6,6,12,0.167,0.167,0.33,0.278,-16,https://www.eliteprospects.com/player/353521/mike-hardman,2025-2026,ahl
+Cam Thiesing,Bridgeport Islanders,44,6,6,12,0.136,0.136,0.27,0.364,5,https://www.eliteprospects.com/player/335885/cam-thiesing,2025-2026,ahl
+Lukas Reichel,Abbotsford Canucks,21,5,7,12,0.333,0.238,0.57,0,-6,https://www.eliteprospects.com/player/381687/lukas-reichel,2025-2026,ahl
+Boris Katchouk,totals,27,5,7,12,0.259,0.185,0.44,0.222,-6,https://www.eliteprospects.com/player/269859/boris-katchouk,2025-2026,ahl
+James Malatesta,Cleveland Monsters,42,5,7,12,0.167,0.119,0.29,1.929,1,https://www.eliteprospects.com/player/484164/james-malatesta,2025-2026,ahl
+Otto Stenberg,Springfield Thunderbirds,28,4,8,12,0.286,0.143,0.43,0.214,3,https://www.eliteprospects.com/player/534828/otto-stenberg,2025-2026,ahl
+Pavol Regenda,San Jose Barracuda,28,4,8,12,0.286,0.143,0.43,0.571,-3,https://www.eliteprospects.com/player/249755/pavol-regenda,2025-2026,ahl
+Victor Mancini,Abbotsford Canucks,31,4,8,12,0.258,0.129,0.39,0.516,0,https://www.eliteprospects.com/player/290051/victor-mancini,2025-2026,ahl
+Thomas Bordeleau,totals,42,4,8,12,0.19,0.095,0.29,0.881,-18,https://www.eliteprospects.com/player/296636/thomas-bordeleau,2025-2026,ahl
+Xavier Simoneau,Laval Rocket,42,4,8,12,0.19,0.095,0.29,1.333,8,https://www.eliteprospects.com/player/376443/xavier-simoneau,2025-2026,ahl
+Devin Kaplan,Lehigh Valley Phantoms,48,4,8,12,0.167,0.083,0.25,1.042,-12,https://www.eliteprospects.com/player/526063/devin-kaplan,2025-2026,ahl
+Gabriel Seger,Grand Rapids Griffins,49,4,8,12,0.163,0.082,0.24,0.265,13,https://www.eliteprospects.com/player/266077/gabriel-seger,2025-2026,ahl
+Nikita Prishchepov,Colorado Eagles,22,3,9,12,0.409,0.136,0.55,1.273,3,https://www.eliteprospects.com/player/691679/nikita-prishchepov,2025-2026,ahl
+Mattias Havelid,San Jose Barracuda,35,3,9,12,0.257,0.086,0.34,0.343,2,https://www.eliteprospects.com/player/577575/mattias-havelid,2025-2026,ahl
+Mikulas Hovorka,Charlotte Checkers,38,2,10,12,0.263,0.053,0.32,0.895,16,https://www.eliteprospects.com/player/425297/mikulas-hovorka,2025-2026,ahl
+Josh Brown,Bakersfield Condors,45,2,10,12,0.222,0.044,0.27,1.422,10,https://www.eliteprospects.com/player/82512/josh-brown,2025-2026,ahl
+Jake Livingstone,Charlotte Checkers,35,1,11,12,0.314,0.029,0.34,0.514,12,https://www.eliteprospects.com/player/358393/jake-livingstone,2025-2026,ahl
+Billy Sweezey,Providence Bruins,48,1,11,12,0.229,0.021,0.25,0.812,28,https://www.eliteprospects.com/player/286681/billy-sweezey,2025-2026,ahl
+Luke Tuch,Laval Rocket,50,9,2,11,0.04,0.18,0.22,1.06,7,https://www.eliteprospects.com/player/470086/luke-tuch,2025-2026,ahl
+Tyler Pitlick,Iowa Wild,11,8,3,11,0.273,0.727,1,0,-4,https://www.eliteprospects.com/player/40064/tyler-pitlick,2025-2026,ahl
+Nathan Legare,Utica Comets,43,7,4,11,0.093,0.163,0.26,1.349,-14,https://www.eliteprospects.com/player/296698/nathan-legare,2025-2026,ahl
+Bokondji Imama,Wilkes-Barre/Scranton Penguins,49,6,5,11,0.102,0.122,0.22,1.694,3,https://www.eliteprospects.com/player/151711/bokondji-imama,2025-2026,ahl
+Patrick Giles,San Jose Barracuda,43,5,6,11,0.14,0.116,0.26,0.279,-10,https://www.eliteprospects.com/player/363655/patrick-giles,2025-2026,ahl
+Brendan Warren,Rochester Americans,45,5,6,11,0.133,0.111,0.24,0.378,-7,https://www.eliteprospects.com/player/208973/brendan-warren,2025-2026,ahl
+Spencer Smallman,Hershey Bears,24,4,7,11,0.292,0.167,0.46,0.625,2,https://www.eliteprospects.com/player/166979/spencer-smallman,2025-2026,ahl
+Luke Toporowski,totals,25,4,7,11,0.28,0.16,0.44,1.12,3,https://www.eliteprospects.com/player/315967/luke-toporowski,2025-2026,ahl
+Marc-Andre Gaudet,Springfield Thunderbirds,33,4,7,11,0.212,0.121,0.33,0.182,-12,https://www.eliteprospects.com/player/573863/marc-andre-gaudet,2025-2026,ahl
+Gabriel Szturc,Syracuse Crunch,47,4,7,11,0.149,0.085,0.23,0.426,-2,https://www.eliteprospects.com/player/426117/gabriel-szturc,2025-2026,ahl
+Kirill Kirsanov,Ontario Reign,49,4,7,11,0.143,0.082,0.22,0.163,8,https://www.eliteprospects.com/player/542519/kirill-kirsanov,2025-2026,ahl
+Alexander Suzdalev,Hershey Bears,23,3,8,11,0.348,0.13,0.48,0.087,0,https://www.eliteprospects.com/player/535701/alexander-suzdalev,2025-2026,ahl
+Cal Foote,Chicago Wolves,27,3,8,11,0.296,0.111,0.41,0.593,9,https://www.eliteprospects.com/player/247895/cal-foote,2025-2026,ahl
+Michal Kunc,Tucson Roadrunners,29,3,8,11,0.276,0.103,0.38,0.276,-6,https://www.eliteprospects.com/player/267809/michal-kunc,2025-2026,ahl
+Matyas Melovsky,Utica Comets,33,3,8,11,0.242,0.091,0.33,0.697,-9,https://www.eliteprospects.com/player/527443/matyas-melovsky,2025-2026,ahl
+Joey Willis,Milwaukee Admirals,34,3,8,11,0.235,0.088,0.32,0.294,-5,https://www.eliteprospects.com/player/637631/joey-willis,2025-2026,ahl
+David Gucciardi,Hershey Bears,35,3,8,11,0.229,0.086,0.31,1.286,10,https://www.eliteprospects.com/player/504264/david-gucciardi,2025-2026,ahl
+Jack Thompson,San Jose Barracuda,38,3,8,11,0.211,0.079,0.29,0.316,13,https://www.eliteprospects.com/player/201878/jack-thompson,2025-2026,ahl
+Marek Alscher,Charlotte Checkers,38,3,8,11,0.211,0.079,0.29,0.526,10,https://www.eliteprospects.com/player/537884/marek-alscher,2025-2026,ahl
+Declan Carlile,Syracuse Crunch,16,2,9,11,0.562,0.125,0.69,1.688,1,https://www.eliteprospects.com/player/276195/declan-carlile,2025-2026,ahl
+Samuel Johannesson,Springfield Thunderbirds,26,2,9,11,0.346,0.077,0.42,0.308,-20,https://www.eliteprospects.com/player/342865/samuel-johannesson,2025-2026,ahl
+Ryan McGregor,Tucson Roadrunners,35,2,9,11,0.257,0.057,0.31,0.4,1,https://www.eliteprospects.com/player/289231/ryan-mcgregor,2025-2026,ahl
+Tanner Molendyk,Milwaukee Admirals,37,2,9,11,0.243,0.054,0.3,0.216,-6,https://www.eliteprospects.com/player/603586/tanner-molendyk,2025-2026,ahl
+Caden Price,Coachella Valley Firebirds,42,2,9,11,0.214,0.048,0.26,0.357,3,https://www.eliteprospects.com/player/607323/caden-price,2025-2026,ahl
+Jon McDonald,Hershey Bears,43,2,9,11,0.209,0.047,0.26,0.651,4,https://www.eliteprospects.com/player/344385/jon-mcdonald,2025-2026,ahl
+Tyson Hinds,San Diego Gulls,45,2,9,11,0.2,0.044,0.24,0.378,4,https://www.eliteprospects.com/player/485317/tyson-hinds,2025-2026,ahl
+Alex Kannok Leipert,Grand Rapids Griffins,48,1,10,11,0.208,0.021,0.23,0.917,11,https://www.eliteprospects.com/player/287497/alex-kannok-leipert,2025-2026,ahl
+Riley Duran,Providence Bruins,50,1,10,11,0.2,0.02,0.22,0.36,9,https://www.eliteprospects.com/player/552533/riley-duran,2025-2026,ahl
+Dennis Gilbert,totals,33,0,11,11,0.333,0,0.33,0.939,-5,https://www.eliteprospects.com/player/267396/dennis-gilbert,2025-2026,ahl
+Travis Mitchell,Bridgeport Islanders,40,0,11,11,0.275,0,0.28,1.6,2,https://www.eliteprospects.com/player/284033/travis-mitchell,2025-2026,ahl
+Joseph LaBate,Abbotsford Canucks,23,6,4,10,0.174,0.261,0.43,2.783,-15,https://www.eliteprospects.com/player/75066/joseph-labate,2025-2026,ahl
+Anthony Vincent,San Jose Barracuda,41,6,4,10,0.098,0.146,0.24,1.78,-6,https://www.eliteprospects.com/player/300460/anthony-vincent,2025-2026,ahl
+Justin Kirkland,Calgary Wranglers,22,5,5,10,0.227,0.227,0.45,0.727,-9,https://www.eliteprospects.com/player/63133/justin-kirkland,2025-2026,ahl
+Ryder Rolston,Milwaukee Admirals,35,5,5,10,0.143,0.143,0.29,0.171,2,https://www.eliteprospects.com/player/369853/ryder-rolston,2025-2026,ahl
+Dominik Badinka,Chicago Wolves,44,5,5,10,0.114,0.114,0.23,0.136,8,https://www.eliteprospects.com/player/727927/dominik-badinka,2025-2026,ahl
+Eetu Liukas,Bridgeport Islanders,24,4,6,10,0.25,0.167,0.42,0.5,4,https://www.eliteprospects.com/player/470708/eetu-liukas,2025-2026,ahl
+Hunter St. Martin,Charlotte Checkers,29,4,6,10,0.207,0.138,0.34,0.828,7,https://www.eliteprospects.com/player/641459/hunter-st.-martin,2025-2026,ahl
+Dmitri Kuzmin,Rockford IceHogs,37,4,6,10,0.162,0.108,0.27,0.297,1,https://www.eliteprospects.com/player/618502/dmitri-kuzmin,2025-2026,ahl
+Miko Matikka,Tucson Roadrunners,39,4,6,10,0.154,0.103,0.26,0.359,-10,https://www.eliteprospects.com/player/628519/miko-matikka,2025-2026,ahl
+Hunter Skinner,Springfield Thunderbirds,39,4,6,10,0.154,0.103,0.26,1.128,-4,https://www.eliteprospects.com/player/359531/hunter-skinner,2025-2026,ahl
+Anton Blidh,Hartford Wolf Pack,42,4,6,10,0.143,0.095,0.24,0.762,-15,https://www.eliteprospects.com/player/67179/anton-blidh,2025-2026,ahl
+Carter King,Calgary Wranglers,48,4,6,10,0.125,0.083,0.21,0.125,-7,https://www.eliteprospects.com/player/412951/carter-king,2025-2026,ahl
+Guillaume Richard,Cleveland Monsters,49,4,6,10,0.122,0.082,0.2,0.286,9,https://www.eliteprospects.com/player/551201/guillaume-richard,2025-2026,ahl
+Noah Ostlund,Rochester Americans,7,3,7,10,1,0.429,1.43,0.286,0,https://www.eliteprospects.com/player/535699/noah-ostlund,2025-2026,ahl
+Cam Squires,Utica Comets,32,3,7,10,0.219,0.094,0.31,0.188,0,https://www.eliteprospects.com/player/649026/cam-squires,2025-2026,ahl
+Aaron Huglen,Wilkes-Barre/Scranton Penguins,33,3,7,10,0.212,0.091,0.3,0.303,-1,https://www.eliteprospects.com/player/485574/aaron-huglen,2025-2026,ahl
+David Goyette,Coachella Valley Firebirds,47,3,7,10,0.149,0.064,0.21,1.447,3,https://www.eliteprospects.com/player/562220/david-goyette,2025-2026,ahl
+Phil Kemp,Wilkes-Barre/Scranton Penguins,53,3,7,10,0.132,0.057,0.19,0.736,4,https://www.eliteprospects.com/player/311901/phil-kemp,2025-2026,ahl
+Samu Tuomaala,totals,19,2,8,10,0.421,0.105,0.53,0.316,-3,https://www.eliteprospects.com/player/499422/samu-tuomaala,2025-2026,ahl
+Matt Benning,Toronto Marlies,21,2,8,10,0.381,0.095,0.48,0.905,4,https://www.eliteprospects.com/player/29261/matt-benning,2025-2026,ahl
+David Jiricek,Iowa Wild,22,2,8,10,0.364,0.091,0.45,0.455,-12,https://www.eliteprospects.com/player/559522/david-ji%C5%99icek,2025-2026,ahl
+Beau Akey,Bakersfield Condors,32,2,8,10,0.25,0.062,0.31,0.5,14,https://www.eliteprospects.com/player/613079/beau-akey,2025-2026,ahl
+Jake Wise,Colorado Eagles,36,2,8,10,0.222,0.056,0.28,0.222,6,https://www.eliteprospects.com/player/268432/jake-wise,2025-2026,ahl
+Noah Warren,San Diego Gulls,49,2,8,10,0.163,0.041,0.2,0.49,9,https://www.eliteprospects.com/player/574586/noah-warren,2025-2026,ahl
+Tyler Thorpe,Laval Rocket,52,2,8,10,0.154,0.038,0.19,1.231,0,https://www.eliteprospects.com/player/735110/tyler-thorpe,2025-2026,ahl
+Ethan Samson,totals,28,1,9,10,0.321,0.036,0.36,0.643,4,https://www.eliteprospects.com/player/559018/ethan-samson,2025-2026,ahl
+Angus Booth,Ontario Reign,42,1,9,10,0.214,0.024,0.24,0.619,1,https://www.eliteprospects.com/player/578244/angus-booth,2025-2026,ahl
+Luke Rowe,Bridgeport Islanders,44,1,9,10,0.205,0.023,0.23,1.182,9,https://www.eliteprospects.com/player/322571/luke-rowe,2025-2026,ahl
+Oliver Moore,Rockford IceHogs,9,6,3,9,0.333,0.667,1,0.222,8,https://www.eliteprospects.com/player/603195/oliver-moore,2025-2026,ahl
+Alexandre Doucet,Grand Rapids Griffins,40,6,3,9,0.075,0.15,0.23,0.25,6,https://www.eliteprospects.com/player/201898/alexandre-doucet,2025-2026,ahl
+Vilmer Alriksson,Abbotsford Canucks,43,6,3,9,0.07,0.14,0.21,1.302,-28,https://www.eliteprospects.com/player/617583/vilmer-alriksson,2025-2026,ahl
+Bradley Marek,Iowa Wild,49,6,3,9,0.061,0.122,0.18,1.245,-2,https://www.eliteprospects.com/player/370261/bradley-marek,2025-2026,ahl
+Michael Buchinger,Springfield Thunderbirds,38,5,4,9,0.105,0.132,0.24,0.474,-10,https://www.eliteprospects.com/player/526053/michael-buchinger,2025-2026,ahl
+Luke Krys,Texas Stars,18,4,5,9,0.278,0.222,0.5,0.889,3,https://www.eliteprospects.com/player/364240/luke-krys,2025-2026,ahl
+Oliver Bonk,Lehigh Valley Phantoms,25,4,5,9,0.2,0.16,0.36,0.4,-4,https://www.eliteprospects.com/player/590255/oliver-bonk,2025-2026,ahl
+Kyle McDonald,Texas Stars,20,3,6,9,0.3,0.15,0.45,0.3,-2,https://www.eliteprospects.com/player/413652/kyle-mcdonald,2025-2026,ahl
+Jakov Novak,Coachella Valley Firebirds,25,3,6,9,0.24,0.12,0.36,0.4,2,https://www.eliteprospects.com/player/269880/jakov-novak,2025-2026,ahl
+Isaac Ratcliffe,Milwaukee Admirals,35,3,6,9,0.171,0.086,0.26,1.457,-3,https://www.eliteprospects.com/player/300398/isaac-ratcliffe,2025-2026,ahl
+Connor Mackey,Hartford Wolf Pack,42,3,6,9,0.143,0.071,0.21,1.738,-10,https://www.eliteprospects.com/player/316315/connor-mackey,2025-2026,ahl
+Martin Misiak,Rockford IceHogs,43,3,6,9,0.14,0.07,0.21,0.395,-5,https://www.eliteprospects.com/player/527425/martin-misiak,2025-2026,ahl
+Helge Grans,Lehigh Valley Phantoms,43,3,6,9,0.14,0.07,0.21,0.419,-10,https://www.eliteprospects.com/player/395302/helge-grans,2025-2026,ahl
+Caleb MacDonald,Cleveland Monsters,45,3,6,9,0.133,0.067,0.2,1.111,0,https://www.eliteprospects.com/player/505193/caleb-macdonald,2025-2026,ahl
+Joey Abate,Providence Bruins,45,3,6,9,0.133,0.067,0.2,1.756,3,https://www.eliteprospects.com/player/271357/joey-abate,2025-2026,ahl
+Cameron Crotty,Belleville Senators,47,3,6,9,0.128,0.064,0.19,0.617,-5,https://www.eliteprospects.com/player/299556/cameron-crotty,2025-2026,ahl
+Ryan Graves,Wilkes-Barre/Scranton Penguins,13,2,7,9,0.538,0.154,0.69,0.308,6,https://www.eliteprospects.com/player/103763/ryan-graves,2025-2026,ahl
+Cam Dineen,Bakersfield Condors,19,2,7,9,0.368,0.105,0.47,0.421,-3,https://www.eliteprospects.com/player/268444/cam-dineen,2025-2026,ahl
+Andreas Englund,Milwaukee Admirals,42,2,7,9,0.167,0.048,0.21,1.381,1,https://www.eliteprospects.com/player/115148/andreas-englund,2025-2026,ahl
+Turner Ottenbreit,Calgary Wranglers,43,2,7,9,0.163,0.047,0.21,1.07,-6,https://www.eliteprospects.com/player/199124/turner-ottenbreit,2025-2026,ahl
+Keaton Middleton,Colorado Eagles,46,2,7,9,0.152,0.043,0.2,0.913,16,https://www.eliteprospects.com/player/249597/keaton-middleton,2025-2026,ahl
+Elias Salomonsson,Manitoba Moose,29,1,8,9,0.276,0.034,0.31,0.345,-2,https://www.eliteprospects.com/player/574931/elias-salomonsson,2025-2026,ahl
+Lukas Dragicevic,Coachella Valley Firebirds,38,1,8,9,0.211,0.026,0.24,0.579,-3,https://www.eliteprospects.com/player/529817/lukas-dragicevic,2025-2026,ahl
+Ashton Sautner,Manitoba Moose,43,1,8,9,0.186,0.023,0.21,0.721,11,https://www.eliteprospects.com/player/84404/ashton-sautner,2025-2026,ahl
+Mackenzie MacEachern,Abbotsford Canucks,21,6,2,8,0.095,0.286,0.38,0.381,-9,https://www.eliteprospects.com/player/183505/mackenzie-maceachern,2025-2026,ahl
+Scott Sabourin,Syracuse Crunch,24,6,2,8,0.083,0.25,0.33,0.917,2,https://www.eliteprospects.com/player/45588/scott-sabourin,2025-2026,ahl
+Chase Bradley,Colorado Eagles,29,6,2,8,0.069,0.207,0.28,1.103,7,https://www.eliteprospects.com/player/201795/chase-bradley,2025-2026,ahl
+Tate Singleton,Cleveland Monsters,28,5,3,8,0.107,0.179,0.29,1.143,-3,https://www.eliteprospects.com/player/362340/tate-singleton,2025-2026,ahl
+Ryan Chesley,Hershey Bears,44,5,3,8,0.068,0.114,0.18,0.273,-18,https://www.eliteprospects.com/player/556717/ryan-chesley,2025-2026,ahl
+Marc Gatcomb,Bridgeport Islanders,15,4,4,8,0.267,0.267,0.53,0.4,-4,https://www.eliteprospects.com/player/446950/marc-gatcomb,2025-2026,ahl
+Kaden Hammell,Coachella Valley Firebirds,26,4,4,8,0.154,0.154,0.31,0.923,14,https://www.eliteprospects.com/player/535571/kaden-hammell,2025-2026,ahl
+Jackson Cates,Rockford IceHogs,29,4,4,8,0.138,0.138,0.28,0.207,-12,https://www.eliteprospects.com/player/353776/jackson-cates,2025-2026,ahl
+Hayden Hodgson,Belleville Senators,32,4,4,8,0.125,0.125,0.25,2.938,-14,https://www.eliteprospects.com/player/188193/hayden-hodgson,2025-2026,ahl
+Gleb Trikozov,Chicago Wolves,34,4,4,8,0.118,0.118,0.24,0.471,-5,https://www.eliteprospects.com/player/690807/gleb-trikozov,2025-2026,ahl
+Ian McKinnon,Coachella Valley Firebirds,43,4,4,8,0.093,0.093,0.19,3.837,2,https://www.eliteprospects.com/player/267844/ian-mckinnon,2025-2026,ahl
+Alex Steeves,Providence Bruins,9,3,5,8,0.556,0.333,0.89,0.222,3,https://www.eliteprospects.com/player/354353/alex-steeves,2025-2026,ahl
+Michael Pezzetta,Toronto Marlies,31,3,5,8,0.161,0.097,0.26,1.452,-8,https://www.eliteprospects.com/player/269038/michael-pezzetta,2025-2026,ahl
+Mark Senden,Colorado Eagles,32,3,5,8,0.156,0.094,0.25,0.375,8,https://www.eliteprospects.com/player/300834/mark-senden,2025-2026,ahl
+Luke Prokop,Bakersfield Condors,37,3,5,8,0.135,0.081,0.22,0.378,-5,https://www.eliteprospects.com/player/201923/luke-prokop,2025-2026,ahl
+Jujhar Khaira,Abbotsford Canucks,39,3,5,8,0.128,0.077,0.21,1.308,-16,https://www.eliteprospects.com/player/93577/jujhar-khaira,2025-2026,ahl
+Colby Barlow,Manitoba Moose,42,3,5,8,0.119,0.071,0.19,0.333,-3,https://www.eliteprospects.com/player/603562/colby-barlow,2025-2026,ahl
+Kyle Marino,Milwaukee Admirals,47,3,5,8,0.106,0.064,0.17,2.489,-3,https://www.eliteprospects.com/player/210307/kyle-marino,2025-2026,ahl
+Braden Hache,San Jose Barracuda,48,3,5,8,0.104,0.062,0.17,1.625,3,https://www.eliteprospects.com/player/614397/braden-hache,2025-2026,ahl
+Chas Sharpe,Toronto Marlies,26,2,6,8,0.231,0.077,0.31,0.538,1,https://www.eliteprospects.com/player/582499/chas-sharpe,2025-2026,ahl
+Vsevolod Komarov,Rochester Americans,37,2,6,8,0.162,0.054,0.22,1.108,2,https://www.eliteprospects.com/player/709023/vsevolod-komarov,2025-2026,ahl
+Mathieu Cataford,Henderson Silver Knights,42,2,6,8,0.143,0.048,0.19,0.333,-15,https://www.eliteprospects.com/player/597877/mathieu-cataford,2025-2026,ahl
+Shai Buium,Grand Rapids Griffins,18,1,7,8,0.389,0.056,0.44,0.222,-3,https://www.eliteprospects.com/player/512185/shai-buium,2025-2026,ahl
+Ayrton Martino,Texas Stars,26,1,7,8,0.269,0.038,0.31,0,-2,https://www.eliteprospects.com/player/582779/ayrton-martino,2025-2026,ahl
+Mason Millman,Bakersfield Condors,36,1,7,8,0.194,0.028,0.22,0.361,9,https://www.eliteprospects.com/player/418350/mason-millman,2025-2026,ahl
+Nate Clurman,Laval Rocket,44,1,7,8,0.159,0.023,0.18,0.318,8,https://www.eliteprospects.com/player/353810/nate-clurman,2025-2026,ahl
+Dino Kambeitz,Abbotsford Canucks,46,1,7,8,0.152,0.022,0.17,0.804,-6,https://www.eliteprospects.com/player/354044/dino-kambeitz,2025-2026,ahl
+Blake Smith,Toronto Marlies,46,1,7,8,0.152,0.022,0.17,2.152,9,https://www.eliteprospects.com/player/709899/blake-smith,2025-2026,ahl
+C.J. Smith,Bridgeport Islanders,17,0,8,8,0.471,0,0.47,0.471,-4,https://www.eliteprospects.com/player/151013/c.j.-smith,2025-2026,ahl
+Ryan Mast,Rockford IceHogs,29,0,8,8,0.276,0,0.28,0.207,0,https://www.eliteprospects.com/player/512167/ryan-mast,2025-2026,ahl
+Viliam Kmec,Henderson Silver Knights,41,0,8,8,0.195,0,0.2,0.512,1,https://www.eliteprospects.com/player/527420/viliam-kmec,2025-2026,ahl
+Noah Gregor,Charlotte Checkers,13,5,2,7,0.154,0.385,0.54,0.154,-1,https://www.eliteprospects.com/player/162892/noah-gregor,2025-2026,ahl
+Julien Gauthier,totals,14,5,2,7,0.143,0.357,0.5,0.429,1,https://www.eliteprospects.com/player/213464/julien-gauthier,2025-2026,ahl
+Tanner Howe,Wilkes-Barre/Scranton Penguins,8,4,3,7,0.375,0.5,0.88,0.75,1,https://www.eliteprospects.com/player/647116/tanner-howe,2025-2026,ahl
+Nick Poisson,Abbotsford Canucks,29,4,3,7,0.103,0.138,0.24,0.138,-5,https://www.eliteprospects.com/player/473851/nick-poisson,2025-2026,ahl
+Landen Hookey,Belleville Senators,40,4,3,7,0.075,0.1,0.18,1,-2,https://www.eliteprospects.com/player/640828/landen-hookey,2025-2026,ahl
+Marc McLaughlin,Utica Comets,6,3,4,7,0.667,0.5,1.17,0.333,2,https://www.eliteprospects.com/player/300610/marc-mclaughlin,2025-2026,ahl
+Pierrick Dube,Bridgeport Islanders,10,3,4,7,0.4,0.3,0.7,0.6,2,https://www.eliteprospects.com/player/410529/pierrick-dube,2025-2026,ahl
+Cam Allen,Hershey Bears,22,3,4,7,0.182,0.136,0.32,1,1,https://www.eliteprospects.com/player/740681/cam-allen,2025-2026,ahl
+Ty Gallagher,Providence Bruins,25,3,4,7,0.16,0.12,0.28,0.56,2,https://www.eliteprospects.com/player/512168/ty-gallagher,2025-2026,ahl
+Brandon Scanlin,Hartford Wolf Pack,27,3,4,7,0.148,0.111,0.26,1.037,-10,https://www.eliteprospects.com/player/283287/brandon-scanlin,2025-2026,ahl
+Mark Duarte,Belleville Senators,28,3,4,7,0.143,0.107,0.25,0.214,-1,https://www.eliteprospects.com/player/534262/mark-duarte,2025-2026,ahl
+Tommy Miller,Syracuse Crunch,35,3,4,7,0.114,0.086,0.2,0.543,5,https://www.eliteprospects.com/player/233517/tommy-miller,2025-2026,ahl
+Dmitri Osipov,Utica Comets,37,3,4,7,0.108,0.081,0.19,1.108,8,https://www.eliteprospects.com/player/250313/dmitri-osipov,2025-2026,ahl
+Jaycob Megna,Henderson Silver Knights,39,3,4,7,0.103,0.077,0.18,0.615,4,https://www.eliteprospects.com/player/84762/jaycob-megna,2025-2026,ahl
+Julian Lutz,Tucson Roadrunners,42,3,4,7,0.095,0.071,0.17,1.095,-7,https://www.eliteprospects.com/player/601111/julian-lutz,2025-2026,ahl
+Sebastian Aho,Wilkes-Barre/Scranton Penguins,14,2,5,7,0.357,0.143,0.5,0.429,5,https://www.eliteprospects.com/player/67208/sebastian-aho,2025-2026,ahl
+Donavan Houle,San Jose Barracuda,15,2,5,7,0.333,0.133,0.47,1.267,1,https://www.eliteprospects.com/player/560870/donavan-houle,2025-2026,ahl
+Ryan McAllister,totals,16,2,5,7,0.312,0.125,0.44,0.625,-5,https://www.eliteprospects.com/player/418420/ryan-mcallister,2025-2026,ahl
+Kai Schwindt,Charlotte Checkers,22,2,5,7,0.227,0.091,0.32,0.182,3,https://www.eliteprospects.com/player/713317/kai-schwindt,2025-2026,ahl
+Maros Jedlicka,Colorado Eagles,25,2,5,7,0.2,0.08,0.28,0.68,5,https://www.eliteprospects.com/player/472350/maros-jedlicka,2025-2026,ahl
+Oscar Eklind,Lehigh Valley Phantoms,27,2,5,7,0.185,0.074,0.26,0.444,9,https://www.eliteprospects.com/player/233155/oscar-eklind,2025-2026,ahl
+Joe Fleming,Henderson Silver Knights,38,2,5,7,0.132,0.053,0.18,2.447,-13,https://www.eliteprospects.com/player/617531/joe-fleming,2025-2026,ahl
+Tobie Paquette-Bisson,Laval Rocket,41,2,5,7,0.122,0.049,0.17,0.341,14,https://www.eliteprospects.com/player/213820/tobie-paquette-bisson,2025-2026,ahl
+Cole Clayton,totals,47,2,5,7,0.106,0.043,0.15,0.766,-10,https://www.eliteprospects.com/player/282470/cole-clayton,2025-2026,ahl
+Andrew Gibson,Milwaukee Admirals,48,2,5,7,0.104,0.042,0.15,0.812,4,https://www.eliteprospects.com/player/702313/andrew-gibson,2025-2026,ahl
+Luca Marrelli,Cleveland Monsters,14,1,6,7,0.429,0.071,0.5,0.286,1,https://www.eliteprospects.com/player/726394/luca-marrelli,2025-2026,ahl
+Kyle Burroughs,Ontario Reign,18,1,6,7,0.333,0.056,0.39,0.556,8,https://www.eliteprospects.com/player/87758/kyle-burroughs,2025-2026,ahl
+Lleyton Moore,Tucson Roadrunners,21,1,6,7,0.286,0.048,0.33,0.19,-6,https://www.eliteprospects.com/player/201922/lleyton-moore,2025-2026,ahl
+Tobias Bjornfot,Charlotte Checkers,22,1,6,7,0.273,0.045,0.32,0.273,6,https://www.eliteprospects.com/player/344751/tobias-bjornfot,2025-2026,ahl
+Noah Laaouan,Rochester Americans,24,1,6,7,0.25,0.042,0.29,0.5,1,https://www.eliteprospects.com/player/294620/noah-laaouan,2025-2026,ahl
+Jett Woo,Abbotsford Canucks,24,1,6,7,0.25,0.042,0.29,3.25,-9,https://www.eliteprospects.com/player/281813/jett-woo,2025-2026,ahl
+Montana Onyebuchi,Tucson Roadrunners,25,1,6,7,0.24,0.04,0.28,1.64,-5,https://www.eliteprospects.com/player/351091/montana-onyebuchi,2025-2026,ahl
+Ivan Ryabkin,Chicago Wolves,25,1,6,7,0.24,0.04,0.28,2.24,-2,https://www.eliteprospects.com/player/690132/ivan-ryabkin,2025-2026,ahl
+Nikita Susuyev,Springfield Thunderbirds,31,1,6,7,0.194,0.032,0.23,0.387,-10,https://www.eliteprospects.com/player/691473/nikita-susuyev,2025-2026,ahl
+Matt Kiersted,Iowa Wild,33,1,6,7,0.182,0.03,0.21,0.848,-5,https://www.eliteprospects.com/player/291904/matt-kiersted,2025-2026,ahl
+Michael Callahan,Providence Bruins,35,1,6,7,0.171,0.029,0.2,0.4,21,https://www.eliteprospects.com/player/201479/michael-callahan,2025-2026,ahl
+Wyatt Newpower,totals,41,1,6,7,0.146,0.024,0.17,0.634,-7,https://www.eliteprospects.com/player/336478/wyatt-newpower,2025-2026,ahl
+Jackson Dorrington,Hartford Wolf Pack,48,1,6,7,0.125,0.021,0.15,0.833,-5,https://www.eliteprospects.com/player/603639/jackson-dorrington,2025-2026,ahl
+Vincent Iorio,San Jose Barracuda,6,0,7,7,1.167,0,1.17,0.667,7,https://www.eliteprospects.com/player/201802/vincent-iorio,2025-2026,ahl
+Simon Lundmark,Syracuse Crunch,37,0,7,7,0.189,0,0.19,0.432,2,https://www.eliteprospects.com/player/344757/simon-lundmark,2025-2026,ahl
+Carter Mazur,Grand Rapids Griffins,5,4,2,6,0.4,0.8,1.2,0.4,7,https://www.eliteprospects.com/player/201766/carter-mazur,2025-2026,ahl
+Sloan Stanick,Henderson Silver Knights,12,4,2,6,0.167,0.333,0.5,0.167,1,https://www.eliteprospects.com/player/527498/sloan-stanick,2025-2026,ahl
+Daniel Walcott,Hartford Wolf Pack,23,4,2,6,0.087,0.174,0.26,1.087,-2,https://www.eliteprospects.com/player/257725/daniel-walcott,2025-2026,ahl
+Kyle Looft,Texas Stars,33,4,2,6,0.061,0.121,0.18,0.545,-12,https://www.eliteprospects.com/player/306341/kyle-looft,2025-2026,ahl
+Lucas Ciona,Calgary Wranglers,40,4,2,6,0.05,0.1,0.15,1.625,-4,https://www.eliteprospects.com/player/475634/lucas-ciona,2025-2026,ahl
+Zach Aston-Reese,Cleveland Monsters,11,3,3,6,0.273,0.273,0.55,0.818,2,https://www.eliteprospects.com/player/98068/zach-aston-reese,2025-2026,ahl
+Jacob Perreault,Providence Bruins,12,3,3,6,0.25,0.25,0.5,0,2,https://www.eliteprospects.com/player/418243/jacob-perreault,2025-2026,ahl
+Bryan Yoon,Colorado Eagles,28,3,3,6,0.107,0.107,0.21,0.071,3,https://www.eliteprospects.com/player/272201/bryan-yoon,2025-2026,ahl
+Jakub Dvorak,Ontario Reign,36,3,3,6,0.083,0.083,0.17,0.917,5,https://www.eliteprospects.com/player/619016/jakub-dvo%C5%99ak,2025-2026,ahl
+Carson Bantle,Grand Rapids Griffins,42,3,3,6,0.071,0.071,0.14,1.262,0,https://www.eliteprospects.com/player/201849/carson-bantle,2025-2026,ahl
+Ryan Sandelin,Iowa Wild,48,3,3,6,0.062,0.062,0.13,0.292,-10,https://www.eliteprospects.com/player/311758/ryan-sandelin,2025-2026,ahl
+Carey Terrance,Hartford Wolf Pack,50,3,3,6,0.06,0.06,0.12,0.52,-9,https://www.eliteprospects.com/player/574539/carey-terrance,2025-2026,ahl
+Nikita Nesterenko,San Diego Gulls,14,2,4,6,0.286,0.143,0.43,0.429,-5,https://www.eliteprospects.com/player/295642/nikita-nesterenko,2025-2026,ahl
+Zach Dean,Springfield Thunderbirds,20,2,4,6,0.2,0.1,0.3,0.4,-3,https://www.eliteprospects.com/player/492218/zach-dean,2025-2026,ahl
+Jack Millar,Ontario Reign,21,2,4,6,0.19,0.095,0.29,0.333,5,https://www.eliteprospects.com/player/376625/jack-millar,2025-2026,ahl
+Raivis Ansons,Wilkes-Barre/Scranton Penguins,25,2,4,6,0.16,0.08,0.24,0.24,-1,https://www.eliteprospects.com/player/477490/raivis-ansons,2025-2026,ahl
+Michael Milne,totals,28,2,4,6,0.143,0.071,0.21,1.143,-13,https://www.eliteprospects.com/player/477344/michael-milne,2025-2026,ahl
+Ty Murchison,Lehigh Valley Phantoms,29,2,4,6,0.138,0.069,0.21,1.586,12,https://www.eliteprospects.com/player/512190/ty-murchison,2025-2026,ahl
+Blake Hillman,Hartford Wolf Pack,34,2,4,6,0.118,0.059,0.18,0.059,-5,https://www.eliteprospects.com/player/248356/blake-hillman,2025-2026,ahl
+Connor Mylymok,Rockford IceHogs,37,2,4,6,0.108,0.054,0.16,3.676,-11,https://www.eliteprospects.com/player/352007/connor-mylymok,2025-2026,ahl
+Robbie Russo,Tucson Roadrunners,40,2,4,6,0.1,0.05,0.15,0.4,-8,https://www.eliteprospects.com/player/38628/robbie-russo,2025-2026,ahl
+Max McCue,Cleveland Monsters,19,1,5,6,0.263,0.053,0.32,1.211,-6,https://www.eliteprospects.com/player/475247/max-mccue,2025-2026,ahl
+Ludvig Jansson,Charlotte Checkers,22,1,5,6,0.227,0.045,0.27,0.545,1,https://www.eliteprospects.com/player/590628/ludvig-jansson,2025-2026,ahl
+Jarred Tinordi,Syracuse Crunch,24,1,5,6,0.208,0.042,0.25,2.625,7,https://www.eliteprospects.com/player/20706/jarred-tinordi,2025-2026,ahl
+Eriks Mateiko,Hershey Bears,27,1,5,6,0.185,0.037,0.22,0.593,1,https://www.eliteprospects.com/player/620208/eriks-mateiko,2025-2026,ahl
+Simon Robertsson,Springfield Thunderbirds,29,1,5,6,0.172,0.034,0.21,0.655,-9,https://www.eliteprospects.com/player/473175/simon-robertsson,2025-2026,ahl
+Tommy Bergsland,Texas Stars,34,1,5,6,0.147,0.029,0.18,0.353,-1,https://www.eliteprospects.com/player/493505/tommy-bergsland,2025-2026,ahl
+Austin Strand,Utica Comets,35,1,5,6,0.143,0.029,0.17,1.114,-7,https://www.eliteprospects.com/player/161123/austin-strand,2025-2026,ahl
+Aaron Ness,Hershey Bears,36,1,5,6,0.139,0.028,0.17,0.667,-6,https://www.eliteprospects.com/player/17497/aaron-ness,2025-2026,ahl
+Jeremie Poirier,totals,36,1,5,6,0.139,0.028,0.17,0.667,-18,https://www.eliteprospects.com/player/201907/jeremie-poirier,2025-2026,ahl
+David Silye,Calgary Wranglers,39,1,5,6,0.128,0.026,0.15,0.513,-8,https://www.eliteprospects.com/player/299441/david-silye,2025-2026,ahl
+Eamon Powell,Charlotte Checkers,14,0,6,6,0.429,0,0.43,0.286,-4,https://www.eliteprospects.com/player/480401/eamon-powell,2025-2026,ahl
+Steven Santini,Syracuse Crunch,28,0,6,6,0.214,0,0.21,0.357,8,https://www.eliteprospects.com/player/96780/steven-santini,2025-2026,ahl
+Jack Malone,Utica Comets,36,0,6,6,0.167,0,0.17,0.167,0,https://www.eliteprospects.com/player/364031/jack-malone,2025-2026,ahl
+Hunter McDonald,Lehigh Valley Phantoms,43,0,6,6,0.14,0,0.14,1.674,8,https://www.eliteprospects.com/player/508274/hunter-mcdonald,2025-2026,ahl
+Nikolai Knyzhov,Abbotsford Canucks,45,0,6,6,0.133,0,0.13,0.2,-20,https://www.eliteprospects.com/player/308784/nikolai-knyzhov,2025-2026,ahl
+Kevin Gravel,Milwaukee Admirals,49,0,6,6,0.122,0,0.12,0.49,-11,https://www.eliteprospects.com/player/35674/kevin-gravel,2025-2026,ahl
+Matvei Petrov,Bakersfield Condors,23,4,1,5,0.043,0.174,0.22,0.087,0,https://www.eliteprospects.com/player/527464/matvei-petrov,2025-2026,ahl
+MacKenzie Entwistle,Charlotte Checkers,30,4,1,5,0.033,0.133,0.17,1,3,https://www.eliteprospects.com/player/273678/mackenzie-entwistle,2025-2026,ahl
+Dominic James,Syracuse Crunch,4,3,2,5,0.5,0.75,1.25,0,3,https://www.eliteprospects.com/player/418282/dominic-james,2025-2026,ahl
+Dalibor Dvorsky,Springfield Thunderbirds,6,3,2,5,0.333,0.5,0.83,0.667,-4,https://www.eliteprospects.com/player/527424/dalibor-dvorsky,2025-2026,ahl
+Liam Ohgren,Iowa Wild,9,3,2,5,0.222,0.333,0.56,0,-3,https://www.eliteprospects.com/player/535698/liam-ohgren,2025-2026,ahl
+Redmond Savage,Rochester Americans,19,3,2,5,0.105,0.158,0.26,0.526,4,https://www.eliteprospects.com/player/512173/redmond-savage,2025-2026,ahl
+Alexander Alexeyev,Wilkes-Barre/Scranton Penguins,25,3,2,5,0.08,0.12,0.2,0.6,5,https://www.eliteprospects.com/player/333787/alexander-alexeyev,2025-2026,ahl
+Sam Bitten,totals,27,3,2,5,0.074,0.111,0.19,1.778,-7,https://www.eliteprospects.com/player/245966/sam-bitten,2025-2026,ahl
+Gavin White,totals,31,3,2,5,0.065,0.097,0.16,0.323,-8,https://www.eliteprospects.com/player/413836/gavin-white,2025-2026,ahl
+Zayne Parekh,Calgary Wranglers,4,2,3,5,0.75,0.5,1.25,0.5,1,https://www.eliteprospects.com/player/535574/zayne-parekh,2025-2026,ahl
+Tim Rego,Ontario Reign,13,2,3,5,0.231,0.154,0.38,0.462,6,https://www.eliteprospects.com/player/393782/tim-rego,2025-2026,ahl
+Liam McLinskey,Charlotte Checkers,18,2,3,5,0.167,0.111,0.28,0.444,2,https://www.eliteprospects.com/player/445714/liam-mclinskey,2025-2026,ahl
+Jake Furlong,totals,21,2,3,5,0.143,0.095,0.24,0.952,-2,https://www.eliteprospects.com/player/563446/jake-furlong,2025-2026,ahl
+Cooper Walker,Abbotsford Canucks,24,2,3,5,0.125,0.083,0.21,0.167,-1,https://www.eliteprospects.com/player/505198/cooper-walker,2025-2026,ahl
+Lucas Johansen,Henderson Silver Knights,24,2,3,5,0.125,0.083,0.21,0.25,-4,https://www.eliteprospects.com/player/199937/lucas-johansen,2025-2026,ahl
+Nikita Chibrikov,Manitoba Moose,32,2,3,5,0.094,0.062,0.16,0.312,-11,https://www.eliteprospects.com/player/527467/nikita-chibrikov,2025-2026,ahl
+Justin Ertel,Texas Stars,33,2,3,5,0.091,0.061,0.15,0.727,-6,https://www.eliteprospects.com/player/529245/justin-ertel,2025-2026,ahl
+Nolan Renwick,Wilkes-Barre/Scranton Penguins,34,2,3,5,0.088,0.059,0.15,0.853,2,https://www.eliteprospects.com/player/352027/nolan-renwick,2025-2026,ahl
+Dillon Boucher,Rockford IceHogs,38,2,3,5,0.079,0.053,0.13,2.263,-6,https://www.eliteprospects.com/player/195762/dillon-boucher,2025-2026,ahl
+Leo Loof,Springfield Thunderbirds,43,2,3,5,0.07,0.047,0.12,0.512,-3,https://www.eliteprospects.com/player/412461/leo-loof,2025-2026,ahl
+Jack St. Ivany,Wilkes-Barre/Scranton Penguins,5,1,4,5,0.8,0.2,1,0.8,3,https://www.eliteprospects.com/player/300076/jack-st.-ivany,2025-2026,ahl
+Melvin Fernstrom,Wilkes-Barre/Scranton Penguins,7,1,4,5,0.571,0.143,0.71,0,4,https://www.eliteprospects.com/player/619006/melvin-fernstrom,2025-2026,ahl
+Scott Morrow,Hartford Wolf Pack,14,1,4,5,0.286,0.071,0.36,1.143,-8,https://www.eliteprospects.com/player/201892/scott-morrow,2025-2026,ahl
+Dylan Anhorn,Manitoba Moose,21,1,4,5,0.19,0.048,0.24,0.476,4,https://www.eliteprospects.com/player/281318/dylan-anhorn,2025-2026,ahl
+Mitchell Vande Sompel,Charlotte Checkers,23,1,4,5,0.174,0.043,0.22,0.478,4,https://www.eliteprospects.com/player/204918/mitchell-vande-sompel,2025-2026,ahl
+Sam Lipkin,Tucson Roadrunners,27,1,4,5,0.148,0.037,0.19,0.593,10,https://www.eliteprospects.com/player/478367/sam-lipkin,2025-2026,ahl
+Andrew Basha,Calgary Wranglers,27,1,4,5,0.148,0.037,0.19,1.222,-7,https://www.eliteprospects.com/player/677806/andrew-basha,2025-2026,ahl
+Tyler Kopff,Rochester Americans,28,1,4,5,0.143,0.036,0.18,0.821,-1,https://www.eliteprospects.com/player/553220/tyler-kopff,2025-2026,ahl
+Stanislav Svozil,Cleveland Monsters,33,1,4,5,0.121,0.03,0.15,0.485,1,https://www.eliteprospects.com/player/428002/stanislav-svozil,2025-2026,ahl
+Cal Burke,San Diego Gulls,36,1,4,5,0.111,0.028,0.14,0.111,-5,https://www.eliteprospects.com/player/248438/cal-burke,2025-2026,ahl
+Graham Slaggert,Rochester Americans,40,1,4,5,0.1,0.025,0.13,0.1,-5,https://www.eliteprospects.com/player/284012/graham-slaggert,2025-2026,ahl
+Emil Andrae,Lehigh Valley Phantoms,7,0,5,5,0.714,0,0.71,0.857,3,https://www.eliteprospects.com/player/394716/emil-andrae,2025-2026,ahl
+Marshall Rifai,Toronto Marlies,18,0,5,5,0.278,0,0.28,1.667,6,https://www.eliteprospects.com/player/254623/marshall-rifai,2025-2026,ahl
+Vladislav Kolyachonok,Texas Stars,20,0,5,5,0.25,0,0.25,0.5,0,https://www.eliteprospects.com/player/490232/vladislav-kolyachonok,2025-2026,ahl
+Mikael Diotte,Utica Comets,36,0,5,5,0.139,0,0.14,0.639,-14,https://www.eliteprospects.com/player/502341/mikael-diotte,2025-2026,ahl
+Josiah Didier,Laval Rocket,37,0,5,5,0.135,0,0.14,0.838,0,https://www.eliteprospects.com/player/89813/josiah-didier,2025-2026,ahl
+Vincent Arseneau,Laval Rocket,13,4,0,4,0,0.308,0.31,0.846,3,https://www.eliteprospects.com/player/37069/vincent-arseneau,2025-2026,ahl
+Zack Ostapchuk,San Jose Barracuda,11,3,1,4,0.091,0.273,0.36,0.909,-4,https://www.eliteprospects.com/player/476029/zack-ostapchuk,2025-2026,ahl
+Jack Ricketts,Tucson Roadrunners,12,3,1,4,0.083,0.25,0.33,0.333,3,https://www.eliteprospects.com/player/300356/jack-ricketts,2025-2026,ahl
+Colton Huard,Charlotte Checkers,19,3,1,4,0.053,0.158,0.21,1.105,0,https://www.eliteprospects.com/player/439058/colton-huard,2025-2026,ahl
+Josh Filmon,Utica Comets,23,3,1,4,0.043,0.13,0.17,0.435,-1,https://www.eliteprospects.com/player/572099/josh-filmon,2025-2026,ahl
+Sam Stange,Springfield Thunderbirds,31,3,1,4,0.032,0.097,0.13,0,-7,https://www.eliteprospects.com/player/435761/sam-stange,2025-2026,ahl
+Cooper Flinton,Syracuse Crunch,31,3,1,4,0.032,0.097,0.13,0.581,2,https://www.eliteprospects.com/player/648425/cooper-flinton,2025-2026,ahl
+Otto Salin,Ontario Reign,34,3,1,4,0.029,0.088,0.12,0.588,-3,https://www.eliteprospects.com/player/638727/otto-salin,2025-2026,ahl
+Kalle Vaisanen,Hartford Wolf Pack,41,3,1,4,0.024,0.073,0.1,0,-9,https://www.eliteprospects.com/player/559937/kalle-vaisanen,2025-2026,ahl
+Fyodor Svechkov,Milwaukee Admirals,7,2,2,4,0.286,0.286,0.57,0.286,0,https://www.eliteprospects.com/player/693396/fyodor-svechkov,2025-2026,ahl
+Landon Slaggert,Rockford IceHogs,8,2,2,4,0.25,0.25,0.5,1,-2,https://www.eliteprospects.com/player/418245/landon-slaggert,2025-2026,ahl
+Chad Hillebrand,Grand Rapids Griffins,14,2,2,4,0.143,0.143,0.29,0.929,5,https://www.eliteprospects.com/player/284070/chad-hillebrand,2025-2026,ahl
+Jaxon Nelson,Iowa Wild,15,2,2,4,0.133,0.133,0.27,0.133,-4,https://www.eliteprospects.com/player/284191/jaxon-nelson,2025-2026,ahl
+Will Dineen,Laval Rocket,27,2,2,4,0.074,0.074,0.15,0.815,4,https://www.eliteprospects.com/player/393076/will-dineen,2025-2026,ahl
+Anri Ravinskis,Abbotsford Canucks,29,2,2,4,0.069,0.069,0.14,0.276,-10,https://www.eliteprospects.com/player/550178/anri-ravinskis,2025-2026,ahl
+Sean Chisholm,Texas Stars,31,2,2,4,0.065,0.065,0.13,1.065,-2,https://www.eliteprospects.com/player/502051/sean-chisholm,2025-2026,ahl
+Ethan Keppen,Bakersfield Condors,31,2,2,4,0.065,0.065,0.13,1.161,-2,https://www.eliteprospects.com/player/418534/ethan-keppen,2025-2026,ahl
+Parker Bell,Calgary Wranglers,41,2,2,4,0.049,0.049,0.1,0.732,-12,https://www.eliteprospects.com/player/539062/parker-bell,2025-2026,ahl
+Brendan Hoffman,San Jose Barracuda,5,1,3,4,0.6,0.2,0.8,0,5,https://www.eliteprospects.com/player/530039/brendan-hoffman,2025-2026,ahl
+Matthew Wood,Milwaukee Admirals,5,1,3,4,0.6,0.2,0.8,0,-1,https://www.eliteprospects.com/player/603587/matthew-wood,2025-2026,ahl
+Kyle Capobianco,Texas Stars,5,1,3,4,0.6,0.2,0.8,0.8,1,https://www.eliteprospects.com/player/225186/kyle-capobianco,2025-2026,ahl
+Zach Uens,Coachella Valley Firebirds,8,1,3,4,0.375,0.125,0.5,0.5,3,https://www.eliteprospects.com/player/424330/zach-uens,2025-2026,ahl
+David Breazeale,Wilkes-Barre/Scranton Penguins,9,1,3,4,0.333,0.111,0.44,0,8,https://www.eliteprospects.com/player/454759/david-breazeale,2025-2026,ahl
+Vitali Kravtsov,Abbotsford Canucks,10,1,3,4,0.3,0.1,0.4,0,-7,https://www.eliteprospects.com/player/379749/vitali-kravtsov,2025-2026,ahl
+Josh Jacobs,Laval Rocket,11,1,3,4,0.273,0.091,0.36,0,5,https://www.eliteprospects.com/player/168704/josh-jacobs,2025-2026,ahl
+Isaac Belliveau,Rochester Americans,22,1,3,4,0.136,0.045,0.18,1,-3,https://www.eliteprospects.com/player/340655/isaac-belliveau,2025-2026,ahl
+Shane Bowers,San Jose Barracuda,23,1,3,4,0.13,0.043,0.17,0.87,-7,https://www.eliteprospects.com/player/216102/shane-bowers,2025-2026,ahl
+Etienne Morin,Calgary Wranglers,24,1,3,4,0.125,0.042,0.17,0.333,-2,https://www.eliteprospects.com/player/599308/etienne-morin,2025-2026,ahl
+Cavan Fitzgerald,Rockford IceHogs,27,1,3,4,0.111,0.037,0.15,1.741,-5,https://www.eliteprospects.com/player/193114/cavan-fitzgerald,2025-2026,ahl
+Adam Ginning,Lehigh Valley Phantoms,30,1,3,4,0.1,0.033,0.13,0.6,-9,https://www.eliteprospects.com/player/281968/adam-ginning,2025-2026,ahl
+Zach Gallant,Wilkes-Barre/Scranton Penguins,30,1,3,4,0.1,0.033,0.13,2.133,1,https://www.eliteprospects.com/player/273617/zach-gallant,2025-2026,ahl
+Taige Harding,Rockford IceHogs,33,1,3,4,0.091,0.03,0.12,2.03,1,https://www.eliteprospects.com/player/201918/taige-harding,2025-2026,ahl
+Andrew Perrott,Rockford IceHogs,33,1,3,4,0.091,0.03,0.12,2.606,-6,https://www.eliteprospects.com/player/369851/andrew-perrott,2025-2026,ahl
+Joe Arntsen,Abbotsford Canucks,47,1,3,4,0.064,0.021,0.09,1.702,-18,https://www.eliteprospects.com/player/483623/joe-arntsen,2025-2026,ahl
+Harrison Brunicke,Wilkes-Barre/Scranton Penguins,5,0,4,4,0.8,0,0.8,0,2,https://www.eliteprospects.com/player/727518/harrison-brunicke,2025-2026,ahl
+Leon Muggli,Hershey Bears,17,0,4,4,0.235,0,0.24,0,-2,https://www.eliteprospects.com/player/795529/leon-muggli,2025-2026,ahl
+Juuso Parssinen,Hartford Wolf Pack,9,3,0,3,0,0.333,0.33,0.444,-2,https://www.eliteprospects.com/player/396656/juuso-parssinen,2025-2026,ahl
+Riley Bezeau,Cleveland Monsters,15,3,0,3,0,0.2,0.2,2.267,1,https://www.eliteprospects.com/player/478624/riley-bezeau,2025-2026,ahl
+Ryan Gagnier,Rockford IceHogs,22,3,0,3,0,0.136,0.14,0.091,-5,https://www.eliteprospects.com/player/485876/ryan-gagnier,2025-2026,ahl
+Mark Liwiski,Iowa Wild,38,3,0,3,0,0.079,0.08,4.658,-10,https://www.eliteprospects.com/player/351246/mark-liwiski,2025-2026,ahl
+Nathan Bastian,Texas Stars,4,2,1,3,0.25,0.5,0.75,0.5,0,https://www.eliteprospects.com/player/245157/nathan-bastian,2025-2026,ahl
+Matt Stienburg,Colorado Eagles,8,2,1,3,0.125,0.25,0.38,1.375,-2,https://www.eliteprospects.com/player/267112/matt-stienburg,2025-2026,ahl
+Jalen Luypen,totals,9,2,1,3,0.111,0.222,0.33,0,1,https://www.eliteprospects.com/player/476673/jalen-luypen,2025-2026,ahl
+Joseph Dunlap,Laval Rocket,10,2,1,3,0.1,0.2,0.3,0.6,3,https://www.eliteprospects.com/player/355835/joseph-dunlap,2025-2026,ahl
+Matteo Costantini,Rochester Americans,11,2,1,3,0.091,0.182,0.27,0,-2,https://www.eliteprospects.com/player/504013/matteo-costantini,2025-2026,ahl
+Gleb Veremyev,Bridgeport Islanders,18,2,1,3,0.056,0.111,0.17,0.722,-5,https://www.eliteprospects.com/player/478448/gleb-veremyev,2025-2026,ahl
+Shawn Element,totals,20,2,1,3,0.05,0.1,0.15,0.55,1,https://www.eliteprospects.com/player/384443/shawn-element,2025-2026,ahl
+Connor Clattenburg,Bakersfield Condors,20,2,1,3,0.05,0.1,0.15,4.4,-5,https://www.eliteprospects.com/player/645291/connor-clattenburg,2025-2026,ahl
+Justin Nachbaur,Hershey Bears,26,2,1,3,0.038,0.077,0.12,2.846,-8,https://www.eliteprospects.com/player/293501/justin-nachbaur,2025-2026,ahl
+Matt Copponi,Bakersfield Condors,29,2,1,3,0.034,0.069,0.1,0.517,-9,https://www.eliteprospects.com/player/665996/matt-copponi,2025-2026,ahl
+Jacob Doty,Ontario Reign,30,2,1,3,0.033,0.067,0.1,1.8,-9,https://www.eliteprospects.com/player/45623/jacob-doty,2025-2026,ahl
+Jack Finley,Syracuse Crunch,3,1,2,3,0.667,0.333,1,0,1,https://www.eliteprospects.com/player/477357/jack-finley,2025-2026,ahl
+Calum Ritchie,Bridgeport Islanders,3,1,2,3,0.667,0.333,1,0.667,2,https://www.eliteprospects.com/player/603108/calum-ritchie,2025-2026,ahl
+Charle-Edouard D'Astous,Syracuse Crunch,4,1,2,3,0.5,0.25,0.75,0,3,https://www.eliteprospects.com/player/255979/charle-edouard-d-astous,2025-2026,ahl
+Jordan Harris,Providence Bruins,4,1,2,3,0.5,0.25,0.75,0,6,https://www.eliteprospects.com/player/321687/jordan-harris,2025-2026,ahl
+Noah Philp,Chicago Wolves,5,1,2,3,0.4,0.2,0.6,0.4,0,https://www.eliteprospects.com/player/198306/noah-philp,2025-2026,ahl
+Jonathan Aspirot,Providence Bruins,5,1,2,3,0.4,0.2,0.6,0.8,2,https://www.eliteprospects.com/player/354151/jonathan-aspirot,2025-2026,ahl
+Emil Pieniniemi,Wilkes-Barre/Scranton Penguins,8,1,2,3,0.25,0.125,0.38,0.25,6,https://www.eliteprospects.com/player/709463/emil-pieniniemi,2025-2026,ahl
+Harrison Israels,Rockford IceHogs,11,1,2,3,0.182,0.091,0.27,0.182,2,https://www.eliteprospects.com/player/418568/harrison-israels,2025-2026,ahl
+Jackson van de Leest,Utica Comets,12,1,2,3,0.167,0.083,0.25,0.583,-2,https://www.eliteprospects.com/player/407592/jackson-van-de-leest,2025-2026,ahl
+Cooper Moore,Hartford Wolf Pack,26,1,2,3,0.077,0.038,0.12,0.846,0,https://www.eliteprospects.com/player/424450/cooper-moore,2025-2026,ahl
+Mason Geertsen,Rochester Americans,26,1,2,3,0.077,0.038,0.12,1.692,-5,https://www.eliteprospects.com/player/64567/mason-geertsen,2025-2026,ahl
+Tomas Hamara,Belleville Senators,37,1,2,3,0.054,0.027,0.08,0.27,-2,https://www.eliteprospects.com/player/559537/tomas-hamara,2025-2026,ahl
+Tyrel Bauer,Manitoba Moose,38,1,2,3,0.053,0.026,0.08,2.342,10,https://www.eliteprospects.com/player/391046/tyrel-bauer,2025-2026,ahl
+Kyle Crnkovic,San Jose Barracuda,5,0,3,3,0.6,0,0.6,0.4,5,https://www.eliteprospects.com/player/201916/kyle-crnkovic,2025-2026,ahl
+Niko Huuhtanen,Syracuse Crunch,5,0,3,3,0.6,0,0.6,2,1,https://www.eliteprospects.com/player/525628/niko-huuhtanen,2025-2026,ahl
+Jacob Truscott,Grand Rapids Griffins,7,0,3,3,0.429,0,0.43,0.571,4,https://www.eliteprospects.com/player/201776/jacob-truscott,2025-2026,ahl
+Brady Stonehouse,Bakersfield Condors,9,0,3,3,0.333,0,0.33,2.333,2,https://www.eliteprospects.com/player/652102/brady-stonehouse,2025-2026,ahl
+Daniel Laatsch,Wilkes-Barre/Scranton Penguins,10,0,3,3,0.3,0,0.3,0.2,1,https://www.eliteprospects.com/player/201855/daniel-laatsch,2025-2026,ahl
+Dennis Cholowski,Utica Comets,10,0,3,3,0.3,0,0.3,0.6,-5,https://www.eliteprospects.com/player/247137/dennis-cholowski,2025-2026,ahl
+Carter Berger,Lehigh Valley Phantoms,12,0,3,3,0.25,0,0.25,0.333,5,https://www.eliteprospects.com/player/299029/carter-berger,2025-2026,ahl
+Milo Roelens,Syracuse Crunch,12,0,3,3,0.25,0,0.25,0.75,2,https://www.eliteprospects.com/player/483281/milo-roelens,2025-2026,ahl
+Dakota Mermis,Toronto Marlies,12,0,3,3,0.25,0,0.25,1.083,-1,https://www.eliteprospects.com/player/56311/dakota-mermis,2025-2026,ahl
+Kaleb Lawrence,Ontario Reign,13,0,3,3,0.231,0,0.23,0.308,2,https://www.eliteprospects.com/player/417191/kaleb-lawrence,2025-2026,ahl
+David Gagnon,Chicago Wolves,13,0,3,3,0.231,0,0.23,0.923,-3,https://www.eliteprospects.com/player/267110/david-gagnon,2025-2026,ahl
+Joel Nystrom,Chicago Wolves,14,0,3,3,0.214,0,0.21,0.429,4,https://www.eliteprospects.com/player/394715/joel-nystrom,2025-2026,ahl
+Arnaud Durandeau,Abbotsford Canucks,19,0,3,3,0.158,0,0.16,0.421,-7,https://www.eliteprospects.com/player/201536/arnaud-durandeau,2025-2026,ahl
+Jackson Kunz,Abbotsford Canucks,22,0,3,3,0.136,0,0.14,0,-7,https://www.eliteprospects.com/player/550361/jackson-kunz,2025-2026,ahl
+Bryce Montgomery,Chicago Wolves,22,0,3,3,0.136,0,0.14,1.955,-3,https://www.eliteprospects.com/player/478709/bryce-montgomery,2025-2026,ahl
+Colin Felix,Providence Bruins,22,0,3,3,0.136,0,0.14,2.864,1,https://www.eliteprospects.com/player/312315/colin-felix,2025-2026,ahl
+Austin Roest,Milwaukee Admirals,28,0,3,3,0.107,0,0.11,0.643,-6,https://www.eliteprospects.com/player/691875/austin-roest,2025-2026,ahl
+Christoffer Sedoff,Henderson Silver Knights,35,0,3,3,0.086,0,0.09,0.429,3,https://www.eliteprospects.com/player/454747/christoffer-sedoff,2025-2026,ahl
+Max Sasson,Abbotsford Canucks,2,2,0,2,0,1,1,0,2,https://www.eliteprospects.com/player/462545/max-sasson,2025-2026,ahl
+Kaden Bohlsen,Hershey Bears,2,2,0,2,0,1,1,0,1,https://www.eliteprospects.com/player/385676/kaden-bohlsen,2025-2026,ahl
+Ethen Frank,Hershey Bears,3,2,0,2,0,0.667,0.67,0,0,https://www.eliteprospects.com/player/247909/ethen-frank,2025-2026,ahl
+Kevin Conley,Manitoba Moose,5,2,0,2,0,0.4,0.4,0.4,1,https://www.eliteprospects.com/player/248429/kevin-conley,2025-2026,ahl
+Logan Mailloux,Springfield Thunderbirds,5,2,0,2,0,0.4,0.4,0.4,-2,https://www.eliteprospects.com/player/582695/logan-mailloux,2025-2026,ahl
+Reilly Connors,Colorado Eagles,8,2,0,2,0,0.25,0.25,1.375,0,https://www.eliteprospects.com/player/386404/reilly-connors,2025-2026,ahl
+Yan Kuznetsov,Calgary Wranglers,10,2,0,2,0,0.2,0.2,0.2,5,https://www.eliteprospects.com/player/440410/yan-kuznetsov,2025-2026,ahl
+Mathieu De St. Phalle,Wilkes-Barre/Scranton Penguins,11,2,0,2,0,0.182,0.18,0.545,-4,https://www.eliteprospects.com/player/283937/mathieu-de-st.-phalle,2025-2026,ahl
+Blake Biondi,Chicago Wolves,23,2,0,2,0,0.087,0.09,0.304,-5,https://www.eliteprospects.com/player/495919/blake-biondi,2025-2026,ahl
+Max Dorrington,Bridgeport Islanders,2,1,1,2,0.5,0.5,1,0,1,https://www.eliteprospects.com/player/505134/max-dorrington,2025-2026,ahl
+Alec Regula,Bakersfield Condors,2,1,1,2,0.5,0.5,1,2,2,https://www.eliteprospects.com/player/283940/alec-regula,2025-2026,ahl
+Robby Fabbri,Charlotte Checkers,3,1,1,2,0.333,0.333,0.67,0,-4,https://www.eliteprospects.com/player/156923/robby-fabbri,2025-2026,ahl
+Paul Ludwinski,Rockford IceHogs,3,1,1,2,0.333,0.333,0.67,0.667,-2,https://www.eliteprospects.com/player/603788/paul-ludwinski,2025-2026,ahl
+Sheldon Rempal,Hershey Bears,4,1,1,2,0.25,0.25,0.5,0.5,-2,https://www.eliteprospects.com/player/142304/sheldon-rempal,2025-2026,ahl
+Tom Willander,Abbotsford Canucks,5,1,1,2,0.2,0.2,0.4,0,-5,https://www.eliteprospects.com/player/599426/tom-willander,2025-2026,ahl
+Givani Smith,Chicago Wolves,8,1,1,2,0.125,0.125,0.25,1.375,-1,https://www.eliteprospects.com/player/252472/givani-smith,2025-2026,ahl
+Kalan Lind,Milwaukee Admirals,9,1,1,2,0.111,0.111,0.22,1.222,-5,https://www.eliteprospects.com/player/569175/kalan-lind,2025-2026,ahl
+Jack Matier,Milwaukee Admirals,9,1,1,2,0.111,0.111,0.22,1.889,2,https://www.eliteprospects.com/player/476043/jack-matier,2025-2026,ahl
+Coulson Pitre,San Diego Gulls,11,1,1,2,0.091,0.091,0.18,0,-3,https://www.eliteprospects.com/player/672925/coulson-pitre,2025-2026,ahl
+Chase Stillman,Abbotsford Canucks,11,1,1,2,0.091,0.091,0.18,2,-4,https://www.eliteprospects.com/player/503174/chase-stillman,2025-2026,ahl
+Kenta Isogai,Ontario Reign,15,1,1,2,0.067,0.067,0.13,0.133,-3,https://www.eliteprospects.com/player/582267/kenta-isogai,2025-2026,ahl
+Nolan Moyle,Grand Rapids Griffins,16,1,1,2,0.062,0.062,0.13,0.938,5,https://www.eliteprospects.com/player/273657/nolan-moyle,2025-2026,ahl
+Riley McKay,Henderson Silver Knights,24,1,1,2,0.042,0.042,0.08,2.625,-9,https://www.eliteprospects.com/player/283832/riley-mckay,2025-2026,ahl
+Dalton Bancroft,Providence Bruins,31,1,1,2,0.032,0.032,0.06,0.806,-3,https://www.eliteprospects.com/player/424327/dalton-bancroft,2025-2026,ahl
+Yegor Zamula,Lehigh Valley Phantoms,3,0,2,2,0.667,0,0.67,0,-3,https://www.eliteprospects.com/player/398138/yegor-zamula,2025-2026,ahl
+Nick Leivermann,Hershey Bears,3,0,2,2,0.667,0,0.67,0,1,https://www.eliteprospects.com/player/344081/nick-leivermann,2025-2026,ahl
+Reilly Webb,Hershey Bears,7,0,2,2,0.286,0,0.29,0.286,3,https://www.eliteprospects.com/player/273694/reilly-webb,2025-2026,ahl
+Ryan O'Rourke,Laval Rocket,8,0,2,2,0.25,0,0.25,0.5,-1,https://www.eliteprospects.com/player/201939/ryan-o-rourke,2025-2026,ahl
+Zac Funk,Hershey Bears,8,0,2,2,0.25,0,0.25,1,0,https://www.eliteprospects.com/player/556514/zac-funk,2025-2026,ahl
+Jacob Julien,Manitoba Moose,9,0,2,2,0.222,0,0.22,0,1,https://www.eliteprospects.com/player/702143/jacob-julien,2025-2026,ahl
+Elliot Desnoyers,Iowa Wild,9,0,2,2,0.222,0,0.22,0.444,-2,https://www.eliteprospects.com/player/290157/elliot-desnoyers,2025-2026,ahl
+Tyler Inamoto,Bakersfield Condors,9,0,2,2,0.222,0,0.22,0.667,1,https://www.eliteprospects.com/player/201486/tyler-inamoto,2025-2026,ahl
+Ethan Frisch,Manitoba Moose,10,0,2,2,0.2,0,0.2,0,2,https://www.eliteprospects.com/player/365031/ethan-frisch,2025-2026,ahl
+Aidan Fulp,Rochester Americans,10,0,2,2,0.2,0,0.2,0.4,4,https://www.eliteprospects.com/player/315954/aidan-fulp,2025-2026,ahl
+Logan Brown,Ontario Reign,11,0,2,2,0.182,0,0.18,0.182,-4,https://www.eliteprospects.com/player/248391/logan-brown,2025-2026,ahl
+Dylan Wendt,Utica Comets,12,0,2,2,0.167,0,0.17,0.167,-2,https://www.eliteprospects.com/player/369968/dylan-wendt,2025-2026,ahl
+Mike Koster,Iowa Wild,13,0,2,2,0.154,0,0.15,0,1,https://www.eliteprospects.com/player/427432/mike-koster,2025-2026,ahl
+Lucas Vanroboys,San Jose Barracuda,13,0,2,2,0.154,0,0.15,3,-4,https://www.eliteprospects.com/player/349153/lucas-vanroboys,2025-2026,ahl
+Phip Waugh,totals,14,0,2,2,0.143,0,0.14,0.143,3,https://www.eliteprospects.com/player/496127/phip-waugh,2025-2026,ahl
+Scooter Brickey,Wilkes-Barre/Scranton Penguins,14,0,2,2,0.143,0,0.14,0.714,3,https://www.eliteprospects.com/player/284078/scooter-brickey,2025-2026,ahl
+Quinton Burns,Springfield Thunderbirds,14,0,2,2,0.143,0,0.14,2.214,-3,https://www.eliteprospects.com/player/590256/quinton-burns,2025-2026,ahl
+Brandon Hickey,Henderson Silver Knights,16,0,2,2,0.125,0,0.13,0.75,-2,https://www.eliteprospects.com/player/64587/brandon-hickey,2025-2026,ahl
+Calle Odelius,Bridgeport Islanders,17,0,2,2,0.118,0,0.12,0.118,-9,https://www.eliteprospects.com/player/607525/calle-odelius,2025-2026,ahl
+Jesse Pulkkinen,Bridgeport Islanders,17,0,2,2,0.118,0,0.12,0.235,-9,https://www.eliteprospects.com/player/709399/jesse-pulkkinen,2025-2026,ahl
+Chris Harpur,Syracuse Crunch,17,0,2,2,0.118,0,0.12,0.353,2,https://www.eliteprospects.com/player/221153/chris-harpur,2025-2026,ahl
+Connor Punnett,Texas Stars,18,0,2,2,0.111,0,0.11,0.722,-1,https://www.eliteprospects.com/player/582502/connor-punnett,2025-2026,ahl
+Simon Mack,Calgary Wranglers,19,0,2,2,0.105,0,0.11,0.105,-3,https://www.eliteprospects.com/player/317518/simon-mack,2025-2026,ahl
+John Prokop,Toronto Marlies,21,0,2,2,0.095,0,0.1,0.286,-6,https://www.eliteprospects.com/player/437599/john-prokop,2025-2026,ahl
+Djibril Toure,Belleville Senators,22,0,2,2,0.091,0,0.09,2.364,6,https://www.eliteprospects.com/player/507219/djibril-toure,2025-2026,ahl
+Kevin Connauton,Tucson Roadrunners,23,0,2,2,0.087,0,0.09,0.87,-11,https://www.eliteprospects.com/player/38032/kevin-connauton,2025-2026,ahl
+Ole Julian Bjorgvik-Holm,Cleveland Monsters,24,0,2,2,0.083,0,0.08,0.25,-1,https://www.eliteprospects.com/player/477881/ole-julian-bjorgvik-holm,2025-2026,ahl
+Rasmus Kumpulainen,Iowa Wild,27,0,2,2,0.074,0,0.07,0.667,-8,https://www.eliteprospects.com/player/689399/rasmus-kumpulainen,2025-2026,ahl
+Will Zmolek,Iowa Wild,29,0,2,2,0.069,0,0.07,0.276,-7,https://www.eliteprospects.com/player/379104/will-zmolek,2025-2026,ahl
+Jacob MacDonald,Colorado Eagles,1,1,0,1,0,1,1,0,-2,https://www.eliteprospects.com/player/60064/jacob-macdonald,2025-2026,ahl
+Zakhar Bardakov,Colorado Eagles,1,1,0,1,0,1,1,0,1,https://www.eliteprospects.com/player/292101/zakhar-bardakov,2025-2026,ahl
+Connor Mayer,Hershey Bears,1,1,0,1,0,1,1,0,1,https://www.eliteprospects.com/player/313508/connor-mayer,2025-2026,ahl
+Josh Dunne,Rochester Americans,2,1,0,1,0,0.5,0.5,2,1,https://www.eliteprospects.com/player/272225/josh-dunne,2025-2026,ahl
+Ryan Kirwan,Toronto Marlies,3,1,0,1,0,0.333,0.33,0,0,https://www.eliteprospects.com/player/508271/ryan-kirwan,2025-2026,ahl
+Saige Weinstein,Colorado Eagles,3,1,0,1,0,0.333,0.33,0.667,0,https://www.eliteprospects.com/player/612889/saige-weinstein,2025-2026,ahl
+Filip Hallander,Wilkes-Barre/Scranton Penguins,3,1,0,1,0,0.333,0.33,0.667,1,https://www.eliteprospects.com/player/293387/filip-hallander,2025-2026,ahl
+Tyler Motte,Charlotte Checkers,4,1,0,1,0,0.25,0.25,0.5,-2,https://www.eliteprospects.com/player/151824/tyler-motte,2025-2026,ahl
+Cooper Gay,Colorado Eagles,5,1,0,1,0,0.2,0.2,0,1,https://www.eliteprospects.com/player/658212/cooper-gay,2025-2026,ahl
+Josh Davies,Milwaukee Admirals,5,1,0,1,0,0.2,0.2,1.8,-1,https://www.eliteprospects.com/player/532703/josh-davies,2025-2026,ahl
+William Dufour,Wilkes-Barre/Scranton Penguins,6,1,0,1,0,0.167,0.17,0,0,https://www.eliteprospects.com/player/294583/william-dufour,2025-2026,ahl
+Patrick Thomas,Hershey Bears,6,1,0,1,0,0.167,0.17,0.333,-2,https://www.eliteprospects.com/player/603791/patrick-thomas,2025-2026,ahl
+Zakary Karpa,Hartford Wolf Pack,6,1,0,1,0,0.167,0.17,1.167,-2,https://www.eliteprospects.com/player/470026/zakary-karpa,2025-2026,ahl
+Ryland Mosley,Cleveland Monsters,8,1,0,1,0,0.125,0.13,0.25,-2,https://www.eliteprospects.com/player/300794/ryland-mosley,2025-2026,ahl
+Brandon Baddock,Toronto Marlies,9,1,0,1,0,0.111,0.11,3.111,0,https://www.eliteprospects.com/player/83627/brandon-baddock,2025-2026,ahl
+Marcel Marcel,Rockford IceHogs,13,1,0,1,0,0.077,0.08,0.538,-7,https://www.eliteprospects.com/player/559520/marcel-marcel,2025-2026,ahl
+Josh Lopina,Rockford IceHogs,16,1,0,1,0,0.062,0.06,0.5,-3,https://www.eliteprospects.com/player/315963/josh-lopina,2025-2026,ahl
+Cameron Butler,Iowa Wild,16,1,0,1,0,0.062,0.06,1.25,-3,https://www.eliteprospects.com/player/342193/cameron-butler,2025-2026,ahl
+Josh Bloom,Abbotsford Canucks,17,1,0,1,0,0.059,0.06,0,-12,https://www.eliteprospects.com/player/617949/josh-bloom,2025-2026,ahl
+Fabian Wagner,Manitoba Moose,18,1,0,1,0,0.056,0.06,0.222,-6,https://www.eliteprospects.com/player/448938/fabian-wagner,2025-2026,ahl
+Neil Shea,Colorado Eagles,1,0,1,1,1,0,1,0,-1,https://www.eliteprospects.com/player/353682/neil-shea,2025-2026,ahl
+Matthew Savoie,Bakersfield Condors,1,0,1,1,1,0,1,0,-1,https://www.eliteprospects.com/player/476028/matthew-savoie,2025-2026,ahl
+Keaton Mastrodonato,Ontario Reign,1,0,1,1,1,0,1,0,-1,https://www.eliteprospects.com/player/344047/keaton-mastrodonato,2025-2026,ahl
+Travis Dermott,Hartford Wolf Pack,2,0,1,1,0.5,0,0.5,0,1,https://www.eliteprospects.com/player/214673/travis-dermott,2025-2026,ahl
+Jackson Jutting,Grand Rapids Griffins,2,0,1,1,0.5,0,0.5,0,0,https://www.eliteprospects.com/player/413300/jackson-jutting,2025-2026,ahl
+Michael Misa,San Jose Barracuda,2,0,1,1,0.5,0,0.5,0,0,https://www.eliteprospects.com/player/577184/michael-misa,2025-2026,ahl
+Easton Cowan,Toronto Marlies,2,0,1,1,0.5,0,0.5,1,1,https://www.eliteprospects.com/player/709773/easton-cowan,2025-2026,ahl
+Robby Drazner,Abbotsford Canucks,2,0,1,1,0.5,0,0.5,3,-1,https://www.eliteprospects.com/player/283980/robby-drazner,2025-2026,ahl
+Simon Pinard,Hershey Bears,3,0,1,1,0.333,0,0.33,0,2,https://www.eliteprospects.com/player/295310/simon-pinard,2025-2026,ahl
+Aidan Hreschuk,Texas Stars,3,0,1,1,0.333,0,0.33,0,-1,https://www.eliteprospects.com/player/512181/aidan-hreschuk,2025-2026,ahl
+Israel Mianscum,Laval Rocket,3,0,1,1,0.333,0,0.33,1.667,0,https://www.eliteprospects.com/player/485049/israel-mianscum,2025-2026,ahl
+Isak Walther,Milwaukee Admirals,4,0,1,1,0.25,0,0.25,0,-1,https://www.eliteprospects.com/player/431803/isak-walther,2025-2026,ahl
+Case McCarthy,Hartford Wolf Pack,4,0,1,1,0.25,0,0.25,0,2,https://www.eliteprospects.com/player/290196/case-mccarthy,2025-2026,ahl
+David Kampf,Toronto Marlies,4,0,1,1,0.25,0,0.25,0,-1,https://www.eliteprospects.com/player/160499/david-kampf,2025-2026,ahl
+Peter Tischke,Rochester Americans,4,0,1,1,0.25,0,0.25,0,2,https://www.eliteprospects.com/player/194272/peter-tischke,2025-2026,ahl
+Jakub Demek,Henderson Silver Knights,4,0,1,1,0.25,0,0.25,0,-4,https://www.eliteprospects.com/player/556420/jakub-demek,2025-2026,ahl
+Drew Callin,Bridgeport Islanders,4,0,1,1,0.25,0,0.25,0.5,-3,https://www.eliteprospects.com/player/190462/drew-callin,2025-2026,ahl
+Charles-Alexis Legault,Chicago Wolves,4,0,1,1,0.25,0,0.25,1.75,1,https://www.eliteprospects.com/player/485094/charles-alexis-legault,2025-2026,ahl
+Radim Mrtka,Rochester Americans,4,0,1,1,0.25,0,0.25,1.75,0,https://www.eliteprospects.com/player/872673/radim-mrtka,2025-2026,ahl
+Milan Lucic,Springfield Thunderbirds,5,0,1,1,0.2,0,0.2,0.8,-7,https://www.eliteprospects.com/player/11104/milan-lucic,2025-2026,ahl
+Curtis Douglas,Syracuse Crunch,6,0,1,1,0.167,0,0.17,0,0,https://www.eliteprospects.com/player/351462/curtis-douglas,2025-2026,ahl
+Jordan Gustafson,Henderson Silver Knights,6,0,1,1,0.167,0,0.17,0,-4,https://www.eliteprospects.com/player/511853/jordan-gustafson,2025-2026,ahl
+Hank Kempf,Colorado Eagles,6,0,1,1,0.167,0,0.17,0.333,1,https://www.eliteprospects.com/player/201723/hank-kempf,2025-2026,ahl
+Riley Kidney,Laval Rocket,6,0,1,1,0.167,0,0.17,0.667,2,https://www.eliteprospects.com/player/473664/riley-kidney,2025-2026,ahl
+Kyle Jackson,Hartford Wolf Pack,7,0,1,1,0.143,0,0.14,0,-3,https://www.eliteprospects.com/player/413825/kyle-jackson,2025-2026,ahl
+Ludwig Persson,Hershey Bears,7,0,1,1,0.143,0,0.14,0.286,-1,https://www.eliteprospects.com/player/423614/ludwig-persson,2025-2026,ahl
+Chase Yoder,Manitoba Moose,8,0,1,1,0.125,0,0.13,1,-2,https://www.eliteprospects.com/player/415335/chase-yoder,2025-2026,ahl
+Wyatte Wylie,Laval Rocket,8,0,1,1,0.125,0,0.13,1,-3,https://www.eliteprospects.com/player/300071/wyatte-wylie,2025-2026,ahl
+Konnor Smith,San Diego Gulls,8,0,1,1,0.125,0,0.13,1.75,-2,https://www.eliteprospects.com/player/640821/konnor-smith,2025-2026,ahl
+Rhett Parsons,Toronto Marlies,8,0,1,1,0.125,0,0.13,5.875,-5,https://www.eliteprospects.com/player/505836/rhett-parsons,2025-2026,ahl
+D.J. King,totals,9,0,1,1,0.111,0,0.11,0.222,1,https://www.eliteprospects.com/player/399239/d.j.-king,2025-2026,ahl
+Samuel Laberge,San Jose Barracuda,9,0,1,1,0.111,0,0.11,3,0,https://www.eliteprospects.com/player/231410/samuel-laberge,2025-2026,ahl
+Ryan Hofer,Hershey Bears,11,0,1,1,0.091,0,0.09,0.182,-1,https://www.eliteprospects.com/player/416983/ryan-hofer,2025-2026,ahl
+Brendan Smith,Cleveland Monsters,11,0,1,1,0.091,0,0.09,0.727,-5,https://www.eliteprospects.com/player/12506/brendan-smith,2025-2026,ahl
+Andrej Sustr,Bridgeport Islanders,11,0,1,1,0.091,0,0.09,1.909,-6,https://www.eliteprospects.com/player/44405/andrej-sustr,2025-2026,ahl
+Derek Daschke,Abbotsford Canucks,13,0,1,1,0.077,0,0.08,0,-2,https://www.eliteprospects.com/player/272191/derek-daschke,2025-2026,ahl
+Tyson Feist,Bakersfield Condors,13,0,1,1,0.077,0,0.08,2.692,5,https://www.eliteprospects.com/player/407570/tyson-feist,2025-2026,ahl
+Chris Ortiz,Hartford Wolf Pack,14,0,1,1,0.071,0,0.07,0.286,2,https://www.eliteprospects.com/player/296699/chris-ortiz,2025-2026,ahl
+Tyson Empey,Manitoba Moose,18,0,1,1,0.056,0,0.06,2.889,0,https://www.eliteprospects.com/player/120233/tyson-empey,2025-2026,ahl
+Travis Howe,San Diego Gulls,19,0,1,1,0.053,0,0.05,3.842,-1,https://www.eliteprospects.com/player/207070/travis-howe,2025-2026,ahl
+Jake Chiasson,Belleville Senators,20,0,1,1,0.05,0,0.05,0.2,0,https://www.eliteprospects.com/player/477353/jake-chiasson,2025-2026,ahl
+Navrin Mutter,Milwaukee Admirals,23,0,1,1,0.043,0,0.04,2.826,-8,https://www.eliteprospects.com/player/418410/navrin-mutter,2025-2026,ahl
+Cade Webber,Toronto Marlies,28,0,1,1,0.036,0,0.04,0.5,11,https://www.eliteprospects.com/player/285385/cade-webber,2025-2026,ahl
+Roman Schmidt,totals,29,0,1,1,0.034,0,0.03,2.069,-10,https://www.eliteprospects.com/player/417192/roman-schmidt,2025-2026,ahl
+Zack Hayes,Milwaukee Admirals,30,0,1,1,0.033,0,0.03,0.467,-8,https://www.eliteprospects.com/player/281743/zack-hayes,2025-2026,ahl
+Yanick Turcotte,Chicago Wolves,31,0,1,1,0.032,0,0.03,3.419,-4,https://www.eliteprospects.com/player/252734/yanick-turcotte,2025-2026,ahl
+Dalton Smith,Hershey Bears,43,0,1,1,0.023,0,0.02,1.814,-16,https://www.eliteprospects.com/player/30923/dalton-smith,2025-2026,ahl
+Artyom Grushnikov,Calgary Wranglers,45,0,1,1,0.022,0,0.02,0.422,1,https://www.eliteprospects.com/player/539222/artyom-grushnikov,2025-2026,ahl
+Mats Lindgren,Bakersfield Condors,0,0,0,0,,,0,,-,https://www.eliteprospects.com/player/635389/mats-lindgren,2025-2026,ahl
+Guillaume Brisebois,Abbotsford Canucks,0,0,0,0,,,0,,-,https://www.eliteprospects.com/player/213397/guillaume-brisebois,2025-2026,ahl
+Justin Janicke,Coachella Valley Firebirds,1,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/583032/justin-janicke,2025-2026,ahl
+Garrett Pyke,Hershey Bears,1,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/273731/garrett-pyke,2025-2026,ahl
+Landon McCallum,Coachella Valley Firebirds,1,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/582562/landon-mccallum,2025-2026,ahl
+Brent Johnson,Wilkes-Barre/Scranton Penguins,1,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/512370/brent-johnson,2025-2026,ahl
+Ryan McCleary,Toronto Marlies,1,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/483627/ryan-mccleary,2025-2026,ahl
+Sullivan Mack,Hartford Wolf Pack,1,0,0,0,0,0,0,0,1,https://www.eliteprospects.com/player/415811/sullivan-mack,2025-2026,ahl
+Ethan Leyh,Chicago Wolves,1,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/407590/ethan-leyh,2025-2026,ahl
+Tyler Weiss,Chicago Wolves,1,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/355485/tyler-weiss,2025-2026,ahl
+Chad Nychuk,Milwaukee Admirals,1,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/351204/chad-nychuk,2025-2026,ahl
+Xavier Bernard,Calgary Wranglers,1,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/335702/xavier-bernard,2025-2026,ahl
+Antonio Venuto,Cleveland Monsters,1,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/283955/antonio-venuto,2025-2026,ahl
+Caleb Jones,Wilkes-Barre/Scranton Penguins,1,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/199902/caleb-jones,2025-2026,ahl
+Jake Murray,totals,1,0,0,0,0,0,0,2,-1,https://www.eliteprospects.com/player/503980/jake-murray,2025-2026,ahl
+Tommy Budnick,Wilkes-Barre/Scranton Penguins,1,0,0,0,0,0,0,2,0,https://www.eliteprospects.com/player/574823/tommy-budnick,2025-2026,ahl
+Max Graham,Wilkes-Barre/Scranton Penguins,1,0,0,0,0,0,0,9,0,https://www.eliteprospects.com/player/650079/max-graham,2025-2026,ahl
+Ben Meehan,Lehigh Valley Phantoms,2,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/499017/ben-meehan,2025-2026,ahl
+Drew Elliott,San Diego Gulls,2,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/417740/drew-elliott,2025-2026,ahl
+Tarun Fizer,Springfield Thunderbirds,2,0,0,0,0,0,0,0,1,https://www.eliteprospects.com/player/413326/tarun-fizer,2025-2026,ahl
+Jackson Berezowski,Coachella Valley Firebirds,2,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/403435/jackson-berezowski,2025-2026,ahl
+Hunter Johannes,Lehigh Valley Phantoms,2,0,0,0,0,0,0,0,2,https://www.eliteprospects.com/player/379289/hunter-johannes,2025-2026,ahl
+Will Riedell,Providence Bruins,2,0,0,0,0,0,0,0,1,https://www.eliteprospects.com/player/353791/will-riedell,2025-2026,ahl
+Zachary Okabe,Abbotsford Canucks,2,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/337754/zachary-okabe,2025-2026,ahl
+Cole Krygier,Charlotte Checkers,2,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/283959/cole-krygier,2025-2026,ahl
+Kyler Kupka,Hershey Bears,2,0,0,0,0,0,0,0,-2,https://www.eliteprospects.com/player/201358/kyler-kupka,2025-2026,ahl
+Dyllan Gill,Syracuse Crunch,2,0,0,0,0,0,0,0,-2,https://www.eliteprospects.com/player/573869/dyllan-gill,2025-2026,ahl
+Romain Rodzinski,Syracuse Crunch,2,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/534608/romain-rodzinski,2025-2026,ahl
+Deni Goure,Chicago Wolves,2,0,0,0,0,0,0,0,-2,https://www.eliteprospects.com/player/505395/deni-goure,2025-2026,ahl
+Ryan McGuire,Iowa Wild,2,0,0,0,0,0,0,1,-2,https://www.eliteprospects.com/player/201890/ryan-mcguire,2025-2026,ahl
+Martin Pospisil,Calgary Wranglers,2,0,0,0,0,0,0,1,-3,https://www.eliteprospects.com/player/341691/martin-pospisil,2025-2026,ahl
+Spencer Kersten,Syracuse Crunch,2,0,0,0,0,0,0,1,0,https://www.eliteprospects.com/player/370370/spencer-kersten,2025-2026,ahl
+Noah Beck,San Jose Barracuda,2,0,0,0,0,0,0,2,1,https://www.eliteprospects.com/player/530038/noah-beck,2025-2026,ahl
+Troy Murray,Springfield Thunderbirds,2,0,0,0,0,0,0,2.5,-1,https://www.eliteprospects.com/player/360750/troy-murray,2025-2026,ahl
+Ilya Solovyov,Colorado Eagles,3,0,0,0,0,0,0,0,1,https://www.eliteprospects.com/player/490245/ilya-solovyov,2025-2026,ahl
+Maxim Barbashyov,Tucson Roadrunners,3,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/699160/maxim-barbashyov,2025-2026,ahl
+Brayden Edwards,Wilkes-Barre/Scranton Penguins,3,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/636658/brayden-edwards,2025-2026,ahl
+Matthew Andonovski,Belleville Senators,3,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/619149/matthew-andonovski,2025-2026,ahl
+Matthew Sop,Iowa Wild,3,0,0,0,0,0,0,0,-2,https://www.eliteprospects.com/player/538401/matthew-sop,2025-2026,ahl
+Jayden Lee,Abbotsford Canucks,3,0,0,0,0,0,0,0,-2,https://www.eliteprospects.com/player/351553/jayden-lee,2025-2026,ahl
+Owen Lindmark,San Diego Gulls,3,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/315962/owen-lindmark,2025-2026,ahl
+Roman Kinal,San Diego Gulls,3,0,0,0,0,0,0,0,2,https://www.eliteprospects.com/player/311067/roman-kinal,2025-2026,ahl
+Scott Reedy,Bridgeport Islanders,3,0,0,0,0,0,0,0,-4,https://www.eliteprospects.com/player/269301/scott-reedy,2025-2026,ahl
+Landon Sim,Toronto Marlies,3,0,0,0,0,0,0,0.667,-2,https://www.eliteprospects.com/player/563410/landon-sim,2025-2026,ahl
+Elias Pettersson,Abbotsford Canucks,3,0,0,0,0,0,0,0.667,-1,https://www.eliteprospects.com/player/641020/elias-pettersson,2025-2026,ahl
+Artur Cholach,Henderson Silver Knights,3,0,0,0,0,0,0,0.667,-1,https://www.eliteprospects.com/player/467724/artur-cholach,2025-2026,ahl
+Zach Berzolla,Springfield Thunderbirds,3,0,0,0,0,0,0,2,-1,https://www.eliteprospects.com/player/291858/zach-berzolla,2025-2026,ahl
+Terrell Goldsmith,Tucson Roadrunners,3,0,0,0,0,0,0,2.333,1,https://www.eliteprospects.com/player/638604/terrell-goldsmith,2025-2026,ahl
+Ian Moore,San Diego Gulls,4,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/201746/ian-moore,2025-2026,ahl
+Samuel Mayer,Henderson Silver Knights,4,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/479856/samuel-mayer,2025-2026,ahl
+Colin Swoyer,Cleveland Monsters,4,0,0,0,0,0,0,0.5,0,https://www.eliteprospects.com/player/271345/colin-swoyer,2025-2026,ahl
+Danny Katic,Belleville Senators,4,0,0,0,0,0,0,0.5,-1,https://www.eliteprospects.com/player/313394/danny-katic,2025-2026,ahl
+Sam Stevens,Toronto Marlies,4,0,0,0,0,0,0,0.5,-1,https://www.eliteprospects.com/player/315953/sam-stevens,2025-2026,ahl
+Ben King,Toronto Marlies,4,0,0,0,0,0,0,1.25,-4,https://www.eliteprospects.com/player/201803/ben-king,2025-2026,ahl
+John Gormley,San Jose Barracuda,4,0,0,0,0,0,0,1.75,0,https://www.eliteprospects.com/player/519987/john-gormley,2025-2026,ahl
+Jack Bar,San Jose Barracuda,5,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/503032/jack-bar,2025-2026,ahl
+Stevie Leskovar,Iowa Wild,5,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/526026/stevie-leskovar,2025-2026,ahl
+Emil Hemming,Texas Stars,5,0,0,0,0,0,0,0,-1,https://www.eliteprospects.com/player/689033/emil-hemming,2025-2026,ahl
+Will MacKinnon,Cleveland Monsters,5,0,0,0,0,0,0,0.4,0,https://www.eliteprospects.com/player/285412/will-mackinnon,2025-2026,ahl
+Carson Golder,Lehigh Valley Phantoms,5,0,0,0,0,0,0,0.4,-2,https://www.eliteprospects.com/player/477356/carson-golder,2025-2026,ahl
+Lukas Sillinger,Iowa Wild,5,0,0,0,0,0,0,0.4,-1,https://www.eliteprospects.com/player/287466/lukas-sillinger,2025-2026,ahl
+Jacob Dion,Laval Rocket,5,0,0,0,0,0,0,0.4,-2,https://www.eliteprospects.com/player/410556/jacob-dion,2025-2026,ahl
+James Stefan,Bakersfield Condors,6,0,0,0,0,0,0,0,0,https://www.eliteprospects.com/player/480110/james-stefan,2025-2026,ahl
+Christian Felton,Abbotsford Canucks,6,0,0,0,0,0,0,0,-2,https://www.eliteprospects.com/player/325238/christian-felton,2025-2026,ahl
+Chongmin Lee,Cleveland Monsters,6,0,0,0,0,0,0,0.333,1,https://www.eliteprospects.com/player/325427/chongmin-lee,2025-2026,ahl
+Gavin Hain,Hartford Wolf Pack,6,0,0,0,0,0,0,0.333,-3,https://www.eliteprospects.com/player/354061/gavin-hain,2025-2026,ahl
+Kevin Wall,Springfield Thunderbirds,6,0,0,0,0,0,0,0.333,-1,https://www.eliteprospects.com/player/355153/kevin-wall,2025-2026,ahl
+Artyom Guryev,Lehigh Valley Phantoms,6,0,0,0,0,0,0,0.667,-1,https://www.eliteprospects.com/player/617884/artyom-guryev,2025-2026,ahl
+Anthony Kehrer,Springfield Thunderbirds,7,0,0,0,0,0,0,0,-3,https://www.eliteprospects.com/player/201954/anthony-kehrer,2025-2026,ahl
+Zach Urdahl,Wilkes-Barre/Scranton Penguins,7,0,0,0,0,0,0,0.286,2,https://www.eliteprospects.com/player/564451/zach-urdahl,2025-2026,ahl
+Chase Wheatcroft,Texas Stars,8,0,0,0,0,0,0,0.5,1,https://www.eliteprospects.com/player/506229/chase-wheatcroft,2025-2026,ahl
+Reece Vitelli,Manitoba Moose,8,0,0,0,0,0,0,0.625,2,https://www.eliteprospects.com/player/351365/reece-vitelli,2025-2026,ahl
+Jackson Edward,Providence Bruins,9,0,0,0,0,0,0,0.222,2,https://www.eliteprospects.com/player/672923/jackson-edward,2025-2026,ahl
+Anton Lundmark,Charlotte Checkers,9,0,0,0,0,0,0,0.444,-2,https://www.eliteprospects.com/player/350424/anton-lundmark,2025-2026,ahl
+Braden Doyle,Chicago Wolves,9,0,0,0,0,0,0,1.667,0,https://www.eliteprospects.com/player/385678/braden-doyle,2025-2026,ahl
+Colton White,Utica Comets,10,0,0,0,0,0,0,0.6,-4,https://www.eliteprospects.com/player/204911/colton-white,2025-2026,ahl
+Dawson Barteaux,Manitoba Moose,10,0,0,0,0,0,0,0.6,-3,https://www.eliteprospects.com/player/285046/dawson-barteaux,2025-2026,ahl
+Tag Bertuzzi,Utica Comets,11,0,0,0,0,0,0,0,-3,https://www.eliteprospects.com/player/279765/tag-bertuzzi,2025-2026,ahl
+Matt Brown,Bakersfield Condors,11,0,0,0,0,0,0,0.182,-1,https://www.eliteprospects.com/player/381804/matt-brown,2025-2026,ahl
+Jett Jones,Springfield Thunderbirds,11,0,0,0,0,0,0,0.364,-6,https://www.eliteprospects.com/player/442336/jett-jones,2025-2026,ahl
+Vincent Sevigny,totals,11,0,0,0,0,0,0,0.364,5,https://www.eliteprospects.com/player/410874/vincent-sevigny,2025-2026,ahl
+Sawyer Boulton,Lehigh Valley Phantoms,11,0,0,0,0,0,0,1.818,-1,https://www.eliteprospects.com/player/637562/sawyer-boulton,2025-2026,ahl
+Loke Johansson,Providence Bruins,12,0,0,0,0,0,0,0.333,3,https://www.eliteprospects.com/player/719598/loke-johansson,2025-2026,ahl
+Carter Wilkie,Calgary Wranglers,14,0,0,0,0,0,0,0.5,-4,https://www.eliteprospects.com/player/411159/carter-wilkie,2025-2026,ahl
+Max Wanner,Providence Bruins,16,0,0,0,0,0,0,0.438,5,https://www.eliteprospects.com/player/414967/max-wanner,2025-2026,ahl
+Charlie Wright,Coachella Valley Firebirds,27,0,0,0,0,0,0,0.148,-1,https://www.eliteprospects.com/player/475351/charlie-wright,2025-2026,ahl
+Alex Gallant,Calgary Wranglers,30,0,0,0,0,0,0,4.533,-8,https://www.eliteprospects.com/player/77308/alex-gallant,2025-2026,ahl
+Kale Kessy,Springfield Thunderbirds,31,0,0,0,0,0,0,1.839,-5,https://www.eliteprospects.com/player/26412/kale-kessy,2025-2026,ahl
+Braeden Kressler,Toronto Marlies,,,,-,,,-,,-,https://www.eliteprospects.com/player/624108/braeden-kressler,2025-2026,ahl
+Connor Kelley,Colorado Eagles,,,,-,,,-,,-,https://www.eliteprospects.com/player/495926/connor-kelley,2025-2026,ahl
+Gannon Laroque,Laval Rocket,,,,-,,,-,,-,https://www.eliteprospects.com/player/476541/gannon-laroque,2025-2026,ahl
+Ben Zloty,Manitoba Moose,,,,-,,,-,,-,https://www.eliteprospects.com/player/475290/ben-zloty,2025-2026,ahl
+Dylan Moulton,Manitoba Moose,,,,-,,,-,,-,https://www.eliteprospects.com/player/370017/dylan-moulton,2025-2026,ahl
+Jonny Hooker,San Diego Gulls,,,,-,,,-,,-,https://www.eliteprospects.com/player/351089/jonny-hooker,2025-2026,ahl
+Erik Middendorf,Providence Bruins,,,,-,,,-,,-,https://www.eliteprospects.com/player/351001/erik-middendorf,2025-2026,ahl
+Ryan Chyzowski,Calgary Wranglers,,,,-,,,-,,-,https://www.eliteprospects.com/player/344066/ryan-chyzowski,2025-2026,ahl
+Joe Carroll,Rockford IceHogs,,,,-,,,-,,-,https://www.eliteprospects.com/player/336897/joe-carroll,2025-2026,ahl
+Jeremie Bucheler,Rockford IceHogs,,,,-,,,-,,-,https://www.eliteprospects.com/player/335685/jeremie-bucheler,2025-2026,ahl
+Juha Jaaska,Chicago Wolves,,,,-,,,-,,-,https://www.eliteprospects.com/player/222123/juha-jaaska,2025-2026,ahl
+Max McCormick,Coachella Valley Firebirds,,,,-,,,-,,-,https://www.eliteprospects.com/player/90365/max-mccormick,2025-2026,ahl
+Nick Leddy,San Jose Barracuda,,,,-,,,-,,-,https://www.eliteprospects.com/player/38067/nick-leddy,2025-2026,ahl

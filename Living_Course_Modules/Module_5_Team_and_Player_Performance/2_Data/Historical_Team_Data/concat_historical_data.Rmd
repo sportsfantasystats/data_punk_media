@@ -1,0 +1,128 @@
+---
+title: "create_historical_dataset"
+output: html_document
+date: "2026-02-28"
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r}
+
+library(tidyverse)
+library(stringr)
+library(lubridate)
+library(janitor)
+library(readr)
+
+```
+
+
+
+```{r}
+
+data_dir <- "D:/Data_Punk_Media_GH/data_punk_media/Living_Course_Modules/Module_5_Team_and_Player_Performance/2_Data/Historical_Team_Data"  
+
+files <- list.files(
+  path = data_dir,
+  pattern = "^nhl_team_stats_\\d{8}\\.csv$",
+  full.names = TRUE
+)
+
+stopifnot(length(files) > 0)
+
+```
+
+
+
+```{r}
+
+get_snapshot_date <- function(fp) {
+  ymd(str_extract(basename(fp), "\\d{8}"))
+}
+
+all_snapshots <- map_dfr(
+  files,
+  \(fp) {
+    read_csv(fp, show_col_types = FALSE) %>%
+      clean_names() %>%  # standardize column names (TEAM -> team, GP -> gp, etc.)
+      mutate(
+        snapshot_date = get_snapshot_date(fp),
+        source_file = basename(fp)
+      )
+  }
+) %>%
+  arrange(snapshot_date)
+
+id_cols <- intersect(names(all_snapshots), c("team", "team_name", "team_abbrev", "snapshot_date", "source_file"))
+
+all_snapshots <- all_snapshots %>%
+  mutate(across(
+    .cols = setdiff(names(all_snapshots), id_cols),
+    .fns  = ~ parse_number(as.character(.x))
+  ))
+
+```
+
+
+
+```{r}
+
+write_csv(all_snapshots, file.path(data_dir, "nhl_team_stats_merged.csv"))
+
+```
+
+
+```{r}
+
+library(tidyverse)
+library(lubridate)
+library(stringr)
+library(janitor)
+library(readr)
+
+```
+
+
+```{r}
+
+data_dir <- "D:/Data_Punk_Media_GH/data_punk_media/Living_Course_Modules/Module_5_Team_and_Player_Performance/2_Data/Historical_Player_Data"  
+
+files <- list.files(
+  path = data_dir,
+  pattern = "^nhl_player_stats_\\d{8}\\.csv$",
+  full.names = TRUE
+)
+
+extract_date <- function(filename) {
+  ymd(str_extract(basename(filename), "\\d{8}"))
+}
+
+combined_df <- map_dfr(files, function(file) {
+  
+  read_csv(file, show_col_types = FALSE) %>%
+    clean_names() %>%                    # standardize headers
+    mutate(
+      snapshot_date = extract_date(file),
+      source_file   = basename(file)
+    )
+})
+
+combined_df <- combined_df %>%
+  arrange(snapshot_date)
+
+```
+
+
+```{r}
+
+write_csv(combined_df,
+          file.path(data_dir, "nhl_player_stats_all_snapshots.csv"))
+
+```
+
+
