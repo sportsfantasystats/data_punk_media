@@ -1,0 +1,64 @@
+---
+title: "apply_predictive_model"
+output: html_document
+date: "2026-05-16"
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r}
+
+library(tidyverse)
+library(caret)
+
+```
+
+
+
+```{r}
+
+model <- readRDS("nhl_pts_pct_model.rds")
+
+```
+
+
+```{r}
+
+
+new_data <- read.csv("new_season_data_sample_data.csv", stringsAsFactors = FALSE)
+
+# Apply the same cleaning steps as the training pipeline
+new_data <- new_data %>%
+  filter(GF > 0, GA > 0, GP > 5) %>%
+  mutate(
+    TIME_PERIOD = factor(TIME_PERIOD, levels = 1:5,
+                         labels = c("1917-1942", "1942-1970",
+                                    "1970-1980", "1980-2000", "2000-2024")),
+    PWE          = GF^2 / (GF^2 + GA^2),
+    GOAL_DIFF_PG = (GF - GA) / GP
+  ) %>%
+  mutate(across(where(is.numeric),
+                ~ ifelse(is.na(.x), median(.x, na.rm = TRUE), .x)))
+
+```
+
+
+```{r}
+
+new_data$PREDICTED_PTS_PCT <- predict(model, newdata = new_data)
+
+new_data %>%
+  select(SEASON, TEAM, PTS_PCT, PREDICTED_PTS_PCT) %>%
+  mutate(DELTA = round(PTS_PCT - PREDICTED_PTS_PCT, 3)) %>%
+  arrange(desc(abs(DELTA))) %>%
+  print(n = 20)
+
+write.csv(new_data, file = "sample_predictions.csv", row.names = FALSE)
+
+```
+
