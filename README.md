@@ -1,5 +1,5 @@
 # Data Punk Media
-This GitHub repo contains the resource files that accompany each of the data stories published on the Data Punk Media site: https://www.datapunk.media. 
+This GitHub repo contains the resource files that accompany each of the data stories published on the Data Punk Media site: https://www.datapunk.media. It also publishes resources associated with our workshops and online courses.
 
 The types of files you will find here include: 
 
