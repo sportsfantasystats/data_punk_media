@@ -1,0 +1,195 @@
+---
+title: "cluster_analysis"
+author: "Data Punk"
+date: "2024-06-29"
+output: html_document
+---
+
+License Information
+
+MIT License
+
+Copyright (c) 2023 Data Punk Hockey
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+# Libraries needed for cluster analysis.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(cluster)
+# library(dendextend)
+library(knitr)
+library(kableExtra)
+
+```
+
+# Load and filter data.
+
+```{r}
+
+player_data <- read_csv('multi_season_player_data.csv')
+
+subset_player_data <- player_data %>% 
+  filter(POS == "C") %>% 
+  filter(GP > 20) %>% 
+  filter(SEASON == "2023_2024")
+
+data_sniper <- subset_player_data %>% 
+  select(NAME, TEAM, GP, SHOT_PCT, PTS) %>% 
+  drop_na()
+  
+
+str(data_sniper)
+
+```
+
+# Determine the number of clusters for k-means analysis.
+
+```{r}
+
+set.seed(42)
+sse <- vector()
+k_range <- 1:10
+
+for (k in k_range) {
+  kmeans_model <- kmeans(data_sniper$SHOT_PCT, centers = k, nstart = 25)
+  sse[k] <- sum(kmeans_model$tot.withinss)
+}
+
+ggplot(data.frame(k = k_range, sse = sse), aes(x = k, y = sse)) +
+  geom_line(color = "lightblue", size = 1) +
+  geom_point(size = 2, color = "blue") +
+    labs(
+    title = 'Elbow Method for Optimal k',
+    x = 'Number of Clusters (k)',
+    y = 'Sum of Squared Distances (SSE)'
+  ) +
+  theme_bw() +
+  theme(
+    plot.title = element_text(size = 12, face = "bold"),
+    axis.title = element_text(size = 10),
+    axis.text = element_text(size = 8),
+    panel.grid.major = element_line(color = "gray88"),
+    panel.grid.minor = element_line(color = "gray95")
+  ) +
+  scale_x_continuous(breaks = k_range)
+
+```
+
+# Run k-means analysis (and recode clusters to be more intuitive).
+
+```{r}
+
+set.seed(42)
+kmeans_final <- kmeans(data_sniper$SHOT_PCT, centers = 5, nstart = 25)
+
+data_sniper_cluster <- data_sniper %>% 
+  mutate(Cluster = as.factor(kmeans_final$cluster)) %>% 
+  mutate(Cluster = recode(Cluster,
+                          `3` = "L5",
+                          `1` = "L4",
+                          `2` = "L3",
+                          `4` = "L2",
+                          `5` = "L1"))
+
+ggplot(data_sniper_cluster, aes(x = NAME, y = SHOT_PCT, color = Cluster)) +
+  geom_point() +
+  labs(title = 'K-Means Clustering of NHL Snipers', x = 'Player', y = 'Shot Percentage') +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 0, hjust = 1), axis.text.y = element_text(angle = 0, hjust = 1, size = 4)) +
+  coord_flip()
+
+
+write.csv(data_sniper_cluster, "cluster_of_snipers.csv", row.names = FALSE)
+
+```
+# Create bar chart of cluster sizes.
+
+```{r}
+
+count_of_clusters_df <- data_sniper_cluster %>% 
+  group_by(Cluster) %>% 
+  summarise(TOTAL_COUNT = n(), AVG_SHOT_PCT = round(mean(SHOT_PCT),2)) %>% 
+  arrange(desc(AVG_SHOT_PCT))
+
+total_count <- sum(count_of_clusters_df$TOTAL_COUNT)
+
+count_of_clusters_df <- count_of_clusters_df %>%
+  mutate(Percentage = TOTAL_COUNT / total_count * 100)
+
+count_of_clusters_df$Percentage <- round(count_of_clusters_df$Percentage, 2)
+
+count_of_clusters_df <- count_of_clusters_df %>%
+  mutate(Cluster = fct_reorder(Cluster, TOTAL_COUNT))
+
+ggplot(count_of_clusters_df, aes(x = Cluster, y = TOTAL_COUNT, fill = Cluster)) +
+  geom_bar(stat = "identity", show.legend = FALSE) +
+  geom_text(aes(label = paste0(TOTAL_COUNT, " (", round(Percentage, 1), "%)")), vjust = -0.5, size = 4) +
+  labs(title = "Count of Snipers by Cluster", x = "Cluster", y = "Total Count") +
+  theme_bw() +
+  theme(
+    plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 10),
+    axis.text = element_text(size = 8),
+    panel.grid.major = element_line(color = "gray88"),
+    panel.grid.minor = element_line(color = "gray95"),
+    panel.background = element_rect(fill = "white", color = NA),
+    plot.background = element_rect(fill = "white", color = NA)
+  ) +
+  scale_fill_brewer(palette = "Set3") +
+  ylim(0, max(count_of_clusters_df$TOTAL_COUNT) * 1.1)
+
+```
+
+# Focus on top 10 players in top cluster.
+
+```{r}
+
+sub_final_cluster <- data_sniper_cluster %>% 
+  filter(Cluster == "L5") %>% 
+  arrange(desc(PTS))
+
+sub_final_cluster
+
+top_10_records <- sub_final_cluster %>%
+  top_n(10, SHOT_PCT) %>% 
+  arrange(desc(SHOT_PCT))
+
+top_10_records
+
+top_10_records %>%
+  kable("html") %>%
+  kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  column_spec(1, bold = T) %>%
+  row_spec(0, bold = T, background = "#D3D3D3")
+
+
+```
+
+
+
+
+
+
+
