@@ -1,0 +1,207 @@
+---
+title: "Predicting Wins - Logistic Regression"
+author: "Data Punk"
+date: "2024-07-13"
+output: html_document
+---
+
+MIT License
+
+Copyright (c) 2024 Data Punk Hockey
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+# Load the libraries for the logistic regression analysis.
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+library(dplyr)
+library(caret)
+library(glmnet)
+library(pROC)
+library(tidyverse)
+library(reshape2)
+library(knitr)
+library(kableExtra)
+library(broom)
+
+```
+
+# Load, clean and transform the data.
+
+```{r}
+final_log_reg_df <- read.csv("final_log_regression_game_data.csv")
+
+sub_final_log_reg_df <- final_log_reg_df %>% 
+  select(Date, Team, Win, GF, GA, SF_PCT, xGF, xGA, xGF_PCT, CF_PCT, FF_PCT, SCF_PCT, HDSF_PCT,
+         HDGF_PCT)
+
+colnames(sub_final_log_reg_df) <- c("DATE", "TEAM", "WIN", "GF", "GA", 
+                                    "SF_PCT", "X_GF", "X_GA", "XGF_PCT", 
+                                    "CF_PCT", "FF_PCT", "SCF_PCT", "HDSF_PCT",
+                                    "HDGF_PCT")
+
+sub_final_log_reg_df <- sub_final_log_reg_df %>%
+  mutate(HDGF_PCT = ifelse(HDGF_PCT == "-", 0, as.numeric(HDGF_PCT)))
+
+na.omit(sub_final_log_reg_df)
+
+sub_final_log_reg_df
+
+write.csv(sub_final_log_reg_df, "subset_log_regression_game_data.csv", row.names = FALSE)
+
+```
+
+# Create the training and test data.
+
+```{r}
+
+set.seed(123)
+
+train_index <- createDataPartition(sub_final_log_reg_df$WIN, p = .8, list = FALSE)
+
+data_train_df <- sub_final_log_reg_df[train_index, ]
+data_test_df <- sub_final_log_reg_df[-train_index, ]
+
+```
+
+#  Create the model.
+
+```{r}
+
+model <- glm(WIN ~ SF_PCT + XGF_PCT + CF_PCT + FF_PCT + HDGF_PCT, 
+             data = data_train_df, family = binomial)
+
+tidy_model <- tidy(model)
+
+tidy_model %>%
+  kable(format = "html", caption = "Logistic Regression Model Results") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F) %>%
+  column_spec(1, bold = TRUE, color = "white", background = "dodgerblue") %>%
+  column_spec(2:5, color = "black", background = "lightgray")
+
+```
+
+
+# Create the predictions and test actuals versus predictions.
+
+```{r}
+
+data_test_df <- data_test_df[, names(data_train_df)]
+
+predictions <- predict(model, newdata = data_test_df, type = "response")
+predicted_classes <- ifelse(predictions > 0.5, 1, 0)
+
+
+result_summary <- data.frame(
+  Actual = data_test_df$WIN,
+  Predicted = predicted_classes
+)
+
+result_summary
+
+kable(result_summary, format = "html", caption = "Actual vs Predicted Results") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F) %>%
+  column_spec(1, bold = TRUE, color = "white", background = "dodgerblue") %>%
+  column_spec(2, bold = TRUE, color = "white", background = "orange")
+
+```
+
+# Create the confusion matrix.
+
+```{r}
+
+conf_matrix <- table(Predicted = predicted_classes, Actual = data_test_df$WIN)
+
+conf_matrix_df <- as.data.frame(as.table(conf_matrix))
+
+ggplot(data = conf_matrix_df, aes(x = Actual, y = Predicted, fill = Freq)) +
+  geom_tile(color = "white") +
+  geom_text(aes(label = Freq), vjust = 1) +
+  scale_fill_gradient(low = "lightblue", high = "orange") +
+  labs(title = "Confusion Matrix", x = "Actual", y = "Predicted") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 12),
+    axis.title.x = element_text(size = 8),
+    axis.title.y = element_text(size = 8),
+    axis.text = element_text(size = 10)
+  )
+
+```
+# Evaluate the model metrics to test specificity and sensitivity.
+
+```{r}
+
+confusion_matrix <- confusionMatrix(factor(predicted_classes), factor(data_test_df$WIN))
+
+performance_metrics <- data.frame(
+  Metric = c("Accuracy", "Sensitivity", "Specificity", "Pos Pred Value", "Neg Pred Value", "Kappa", "Balanced Accuracy"),
+  Value = c(
+    confusion_matrix$overall["Accuracy"],
+    confusion_matrix$byClass["Sensitivity"],
+    confusion_matrix$byClass["Specificity"],
+    confusion_matrix$byClass["Pos Pred Value"],
+    confusion_matrix$byClass["Neg Pred Value"],
+    confusion_matrix$overall["Kappa"],
+    confusion_matrix$byClass["Balanced Accuracy"]
+  )
+)
+
+kable(performance_metrics, format = "html", caption = "Performance Metrics") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F) %>%
+  column_spec(1, bold = TRUE, color = "white", background = "dodgerblue") %>%
+  column_spec(2, bold = TRUE, color = "white", background = "orange")
+
+```
+
+# Plot the ROC curve.
+
+```{r}
+
+roc_curve <- roc(data_test_df$WIN, predictions)
+auc_value <- auc(roc_curve)
+
+roc_plot <- ggroc(roc_curve, color = "blue", size = 1.2) +
+  geom_abline(linetype = "dashed", color = "red") +
+  labs(title = "ROC Curve", 
+       subtitle = paste("AUC =", round(auc_value, 2)),
+       x = "False Positive Rate", 
+       y = "True Positive Rate") +
+  theme_bw() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 15),
+    axis.title.x = element_text(size = 15),
+    axis.title.y = element_text(size = 15),
+    axis.text = element_text(size = 12),
+    panel.grid.major = element_line(color = "gray90"),
+    panel.grid.minor = element_line(color = "gray95")
+  ) +
+  annotate("text", x = 0.7, y = 0.2, label = paste("AUC =", round(auc_value, 2)), color = "blue", size = 5, hjust = 0)
+
+print(roc_plot)
+
+```
+
+
