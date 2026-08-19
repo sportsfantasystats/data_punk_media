@@ -1,0 +1,183 @@
+---
+title: "Linear Regression"
+author: "Data Punk"
+date: "2024-01-09"
+output: html_document
+---
+
+License Information
+
+MIT License
+
+Copyright (c) 2023 Data Punk Hockey
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+library(dplyr)
+library(reshape2)
+library(corrplot)
+library(caTools)
+library(caret)
+
+```
+
+
+```{r}
+
+summary_team_shot_data_df <- read.csv("combined_team_stats_file.csv")
+
+print(head(summary_team_shot_data_df, 5))
+
+```
+
+
+```{r}
+
+corsi_goals_df <- summary_team_shot_data_df %>% 
+  select(GF, CORSI_PCT)
+
+ggplot(corsi_goals_df, aes(x = GF, y = CORSI_PCT)) +
+  geom_point() +  
+  geom_smooth() +
+  theme_bw() +
+  labs(x = "Corsi Percent", y = "Goals", title = "Puck Possession Production: Corsi vs Goals")
+
+write.csv(corsi_goals_df, "corsi_vs_goals.csv", row.names = FALSE)
+
+```
+
+
+```{r}
+
+pdo_goals_df <- summary_team_shot_data_df %>% 
+  select(GF, PDO)
+
+ggplot(pdo_goals_df, aes(x = GF, y = PDO)) +
+  geom_point() +  
+  geom_smooth() +
+  theme_bw() +
+  labs(x = "Goals", y = "PDO", title = "Shot & Save Percent: PDO vs Goals")
+
+write.csv(pdo_goals_df, "pdo_vs_goals.csv", row.names = FALSE)
+
+```
+
+
+
+```{r}
+
+xgf_goals_df <- summary_team_shot_data_df %>% 
+  select(GF, X_GF)
+
+ggplot(xgf_goals_df, aes(x = X_GF, y = GF)) +
+  geom_point() +
+  geom_smooth() +
+  labs(title = "Expected Goals vs Goals For (GF)",
+       x = "Expected Goals",
+       y = "Goals For (GF)") +
+  theme_bw()
+
+write.csv(xgf_goals_df, "xgf_vs_goals.csv", row.names = FALSE)
+
+```
+
+
+```{r}
+
+corr_model_data <- summary_team_shot_data_df[, c('AVG_AGE', 'X_GF', 'CORSI_PCT', 'SHOT_PCT', 'PDO', 'PP', 'GF')]
+
+cor_matrix <- cor(corr_model_data, use = "complete.obs")  # 'complete.obs' to handle missing values
+
+melted_cor_matrix <- melt(cor_matrix)
+
+corrplot(cor_matrix, method = "circle", type = "upper", 
+         tl.col = "blue", tl.srt = 45, 
+         addCoef.col = "gray",  # Add correlation coefficients
+         number.cex = 0.7)      # Adjust size of the coefficients
+```
+
+
+```{r}
+
+predictors <- c('AVG_AGE', 'X_GF', 'CORSI_PCT', 'SHOT_PCT', 'PDO', 'PP')
+
+results <- data.frame(Predictor = character(),
+                      R_squared = numeric(),
+                      MSE = numeric(),
+                      stringsAsFactors = FALSE)
+
+for (pred in predictors) {
+  formula <- as.formula(paste("GF ~", pred))
+  data_clean <- na.omit(summary_team_shot_data_df[, c(pred, 'GF')])
+  set.seed(42)
+  split <- sample.split(data_clean$GF, SplitRatio = 0.8)
+  train_data <- subset(data_clean, split == TRUE)
+  test_data <- subset(data_clean, split == FALSE)
+
+  model <- lm(formula, data = train_data)
+
+  predictions <- predict(model, newdata = test_data)
+
+  mse <- mean((predictions - test_data$GF)^2)
+  r2 <- summary(lm(predictions ~ test_data$GF))$r.squared
+
+  results <- rbind(results, data.frame(Predictor = pred, R_squared = r2, MSE = mse))
+}
+
+print(results)
+
+```
+
+
+```{r}
+
+sub_results <- results %>% 
+  select(Predictor, R_squared) %>% 
+  arrange(desc(R_squared))
+
+colnames(sub_results) <- c("PREDICTOR", "R_SQUARED")
+
+sub_results$R_SQUARED = round(sub_results$R_SQUARED, 2)
+
+print(sub_results)
+
+write.csv(sub_results, "new_predictor_results.csv", row.names = FALSE)
+
+```
+
+```{r}
+
+ggplot(sub_results, aes(x = PREDICTOR, y = R_SQUARED, fill = PREDICTOR)) +
+  geom_bar(stat = "identity", show.legend = FALSE) +
+  scale_fill_brewer(palette = "Paired") +
+  labs(title = "R-squared Values of Predictor Variables",
+       x = "Predictor Variable",
+       y = "R-squared Value") +
+  theme_bw(base_size = 14) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+        plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+        axis.title = element_text(size = 12, face = "bold")) +
+  coord_flip()  # Flips the axes for a horizontal bar chart
+```
+
