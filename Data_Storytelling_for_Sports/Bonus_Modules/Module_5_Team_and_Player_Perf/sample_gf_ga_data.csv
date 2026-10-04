@@ -1,0 +1,129 @@
+SEASON,TEAM,GFPG,GAPG
+2021_2022,Florida Panthers,4.11,2.95
+2021_2022,Colorado Avalanche,3.76,2.83
+2021_2022,Carolina Hurricanes,3.38,2.44
+2021_2022,Toronto Maple Leafs,3.8,3.07
+2021_2022,Minnesota Wild,3.72,3.04
+2021_2022,Calgary Flames,3.55,2.51
+2021_2022,Tampa Bay Lightning,3.48,2.78
+2021_2022,New York Rangers,3.05,2.49
+2021_2022,St. Louis Blues,3.77,2.91
+2021_2022,Boston Bruins,3.09,2.66
+2021_2022,Edmonton Oilers,3.48,3.06
+2021_2022,Pittsburgh Penguins,3.28,2.71
+2021_2022,Washington Capitals,3.29,2.95
+2021_2022,Los Angeles Kings,2.87,2.83
+2021_2022,Dallas Stars,2.84,2.98
+2021_2022,Nashville Predators,3.2,3.05
+2021_2022,Vegas Golden Knights,3.2,2.98
+2021_2022,Vancouver Canucks,3,2.82
+2021_2022,Winnipeg Jets,3.05,3.09
+2021_2022,New York Islanders,2.79,2.82
+2021_2022,Columbus Blue Jackets,3.15,3.62
+2021_2022,San Jose Sharks,2.57,3.18
+2021_2022,Anaheim Ducks,2.78,3.24
+2021_2022,Buffalo Sabres,2.79,3.5
+2021_2022,Detroit Red Wings,2.77,3.78
+2021_2022,Ottawa Senators,2.73,3.22
+2021_2022,Chicago Blackhawks,2.6,3.52
+2021_2022,New Jersey Devils,2.99,3.68
+2021_2022,Philadelphia Flyers,2.56,3.59
+2021_2022,Seattle Kraken,2.6,3.46
+2021_2022,Arizona Coyotes,2.51,3.77
+2021_2022,Montreal Canadiens,2.66,3.87
+2022_2023,Boston Bruins,3.67,2.12
+2022_2023,Carolina Hurricanes,3.2,2.56
+2022_2023,New Jersey Devils,3.52,2.71
+2022_2023,Vegas Golden Knights,3.26,2.74
+2022_2023,Toronto Maple Leafs,3.39,2.68
+2022_2023,Colorado Avalanche,3.34,2.72
+2022_2023,Edmonton Oilers,3.96,3.12
+2022_2023,Dallas Stars,3.43,2.62
+2022_2023,New York Rangers,3.33,2.63
+2022_2023,Los Angeles Kings,3.34,3.1
+2022_2023,Minnesota Wild,2.91,2.67
+2022_2023,Seattle Kraken,3.52,3.07
+2022_2023,Tampa Bay Lightning,3.41,3.07
+2022_2023,Winnipeg Jets,3,2.73
+2022_2023,Calgary Flames,3.15,3.01
+2022_2023,New York Islanders,2.95,2.65
+2022_2023,Florida Panthers,3.51,3.32
+2022_2023,Nashville Predators,2.72,2.88
+2022_2023,Buffalo Sabres,3.57,3.62
+2022_2023,Pittsburgh Penguins,3.18,3.21
+2022_2023,Ottawa Senators,3.16,3.29
+2022_2023,Vancouver Canucks,3.29,3.61
+2022_2023,St. Louis Blues,3.17,3.63
+2022_2023,Washington Capitals,3.09,3.18
+2022_2023,Detroit Red Wings,2.89,3.35
+2022_2023,Philadelphia Flyers,2.68,3.37
+2022_2023,Arizona Coyotes,2.74,3.6
+2022_2023,Montreal Canadiens,2.77,3.72
+2022_2023,San Jose Sharks,2.84,3.84
+2022_2023,Chicago Blackhawks,2.46,3.65
+2022_2023,Columbus Blue Jackets,2.6,4.01
+2022_2023,Anaheim Ducks,2.51,4.09
+2023_2024,New York Rangers,3.39,2.76
+2023_2024,Dallas Stars,3.59,2.83
+2023_2024,Carolina Hurricanes,3.38,2.57
+2023_2024,Winnipeg Jets,3.16,2.41
+2023_2024,Florida Panthers,3.23,2.41
+2023_2024,Boston Bruins,3.21,2.7
+2023_2024,Vancouver Canucks,3.4,2.7
+2023_2024,Colorado Avalanche,3.68,3.07
+2023_2024,Edmonton Oilers,3.56,2.88
+2023_2024,Toronto Maple Leafs,3.63,3.18
+2023_2024,Nashville Predators,3.24,3.02
+2023_2024,Los Angeles Kings,3.1,2.56
+2023_2024,Tampa Bay Lightning,3.51,3.26
+2023_2024,Vegas Golden Knights,3.21,2.96
+2023_2024,New York Islanders,2.99,3.15
+2023_2024,St. Louis Blues,2.85,3.02
+2023_2024,Washington Capitals,2.63,3.07
+2023_2024,Detroit Red Wings,3.35,3.33
+2023_2024,Pittsburgh Penguins,3.09,3.02
+2023_2024,Minnesota Wild,3.02,3.17
+2023_2024,Philadelphia Flyers,2.82,3.15
+2023_2024,Buffalo Sabres,2.98,2.96
+2023_2024,New Jersey Devils,3.22,3.43
+2023_2024,Seattle Kraken,2.61,2.83
+2023_2024,Calgary Flames,3.09,3.26
+2023_2024,Ottawa Senators,3.05,3.43
+2023_2024,Arizona Coyotes,3.1,3.34
+2023_2024,Montreal Canadiens,2.83,3.43
+2023_2024,Columbus Blue Jackets,2.85,3.63
+2023_2024,Anaheim Ducks,2.48,3.57
+2023_2024,Chicago Blackhawks,2.17,3.52
+2023_2024,San Jose Sharks,2.2,3.98
+2024_2025,Winnipeg Jets,3.45,2.34
+2024_2025,Washington Capitals,3.61,2.57
+2024_2025,Dallas Stars,3.39,2.57
+2024_2025,Vegas Golden Knights,3.42,2.65
+2024_2025,Colorado Avalanche,3.37,2.79
+2024_2025,Carolina Hurricanes,3.22,2.64
+2024_2025,Florida Panthers,3.14,2.69
+2024_2025,Toronto Maple Leafs,3.26,2.97
+2024_2025,Tampa Bay Lightning,3.57,2.64
+2024_2025,Los Angeles Kings,2.89,2.52
+2024_2025,Minnesota Wild,2.7,2.79
+2024_2025,Edmonton Oilers,3.24,2.94
+2024_2025,St. Louis Blues,3.01,2.84
+2024_2025,New Jersey Devils,2.95,2.64
+2024_2025,Ottawa Senators,2.92,2.87
+2024_2025,Vancouver Canucks,2.86,3.07
+2024_2025,Calgary Flames,2.61,2.94
+2024_2025,Utah Hockey Club,2.78,3.05
+2024_2025,Montreal Canadiens,2.97,3.35
+2024_2025,New York Rangers,2.97,3.03
+2024_2025,Columbus Blue Jackets,3.18,3.35
+2024_2025,New York Islanders,2.72,2.99
+2024_2025,Detroit Red Wings,2.85,3.21
+2024_2025,Anaheim Ducks,2.72,3.13
+2024_2025,Boston Bruins,2.63,3.3
+2024_2025,Pittsburgh Penguins,2.92,3.62
+2024_2025,Seattle Kraken,3.03,3.21
+2024_2025,Philadelphia Flyers,2.74,3.45
+2024_2025,Buffalo Sabres,3.15,3.49
+2024_2025,Nashville Predators,2.54,3.22
+2024_2025,Chicago Blackhawks,2.71,3.59
+2024_2025,San Jose Sharks,2.62,3.66

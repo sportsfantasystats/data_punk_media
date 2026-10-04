@@ -1,0 +1,126 @@
+---
+title: "Winning Percentage"
+author: "Data Punk"
+date: "2024-12-02"
+output: html_document
+---
+
+License Information
+
+MIT License
+
+Copyright (c) 2024 Data Punk Media
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+# Load core R package.
+
+```{r}
+
+library(tidyverse)
+
+```
+
+# Load sports data into an in-memory data frame. 
+
+```{r}
+
+nhl_team_stats_df <- read.csv("Demo_NHL_Team_Stats_Summary.csv")
+
+```
+
+# Create a new data frame with Team and Expected Win Percentage. 
+
+```{r}
+
+stats_with_wp_df <- nhl_team_stats_df %>%
+  mutate(WP = round((GOALS_FOR^2) / (GOALS_FOR^2 + GOALS_AGAINST^2), 3))  
+
+stats_with_wp_df$TEAM_NAME <- paste(stats_with_wp_df$CITY, stats_with_wp_df$NAME, sep = " ")
+
+stats_with_wp_df <- stats_with_wp_df %>% 
+  select(TEAM_NAME, WP) %>% 
+  arrange(desc(WP))
+
+print(stats_with_wp_df)
+
+```
+
+# Create a 4-tier ranking (quartiles) for average Expected Win Percentage.
+
+```{r}
+
+stats_with_wp_df$QUART<- cut(
+  stats_with_wp_df$WP, 
+  breaks = quantile(stats_with_wp_df$WP, probs = seq(0, 1, 0.25)), 
+  include.lowest = TRUE, 
+  labels = c("Tier 4", "Tier 3", "Tier 2", "Tier 1")
+)
+
+average_wp_quartile <- stats_with_wp_df %>% 
+  group_by(QUART) %>% 
+  summarize(AVG_WP = round(mean(WP),3)) %>% 
+  arrange(desc(AVG_WP))
+
+average_wp_quartile
+
+write.csv(average_wp_quartile, "avg_wp_by_tier.csv", row.names = FALSE)
+
+```
+
+
+
+
+```{r}
+
+ggplot(stats_with_wp_df, aes(x = reorder(TEAM_NAME, WP), y = WP, fill = WP)) +
+  geom_bar(stat = "identity", color = "black") +
+  coord_flip() +
+  labs(
+    title = "Winning Percentage by NHL Team",
+    x = "Teams",
+    y = "Winning Percentage",
+    caption = "Data Source: My Sports Feeds"
+  ) +
+  scale_fill_gradient(low = "blue", high = "red", name = "WP") +
+  theme_minimal(base_size = 12) +
+  theme(
+    axis.text.y = element_text(size = 7, face = "bold"),  # Increase size and make text bold for readability
+    axis.text.x = element_text(size = 8, angle = 0),     # Ensure X-axis is properly readable
+    plot.title = element_text(face = "bold", size = 12),
+    legend.position = "bottom",
+    legend.title = element_text(size = 10),
+    legend.text = element_text(size = 8)
+  )
+
+
+```
+
+
+
+
+

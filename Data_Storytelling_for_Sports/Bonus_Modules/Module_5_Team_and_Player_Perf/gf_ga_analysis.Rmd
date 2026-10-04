@@ -1,0 +1,78 @@
+---
+title: "Goals For and Goals Against Analysis"
+author: "Data Punk"
+date: "2025-03-31"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r}
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(scales)
+
+```
+
+
+
+```{r}
+
+df <- read.csv("sample_gf_ga_data.csv")
+
+avg_df <- df %>%
+  group_by(TEAM) %>%
+  summarize(
+    avg_GFPG = mean(GFPG),
+    avg_GAPG = mean(GAPG)
+  )
+
+long_df <- avg_df %>%
+  pivot_longer(cols = c(avg_GFPG, avg_GAPG), names_to = "Type", values_to = "Value")
+
+long_df <- long_df %>%
+  group_by(TEAM) %>%
+  mutate(Percent = Value / sum(Value))
+
+```
+
+
+```{r}
+
+ggplot(long_df, aes(x = reorder(TEAM, -Percent), y = Percent, fill = Type)) +
+  geom_col(width = 0.8, color = "white", size = 0.2) +
+  scale_y_continuous(labels = percent_format(), expand = c(0, 0)) +
+  scale_fill_manual(
+    values = c("avg_GFPG" = "#1f77b4", "avg_GAPG" = "#d62728"),
+    labels = c("Goals For Per Game", "Goals Against Per Game")
+  ) +
+  labs(
+    title = "Balance of Scoring vs. Defense by NHL Team (Avg GFPG vs. GAPG)",
+    subtitle = "Average: 2021–2022 to 2024-2025 Regular Seasons",
+    x = NULL,
+    y = "Percentage of Total Goals",
+    fill = NULL
+  ) +
+  theme_light(base_size = 12) +
+  theme(
+    axis.text.x = element_text(angle = 60, hjust = 1, size = 8),
+    axis.text.y = element_text(size = 8),
+    plot.title = element_text(face = "bold", size = 10),
+    plot.subtitle = element_text(size = 8),
+    legend.position = "top",
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank()
+  )
+
+ggsave("gfpg_gapg_100pct_chart.png", width = 12, height = 6, dpi = 300)
+
+
+```
+
