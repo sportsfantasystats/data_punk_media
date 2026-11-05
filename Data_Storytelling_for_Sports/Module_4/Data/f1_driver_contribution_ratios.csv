@@ -1,0 +1,25 @@
+"RANK","DRIVER","TEAM","POINTS","TEAM_POINTS","DRIVER_RATIO","DRIVER_PCT"
+1,"Fernando Alonso","Aston Martin",7,7,1,100
+2,"Oliver Bearman","Haas F1 Team",23,31,0.741935483870968,74.2
+3,"Max Verstappen","Red Bull Racing",261,368,0.709239130434783,70.9
+4,"Liam Lawson","Racing Bulls",83,122,0.680327868852459,68
+5,"Pierre Gasly","Alpine",42,69,0.608695652173913,60.9
+6,"Lando Norris","McLaren",221,365,0.605479452054794,60.5
+7,"Kimi Antonelli","Mercedes",380,630,0.603174603174603,60.3
+8,"Carlos Sainz","Williams",7,12,0.583333333333333,58.3
+9,"Gabriel Bortoleto","Audi",14,27,0.518518518518518,51.9
+10,"Lewis Hamilton","Ferrari",259,504,0.513888888888889,51.4
+11,"Charles Leclerc","Ferrari",245,504,0.486111111111111,48.6
+12,"Nico Hulkenberg","Audi",13,27,0.481481481481481,48.1
+13,"Alexander Albon","Williams",5,12,0.416666666666667,41.7
+14,"George Russell","Mercedes",250,630,0.396825396825397,39.7
+15,"Oscar Piastri","McLaren",144,365,0.394520547945205,39.5
+16,"Franco Colapinto","Alpine",27,69,0.391304347826087,39.1
+17,"Arvid Lindblad","Racing Bulls",38,122,0.311475409836066,31.1
+18,"Isack Hadjar","Red Bull Racing",107,368,0.290760869565217,29.1
+19,"Esteban Ocon","Haas F1 Team",7,31,0.225806451612903,22.6
+20,"Ryo Hirakawa","Haas F1 Team",1,31,0.032258064516129,3.2
+21,"Yuki Tsunoda","Racing Bulls",1,122,0.00819672131147541,0.8
+22,"Lance Stroll","Aston Martin",0,7,0,0
+NA,"Valtteri Bottas","Cadillac",0,0,NA,NA
+NA,"Sergio Perez","Cadillac",0,0,NA,NA

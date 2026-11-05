@@ -1,0 +1,171 @@
+---
+title: "get_f1_data"
+author: "Data Punk"
+date: "2025-08-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+# Load the libraries for the R script.
+
+```{r}
+
+library(tidyverse)
+library(dplyr)
+library(rvest)
+library(xml2)
+library(tibble)
+library(ggplot2)
+library(stringr)
+
+```
+
+# Scrape driver statistics and clean/transform data and save as external CSV file.
+
+```{r}
+
+url <- "https://www.formula1.com/en/results/2026/drivers"
+
+driver_stats <- url %>% 
+  read_html() %>% 
+  html_nodes(xpath = '//*[@id="results-table"]/div/table') %>% 
+  html_table()
+
+driver_statistics <- driver_stats[[1]]
+
+driver_stats_df <- as.data.frame(driver_statistics)
+
+driver_stats_df$Driver <- substr(driver_stats_df$Driver, 1, nchar(driver_stats_df$Driver) - 3)
+
+colnames(driver_stats_df) <- c("POS", "DRIVER", "NATIONALITY",
+                               "TEAM", "POINTS")
+
+driver_stats_df$DRIVER <- gsub("Â", "", driver_stats_df$DRIVER)       
+driver_stats_df$DRIVER  <- gsub("\u00A0", " ", driver_stats_df$DRIVER)
+
+driver_stats_df
+
+write.csv(driver_stats_df, "latest_f1_driver_stats.csv", row.names = FALSE)
+
+```
+
+
+# Load the team stats and save as external CSV file. 
+
+```{r}
+library(httr)
+library(rvest)
+library(dplyr)
+
+url <- "https://www.formula1.com/en/results/2026/team"
+
+response <- GET(
+  url,
+  user_agent("Mozilla/5.0"),
+  timeout(30)
+)
+
+page <- read_html(
+  content(response, "text", encoding = "UTF-8")
+)
+
+# How many tables are present?
+tables <- html_elements(page, "table")
+
+print(length(tables))
+
+# Inspect table contents
+if (length(tables) > 0) {
+  lapply(tables, html_table)
+}
+url <- "https://www.formula1.com/en/results/2026/team"
+
+response <- tryCatch(
+  GET(
+    url,
+    user_agent("Mozilla/5.0"),
+    timeout(20)
+  ),
+  error = function(e) e
+)
+
+if (inherits(response, "error")) {
+  message(conditionMessage(response))
+} else {
+  print(status_code(response))
+  print(headers(response)[["content-type"]])
+}
+
+team_stats <- tables[[1]] %>%
+  html_table(fill = TRUE) %>%
+  as_tibble()
+
+print(team_stats)
+
+write.csv(team_stats, "team_stats.csv", row.names = FALSE)
+
+
+```
+
+
+# Calculate the individual driver ratios. 
+
+```{r}
+
+library(dplyr)
+
+f1_df <- read.csv(
+  "latest_f1_driver_stats.csv",
+  stringsAsFactors = FALSE
+)
+
+driver_ratios <- f1_df %>%
+  group_by(TEAM) %>%
+  mutate(
+    TEAM_POINTS = sum(POINTS, na.rm = TRUE),
+
+    DRIVER_RATIO = if_else(
+      TEAM_POINTS > 0,
+      POINTS / TEAM_POINTS,
+      NA_real_
+    ),
+
+    DRIVER_PCT = round(DRIVER_RATIO * 100, 1)
+  ) %>%
+  ungroup() %>%
+  arrange(desc(DRIVER_RATIO), desc(POINTS)) %>%
+  mutate(
+    RANK = if_else(
+      is.na(DRIVER_RATIO),
+      NA_integer_,
+      rank(-DRIVER_RATIO, ties.method = "min",
+           na.last = "keep") %>% as.integer()
+    )
+  ) %>%
+  select(
+    RANK,
+    DRIVER,
+    TEAM,
+    POINTS,
+    TEAM_POINTS,
+    DRIVER_RATIO,
+    DRIVER_PCT
+  )
+
+print(driver_ratios, n = Inf)
+
+
+write.csv(
+  driver_ratios,
+  "f1_driver_contribution_ratios.csv",
+  row.names = FALSE
+)
+
+
+```
+
